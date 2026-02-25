@@ -1,0 +1,172 @@
+.practice-page {
+  background-color: #f3f6f8;
+  min-height: 100vh;
+}
+
+.welcome-section {
+  border-bottom: 1px solid #e9ecef;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #6b46c1 0%, #9f7aea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.language-card {
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.language-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.language-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #495057;
+  text-decoration: underline;
+}
+
+/* Section container styles */
+.section-container {
+  max-width: 1254px;
+  margin: 0 auto 60px auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  position: relative;
+  padding: 0 15px;
+}
+
+/* Advanced section specific styling */
+.advanced-section {
+  max-width: 364px;
+  width: 364px;
+  margin-left: 132px !important;
+  margin-right: auto !important;
+  height: 374px;
+}
+
+/* Make sure advanced challenge card has proper styling */
+.advanced-section .card-header {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* Media query to ensure advanced section displays properly on smaller screens */
+@media (max-width: 576px) {
+  .advanced-section {
+    margin-left: auto !important;
+  }
+}
+
+/* Missing Color Classes */
+.bg-project-blue {
+  background-color: #3b82f6 !important;
+}
+
+.bg-dsa-yellow {
+  background-color: #f59e0b !important;
+}
+
+.bg-difficulty-magenta {
+  background-color: #d946ef !important;
+}
+
+.bg-interview-orange {
+  background-color: #f97316 !important;
+}
+
+.bg-company-teal {
+  background-color: #0d9488 !important;
+}
+
+.bg-language-pink {
+  background-color: #ec4899 !important;
+}
+
+/* Language Card Gradients */
+.card-cpp {
+  background: linear-gradient(135deg, #00599c, #004482);
+}
+
+.card-python {
+  background: linear-gradient(135deg, #3776ab, #2b5b87);
+}
+
+.card-java {
+  background: linear-gradient(135deg, #f89820, #e76f00);
+}
+
+.card-c {
+  background: linear-gradient(135deg, #a8b9cc, #5c7eb5);
+}
+
+.card-js {
+  background: linear-gradient(135deg, #f7df1e, #e5c010);
+}
+
+.card-html {
+  background: linear-gradient(135deg, #e34f26, #f06529);
+}
+
+.card-sql {
+  background: linear-gradient(135deg, #336791, #274d6e);
+}
+
+.card-php {
+  background: linear-gradient(135deg, #777bb4, #4f5b93);
+}
+
+.card-top-gradient {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.language-icon {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.practice-divider {
+  background: #4F4C4C;
+  height: 2px;
+  border-radius: 2px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Sidebar Customizations */
+.sticky-top {
+  z-index: 1020;
+}
+
+.practice-page .section-container {
+  max-width: 100%;
+}

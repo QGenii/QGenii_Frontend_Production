@@ -1,0 +1,118 @@
+.edit-plan-modal .modal-content {
+  border-radius: 10px;
+  border: none;
+}
+
+.edit-plan-modal .modal-header {
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 20px;
+}
+
+.edit-plan-modal .modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+}
+
+.edit-plan-modal .modal-body {
+  padding: 20px;
+}
+
+.edit-plan-modal .modal-footer {
+  border-top: 1px solid #eaeaea;
+  padding: 15px 20px;
+}
+
+.subject-selector label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.subject-selector .form-select {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+.tasks-section {
+  margin-top: 20px;
+}
+
+.tasks-section label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.tasks-list {
+  margin-bottom: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+
+.task-item .task-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.task-title {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.task-frequency {
+  font-size: 13px;
+  color: #666;
+}
+
+.delete-task-btn {
+  color: #ff3b30;
+  padding: 0;
+  text-decoration: none;
+}
+
+.add-task-section {
+  margin-top: 20px;
+}
+
+.add-task-btn {
+  border: 1px dashed #ddd;
+  color: #143b6e;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus-icon {
+  font-size: 18px;
+  margin-right: 8px;
+  font-weight: 400;
+}
+
+.save-plan-btn {
+  background-color: #143b6e;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+}
+
+.save-plan-btn:hover {
+  background-color: #0f2e58;
+}

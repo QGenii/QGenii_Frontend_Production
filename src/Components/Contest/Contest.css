@@ -1,0 +1,395 @@
+.contest-page {
+  background-color: #f5f8fb;
+  padding: 24px 0;
+  min-height: 100vh;
+  color: #1f2d3d;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.contest-page > div[style] {
+  box-shadow: 0 1px 6px rgba(12,49,110,0.06);
+  border-radius: 6px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  color: #000;
+  /* border-bottom: 2px solid #0C316E; */
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.contest-page .section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Table Styles */
+.table {
+  background-color: #fff;
+  margin-bottom: 0;
+  border: none;
+  border-collapse: collapse;
+}
+
+/* For single row tables with headers in the first column */
+.table tbody th {
+  border: none;
+  font-weight: 500;
+}
+
+.table thead {
+  border-bottom: none;
+}
+
+.table thead tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table.table-bordered thead {
+  background-color: transparent;
+}
+
+.table thead th {
+  color: #212529;
+  font-weight: 500;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-right: none !important;
+  border-left: none !important;
+  background-color: transparent;
+}
+
+.table tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+  font-weight: 500;
+}
+
+tr[style*="background-color: #0C316E"] th {
+  font-weight: 500;
+  color: white !important;
+  border-right: none;
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table tbody td {
+  padding: 10px 15px;
+  color: #333;
+  font-size: 14px;
+  vertical-align: middle;
+  border-right: none !important;
+  border-left: none !important;
+}
+
+/* Override Bootstrap's table-bordered */
+.table.table-bordered,
+.table.table-bordered th,
+.table.table-bordered td {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.table.table-bordered {
+  border: none;
+}
+
+/* Links in tables */
+.test-link, .contest-link, .problem-link {
+  color: #0645ad;
+  text-decoration: none;
+  font-weight: normal;
+  display: block;
+}
+
+.test-link:hover, .contest-link:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #0C316E;
+  border-color: #0C316E;
+}
+
+.btn-primary:hover {
+  background-color: #092456;
+  border-color: #092456;
+}
+
+.btn-primary:disabled {
+  background-color: #7994c1;
+  border-color: #7994c1;
+}
+
+.btn-outline-primary {
+  color: #0C316E;
+  border-color: #0C316E;
+  padding: 2px 6px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0C316E;
+  color: white;
+}
+
+/* Badge styles */
+.badge.bg-success {
+  background-color: #28a745 !important;
+  font-size: 10px;
+  font-weight: normal;
+  padding: 3px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contest-page .badge.bg-success {
+  background-color: #28a745 !important;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px 6px;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+}
+
+/* Text styles */
+.text-muted {
+  color: #666 !important;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contest-page .text-muted {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+/* Bell icon button */
+.fa-bell::before {
+  content: "🔔";
+}
+
+/* Contest specific styles */
+.contest-details-page .contest-title,
+.contest-start-page .contest-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.contest-info-card {
+  background-color: #f0f5ff !important;
+  border-radius: 8px !important;
+}
+
+.contest-overview-list li,
+.contest-rules-list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.form-check-input:checked {
+  background-color: #0C316E;
+  border-color: #0C316E;
+}
+
+.wifi-icon {
+  color: #28a745;
+  font-size: 1.2rem;
+  margin-left: auto;
+}
+
+/* Responsive table */
+@media (max-width: 992px) {
+  .table-responsive {
+    border: none;
+  }
+  
+  .section-header {
+    padding: 0 5px;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .table thead th, .table tbody td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .section-header .btn {
+    align-self: flex-start;
+  }
+  
+  .table thead th, .table tbody td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+/* Contest Pages Styling */
+
+/* Rating graph colors */
+.ratings-graph {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.practice-problems-page h5, 
+.practice-problems-page h6 {
+  font-weight: 600;
+}
+
+.text-uppercase {
+  letter-spacing: 0.5px;
+}
+
+.table th {
+  font-weight: 600;
+  background-color: #f9f9f9;
+}
+
+.btn-primary {
+  background-color: #0C316E;
+  border-color: #0C316E;
+}
+
+.btn-primary:hover {
+  background-color: #092456;
+  border-color: #092456;
+}
+
+.btn-outline-primary {
+  color: #0C316E;
+  border-color: #0C316E;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0C316E;
+  color: white;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+}
+
+.alert-link {
+  color: #0C316E;
+  font-weight: 600;
+}
+
+/* Contest timer styling */
+.contest-timer h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* For the breadcrumb navigation */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+}
+
+.contest-page .table {
+  border: 1px solid #cfdce8;
+  margin-bottom: 0.5rem;
+  border-collapse: collapse;
+}
+
+.contest-page .table th,
+.contest-page .table td {
+  padding: 6px 12px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.contest-page .table thead th {
+  font-weight: 500;
+  background-color: #AFE8F3;
+  color: #222;
+  border: none;
+}
+
+.contest-page .table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Tighter spacing between sections */
+.contest-page .container {
+  padding-top: 1rem;
+}
+
+.contest-page .table-responsive {
+  margin-bottom: 0;
+}
+
+.contest-page .mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.contest-page .mb-3 {
+  margin-bottom: 0.5rem !important;
+}
+
+.contest-page .mb-2 {
+  margin-bottom: 0.25rem !important;
+}
+
+/* Link colors */
+.contest-page a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+/* Button styling */
+.contest-page .btn-primary {
+  background-color: #0C316E;
+  border-color: #0C316E;
+}

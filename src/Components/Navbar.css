@@ -1,0 +1,155 @@
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.navbar-links a:hover {
+  color: white;
+}
+
+.navbar-links a.active {
+  color: white;
+}
+
+.navbar-links a.active:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: white;
+  bottom: -2px;
+  left: 0;
+  border-radius: 1px;
+}
+
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  cursor: pointer;
+}
+
+.mobile-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: transform 0.3s;
+}
+
+/* Overlay for mobile menu */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+  
+  .mobile-toggle {
+    display: flex;
+    z-index: 2;
+  }
+  
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: #212529;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px 2rem 2rem 2rem;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    z-index: 2;
+  }
+  
+  .navbar-links.active {
+    right: 0;
+  }
+
+  /* Hamburger to X animation */
+  .mobile-toggle.active span:first-child {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mobile-toggle.active span:last-child {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-links {
+    width: 100%;
+    padding-top: 80px;
+  }
+}
+
+/* For smaller screens */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-link {
+    width: 100%;
+  }
+}
+
+/* Add smooth scrolling to all elements */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* Adjust based on navbar height */
+}

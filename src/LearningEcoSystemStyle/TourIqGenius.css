@@ -1,0 +1,224 @@
+/* *  container3 */
+
+.learning-eco-system-container3 {
+  display: flex;
+
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1.875rem;
+margin-top: 8rem;
+
+  
+}
+.learning-eco-system-title {
+  color: #000;
+
+  color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+
+.learning-eco-system-subtitle {
+  color: #000;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.learning-eco-system-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7.375rem;
+  /**  background-color: yellow*; */
+ 
+}
+
+.learning-eco-system-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3125rem;
+  width: 19rem;
+}
+
+.learning-eco-system-img1 {
+  width: 15.625rem;
+height: 15.625rem;
+aspect-ratio: 1/1;
+}
+
+.learning-eco-system-card div {
+  color: #1e1e1e;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.learning-eco-system-card p {
+  width: 287.5px;
+  color: #1e1e1e;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.learning-eco-system-card span {
+  color: var(--Brand-Color, #0c316e);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.learning-eco-system-card2 div {
+  color: #1e1e1e;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 80%;
+}
+
+.learning-eco-system-card2 {
+  display: flex;
+  padding: 0 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.3rem;
+  
+  /* background-color: red; */
+}
+
+.learning-eco-system-card2 .learning-eco-system-img2 {
+  width: 17.4375rem;
+height: 13.5625rem;
+aspect-ratio: 9/7;
+}
+.learning-eco-system-card2 div {
+  width: 100%;
+}
+.learning-eco-system-card2 p {
+  width: 287.5px;
+  color: #1e1e1e;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.learning-eco-system-card2 button {
+  /* margin-top: 20px; */
+  display: flex;
+  padding: 10px 76px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5px;
+  border-radius: 3.75px;
+color: var(--Brand-Color, #0c316e);
+  box-shadow: -0.75px 3px 9px 0 rgba(12, 49, 110, 0.1);
+
+}
+.learn-btn {
+  /* display: flex;
+  padding: 10px 76px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5px;
+  border-radius: 3.75px; */
+  color: var(--Brand-Color, #0C316E);
+font-family: Poppins;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+
+/* *  container4 */
+.learning-eco-system-container4 {
+  width: 1129px;
+  height: 373px;
+  flex-shrink: 0;
+  border-radius: 62px;
+  margin: 0 auto;
+  background: linear-gradient(276deg, #2188e7 6.33%, #afe8f3 99.69%);
+
+  /* main shadow */
+  box-shadow: -1px 4px 12px 0 rgba(12, 49, 110, 0.1);
+}
+
+.learning-eco-system-container4-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 373px;
+  /* background-color: red; */
+}
+
+.learning-eco-system-container4-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 676px;
+
+  h2 {
+    color: #000;
+
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  div {
+    width: 394px;
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  button {
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.learning-eco-system-container4-content-right img {
+  width: 250px;
+  height: 248px;
+  aspect-ratio: 125/124;
+  border-radius: 28.5px;
+}

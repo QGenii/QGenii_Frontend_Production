@@ -1,0 +1,1517 @@
+﻿[
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Components\\CourseDetails\\Footer_Section\\BottomSection\\BottomSection.jsx",
+        "Line":  3,
+        "Content":  "import globe from \u0027../../../../assets/global.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Components\\Footer_Section\\BottomSection\\BottomSection.jsx",
+        "Line":  3,
+        "Content":  "import globe from \u0027../../../assets/global.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Components\\FormSection.jsx",
+        "Line":  5,
+        "Content":  "import ContentImage3 from \"../assets/ContentImage3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Components\\FormSection.jsx",
+        "Line":  9,
+        "Content":  "import ContentImage2 from \"../assets/ContentImage2.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Components\\MainContent.jsx",
+        "Line":  5,
+        "Content":  "import ContentImage1 from \"../assets/ContentImage1.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\LearningEcoSystemDrive\\LearningEcoSystemDriveLearningPage.jsx",
+        "Line":  4,
+        "Content":  "import Img1 from \"../../assets//LearningEcoSystemDriveLearning/Img1.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\LearningEcoSystemDrive\\LearningEcoSystemDriveLearningPage.jsx",
+        "Line":  5,
+        "Content":  "import Logo from \"../../assets/LearningEcoSystemDriveLearning/Logo.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\LearningEcoSystemDrive\\Section3.jsx",
+        "Line":  2,
+        "Content":  "import Img3 from \"../../assets/LearningEcoSystemDriveLearning/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\LearningEcoSystemDrive\\Section3.jsx",
+        "Line":  3,
+        "Content":  "import Img2 from \"../../assets/LearningEcoSystemDriveLearning/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\LearningEcoSystemDrive\\Section3.jsx",
+        "Line":  4,
+        "Content":  "import Img4 from \"../../assets/LearningEcoSystemDriveLearning/Img4.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\Gardient.jsx",
+        "Line":  3,
+        "Content":  "import Img6 from \u0027../assets/LearningEcoSystem/Img6.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\LearningEcoSystemPage.jsx",
+        "Line":  2,
+        "Content":  "import Logo from \"../assets/LearningEcoSystem/Logo.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\LearningEcoSystemPage.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \"../assets/LearningEcoSystem/LearningEcoImg1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\TourIqGenius.jsx",
+        "Line":  3,
+        "Content":  "import Img3 from \u0027../assets/whatwedo/Enterpriseimage/Img3.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\TourIqGenius.jsx",
+        "Line":  5,
+        "Content":  "import featureImg1 from \"../assets/whatwedo/Enterpriseimage/featureImg1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Learning Ecosystem\\TourIqGenius.jsx",
+        "Line":  6,
+        "Content":  "import featureImg2 from \"../assets/whatwedo/Enterpriseimage/featureImg2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\MyStudingPages\\AiAssistance.jsx",
+        "Line":  6,
+        "Content":  "import trophy from \"../assets/MyStuding/stash_trophy.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\MyStudingPages\\AiAssistance.jsx",
+        "Line":  7,
+        "Content":  "import Degree from \"../assets/MyStuding/overview/Degree.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\MyStudingPages\\AiAssistance.jsx",
+        "Line":  8,
+        "Content":  "import Clock from \"../assets/MyStuding/overview/Clock.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\MyStudingPages\\AiAssistance.jsx",
+        "Line":  9,
+        "Content":  "import Vector from \"../assets/MyStuding/overview/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\MyStudingPages\\LearningTool.jsx",
+        "Line":  4,
+        "Content":  "import ClockTime from \u0027../assets/MyStuding/ClockTime.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\MyStudingPages\\MyStudying.jsx",
+        "Line":  6,
+        "Content":  "import Img1 from \"../assets/MyList/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\MyStudingPages\\SectionList.jsx",
+        "Line":  2,
+        "Content":  "import Clock from \"../assets/MyStuding/overview/Clock.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\downloadshared\\Section1.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../assets/WhatWedo/CertificatePrepAndBadges/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section2.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../assets/CodeIQGenius/sharedImg/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section2.jsx",
+        "Line":  4,
+        "Content":  "import Img2 from \u0027../../../../assets/CodeIQGenius/sharedImg/Img2.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section2.jsx",
+        "Line":  5,
+        "Content":  "import Img3 from \u0027../../../../assets/CodeIQGenius/sharedImg/Img3.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section2.jsx",
+        "Line":  6,
+        "Content":  "import Img4 from \u0027../../../../assets/CodeIQGenius/sharedImg/Img4.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section5.jsx",
+        "Line":  2,
+        "Content":  "import Img4 from \u0027../../../../assets/assets/WhatWedo/Enterpriseimage/Img4.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section6.jsx",
+        "Line":  3,
+        "Content":  "import Img5 from \u0027../../../../assets/CodeIQGenius/sharedImg/Img5.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section6.jsx",
+        "Line":  4,
+        "Content":  "import Img6 from \u0027../../../../assets/CodeIQGenius/sharedImg/Img6.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section6.jsx",
+        "Line":  5,
+        "Content":  "import Img7 from \u0027../../../../assets/CodeIQGenius/sharedImg/Img7.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section6.jsx",
+        "Line":  6,
+        "Content":  "import Img8 from \u0027../../../../assets/CodeIQGenius/sharedImg/Img8.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section6.jsx",
+        "Line":  7,
+        "Content":  "import bgImg from \u0027../../../../assets/CodeIQGenius/sharedImg/bgImg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section6.jsx",
+        "Line":  8,
+        "Content":  "import bgImg1 from \u0027../../../../assets/CodeIQGenius/sharedImg/bgImg1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section6.jsx",
+        "Line":  9,
+        "Content":  "import bgimg2 from \u0027../../../../assets/CodeIQGenius/sharedImg/bgimg2.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section6.jsx",
+        "Line":  10,
+        "Content":  "import bgimg3 from \u0027../../../../assets/CodeIQGenius/sharedImg/bgimg3.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section7.jsx",
+        "Line":  2,
+        "Content":  "import Img3 from \u0027../../../../assets/assets/WhatWedo/Enterpriseimage/Img3.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIqGeniusComponents\\Section7.jsx",
+        "Line":  3,
+        "Content":  "import Img4 from \u0027../../../../assets/assets/WhatWedo/Enterpriseimage/Img3.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearningComponents\\Section1.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../assets/CodeIQGenius/MainPage/CohortLearning/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearningComponents\\Section1.jsx",
+        "Line":  3,
+        "Content":  "import Logo from \u0027../../../../assets/CodeIQGenius/MainPage/CohortLearning/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearningComponents\\Section2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg1 from \"../../../../assets/CodeIQGenius/MainPage/ProfessionalService/bgimg1.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearningComponents\\Section3.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \"../../../../assets/CodeIQGenius/MainPage/CohortLearning/Img1.png\""
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearningComponents\\Section3.jsx",
+        "Line":  4,
+        "Content":  "import Img2 from \"../../../../assets/CodeIQGenius/MainPage/CohortLearning/Img2.png\""
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearningComponents\\Section3.jsx",
+        "Line":  5,
+        "Content":  "import Img3 from \"../../../../assets/CodeIQGenius/MainPage/CohortLearning/Img3.png\""
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearningComponents\\Section3.jsx",
+        "Line":  6,
+        "Content":  "import Img4 from \"../../../../assets/CodeIQGenius/MainPage/CohortLearning/Img4.png\""
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearningComponents\\Section4.jsx",
+        "Line":  2,
+        "Content":  "import Img5 from \"../../../../assets/CodeIQGenius/MainPage/CohortLearning/Img5.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearningComponents\\Section6.jsx",
+        "Line":  2,
+        "Content":  "import bgimg1 from \"../../../../assets/CodeIQGenius/MainPage/ProfessionalService/bgimg1.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLearnRequestdemoComponent\\FormSection.jsx",
+        "Line":  9,
+        "Content":  "import Img2 from \u0027../../../../assets/CodeIQGenius/MainPage/CohortLearningRequestDemo/Img2.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\ProfessionalsharedComponent\\Section2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg1 from \"../../../../assets/CodeIQGenius/MainPage/ProfessionalService/bgimg1.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\sharedcomponentcodeiqgeniusaccerte\\Section1.jsx",
+        "Line":  2,
+        "Content":  "import accelerateformbg from \u0027../../../../assets/CodeIQGenius/AcceleratepageImg/Accelerateformbg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIQGenius.jsx",
+        "Line":  2,
+        "Content":  "import  bgimg from \u0027../../../assets/CodeIQGenius/MainPage/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CodeIQGenius.jsx",
+        "Line":  3,
+        "Content":  "import Logo from \u0027../../../assets/CodeIQGenius/MainPage/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\CohortLeaningRequestdemo.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../assets/CodeIQGenius/MainPage/CohortLearningRequestDemo/Img1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\ProffessionalService.jsx",
+        "Line":  4,
+        "Content":  "import  bgImg from \u0027../../../assets/CodeIQGenius/MainPage/ProfessionalService/bgImg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\CodeIQGenius\\MainPage\\ProffessionalService.jsx",
+        "Line":  5,
+        "Content":  "import Logo from \u0027../../../assets/CodeIQGenius/MainPage/ProfessionalService/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Contest\\components\\layout\\Header.jsx",
+        "Line":  8,
+        "Content":  "import codeiqgeniuslogo from \"../../assets/Navbar/codeiqgeniuslogo.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\AiEnabledLearning\\AiEnabledLearningSharedComponent\\AiEnabledLearningSection1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../assets/HowDoWeIt/AiEnabledLearning/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\AiEnabledLearning\\AiEnabledLearningSharedComponent\\AiEnabledLearningSection1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../assets/HowDoWeIt/AiEnabledLearning/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\AiEnabledLearning\\AiEnabledLearningSharedComponent\\AiEnabledLearningSection2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg1 from \"../../../../assets/HowDoWeIt/AiEnabledLearning/bgimg1.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\AiEnabledLearning\\AiEnabledLearningSharedComponent\\AiEnabledLearningSection4.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \"../../../../assets/HowDoWeIt/AiEnabledLearning/Img1.png\""
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\AiEnabledLearning\\AiEnabledLearningSharedComponent\\AiEnabledLearningSection4.jsx",
+        "Line":  4,
+        "Content":  "import Img2 from \"../../../../assets/HowDoWeIt/AiEnabledLearning/Img2.png\""
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\AiEnabledLearning\\AiEnabledLearningSharedComponent\\AiEnabledLearningSection5.jsx",
+        "Line":  2,
+        "Content":  "// import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\AiEnabledLearning\\AiEnabledLearningSharedComponent\\AiEnabledLearningSection5.jsx",
+        "Line":  3,
+        "Content":  "// import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\CaseStudies\\CaseStudies.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../assets/HowDoWeIt/CaseStudies/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\CaseStudies\\CaseStudies.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../assets/HowDoWeIt/CaseStudies/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\InvestLeaderProgram\\InvestLeaderProgramSharedComponents\\InvestLeaderProgramSection1.jsx",
+        "Line":  4,
+        "Content":  "import Logo from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\InvestLeaderProgram\\InvestLeaderProgramSharedComponents\\InvestLeaderProgramSection1.jsx",
+        "Line":  5,
+        "Content":  "import bgimg from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\InvestLeaderProgram\\InvestLeaderProgramSharedComponents\\InvestLeaderProgramSection2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\InvestLeaderProgram\\InvestLeaderProgramSharedComponents\\InvestLeaderProgramSection5.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\LeadingGenAiInovationprogram\\LeadingGenAiInovationprogramSharedComponent\\LeadingGenAiInovationprogramSection1.jsx",
+        "Line":  4,
+        "Content":  "import Logo from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\LeadingGenAiInovationprogram\\LeadingGenAiInovationprogramSharedComponent\\LeadingGenAiInovationprogramSection1.jsx",
+        "Line":  5,
+        "Content":  "import bgimg from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\LeadingGenAiInovationprogram\\LeadingGenAiInovationprogramSharedComponent\\LeadingGenAiInovationprogramSection2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\LeadingGenAiInovationprogram\\LeadingGenAiInovationprogramSharedComponent\\LeadingGenAiInovationprogramSection5.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\MultiLanguageCollection\\MultiLanguageCollectionSharedCommponent\\MultiLanguageCollectionSection1.jsx",
+        "Line":  4,
+        "Content":  "import Logo from \u0027../../../../assets/HowDoWeIt/MultiLanguageCollection/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\MultiLanguageCollection\\MultiLanguageCollectionSharedCommponent\\MultiLanguageCollectionSection1.jsx",
+        "Line":  5,
+        "Content":  "import bgimg from \u0027../../../../assets/HowDoWeIt/MultiLanguageCollection/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\MultiLanguageCollection\\MultiLanguageCollectionSharedCommponent\\MultiLanguageCollectionSection2.jsx",
+        "Line":  4,
+        "Content":  "import Img1 from \u0027../../../../assets/HowDoWeIt/MultiLanguageCollection/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\MultiLanguageCollection\\MultiLanguageCollectionSharedCommponent\\MultiLanguageCollectionSection2.jsx",
+        "Line":  5,
+        "Content":  "import Img2 from \u0027../../../../assets/HowDoWeIt/MultiLanguageCollection/Img2.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\MultiLanguageCollection\\MultiLanguageCollectionSharedCommponent\\MultiLanguageCollectionSection2.jsx",
+        "Line":  6,
+        "Content":  "import Img3 from \u0027../../../../assets/HowDoWeIt/MultiLanguageCollection/Img3.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\MultiLanguageCollection\\MultiLanguageCollectionSharedCommponent\\MultiLanguageCollectionSection4.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../assets/HowDoWeIt/RealWorldInstructor/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\PartnerWithQgenii\\PartnerWithQgeniiSharedComponent\\PartnerWithQgeniiSection1.jsx",
+        "Line":  4,
+        "Content":  "import bgImg from \u0027../../../../assets/HowDoWeIt/PartnerWithQgenii/bgImg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\PartnerWithQgenii\\PartnerWithQgeniiSharedComponent\\PartnerWithQgeniiSection2.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../assets/HowDoWeIt/PartnerWithQgenii/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\PartnerWithQgenii\\PartnerWithQgeniiSharedComponent\\PartnerWithQgeniiSection2.jsx",
+        "Line":  4,
+        "Content":  "import Img2 from \u0027../../../../assets/HowDoWeIt/PartnerWithQgenii/Img.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\RealWorldInstructor\\RealWorldInstructorsharedComponent\\RealWorldInstructorSection1.jsx",
+        "Line":  4,
+        "Content":  "import Logo from \u0027../../../../assets/HowDoWeIt/RealWorldInstructor/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\RealWorldInstructor\\RealWorldInstructorsharedComponent\\RealWorldInstructorSection1.jsx",
+        "Line":  5,
+        "Content":  "import bgimg from \u0027../../../../assets/HowDoWeIt/RealWorldInstructor/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\RealWorldInstructor\\RealWorldInstructorsharedComponent\\RealWorldInstructorSection3.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../assets/HowDoWeIt/RealWorldInstructor/bgimg1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\RealWorldInstructor\\RealWorldInstructorsharedComponent\\RealWorldInstructorSection4.jsx",
+        "Line":  1,
+        "Content":  "import Img1 from \u0027../../../../assets/HowDoWeIt/RealWorldInstructor/Img1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\RealWorldInstructor\\RealWorldInstructorsharedComponent\\RealWorldInstructorSection4.jsx",
+        "Line":  2,
+        "Content":  "import Img2 from \u0027../../../../assets/HowDoWeIt/RealWorldInstructor/Img2.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\RealWorldInstructor\\RealWorldInstructorsharedComponent\\RealWorldInstructorSection4.jsx",
+        "Line":  3,
+        "Content":  "import Img3 from \u0027../../../../assets/HowDoWeIt/RealWorldInstructor/Img3.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\RealWorldInstructor\\RealWorldInstructorsharedComponent\\RealWorldInstructorSection4.jsx",
+        "Line":  4,
+        "Content":  "import Img4 from \u0027../../../../assets/HowDoWeIt/RealWorldInstructor/Img4.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\UnlockingGenAiWithAws\\UnlockingGenAiWithAwsSharedComponent\\UnlockingGenAiWithAwsSection1.jsx",
+        "Line":  4,
+        "Content":  "import Logo from \u0027../../../../assets/HowDoWeIt/UnlockingGenAiWithAws/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\UnlockingGenAiWithAws\\UnlockingGenAiWithAwsSharedComponent\\UnlockingGenAiWithAwsSection1.jsx",
+        "Line":  5,
+        "Content":  "import bgimg from \u0027../../../../assets/HowDoWeIt/UnlockingGenAiWithAws/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\UnlockingGenAiWithAws\\UnlockingGenAiWithAwsSharedComponent\\UnlockingGenAiWithAwsSection2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\HowWedoit\\UnlockingGenAiWithAws\\UnlockingGenAiWithAwsSharedComponent\\UnlockingGenAiWithAwsSection5.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../assets/HowDoWeIt/LeadingGenAiInovationprogram/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\MyJobInternshipComponentShared\\Certificate.jsx",
+        "Line":  4,
+        "Content":  "import Img1 from \u0027../../../assets/Profile/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\MyJobInternshipComponentShared\\MyRound.jsx",
+        "Line":  2,
+        "Content":  "import Img1 from \u0027../../../assets/Profile/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\MyJobInternshipComponentShared\\Registration.jsx",
+        "Line":  5,
+        "Content":  "import Img1 from \u0027../../../assets/Profile/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\OrganizerDashboardSharedConponent\\Dashboard.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../assets/Profile/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\OrganizerDashboardSharedConponent\\EvaluateCandidate.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../assets/Profile/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\OrganizerDashboardSharedConponent\\MyJobAndInternship.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../assets/Profile/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\OrganizerDashboardSharedConponent\\Opportunities.jsx",
+        "Line":  5,
+        "Content":  "import Img1 from \u0027../../../assets/Profile/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\OrganizerDashboardSharedConponent\\TalentPipeline.jsx",
+        "Line":  2,
+        "Content":  "import Img from \"../../../assets/Profile/Img1.png\"; // replace with your illustration"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\ProfilesharedComponents\\Wishlist.jsx",
+        "Line":  3,
+        "Content":  "import Img6 from \"../../../assets/Profile/Img6.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\ProfilesharedComponents\\Wishlist.jsx",
+        "Line":  4,
+        "Content":  "import Img7 from \"../../../assets/Profile/Group.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\MyJobAndInternship.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../assets/Profile/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\OrganizerDashboard.jsx",
+        "Line":  4,
+        "Content":  "import Img1 from \u0027../../assets/Profile/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\Profile\\Profile.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \"../../assets/Profile/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\public\\Navbar.jsx",
+        "Line":  2,
+        "Content":  "import codeiqgeniuslogo from \"../../assets/Navbar/codeiqgeniuslogo.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\SecondLink\\Components\\PaymentMethods.jsx",
+        "Line":  4,
+        "Content":  "import Img from \"../../../assets/FirstLinkPage/Img.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\SecondLink\\Components\\PaymentMethods.jsx",
+        "Line":  5,
+        "Content":  "import QRCode from \"../../../assets/FirstLinkPage/QRCode.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\SecondLink\\ForgetPassword.jsx",
+        "Line":  2,
+        "Content":  "import Logo from \u0027../../assets/SecondLink/forgetpassword/Logo.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\SecondLink\\Login.jsx",
+        "Line":  2,
+        "Content":  "import Logo from \"../../assets/SecondLink/Logo.jpg\""
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\SecondLink\\ResetPassword.jsx",
+        "Line":  2,
+        "Content":  "import Logo from \u0027../../assets/SecondLink/forgetpassword/Logo.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\SecondLink\\ResetPassword.jsx",
+        "Line":  3,
+        "Content":  "import Check from \u0027../../assets/SecondLink/Check.svg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\SecondLink\\SignUp.jsx",
+        "Line":  2,
+        "Content":  "import Logo from \u0027../../assets/SecondLink/Logo.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceComponentshared\\FinancialSection4.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Technology/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceComponentshared\\FinancialServiceSection1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByIndustry/FinancialService/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceComponentshared\\FinancialServiceSection1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/FinancialService/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceComponentshared\\FinancialServiceSection2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/FinancialService/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceComponentshared\\FinancialServiceSection3.jsx",
+        "Line":  10,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/FinancialService/Img1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceComponentshared\\FinancialServiceSection3.jsx",
+        "Line":  11,
+        "Content":  "import Img2 from \u0027../../../../../assets/WhatWedo/ByIndustry/FinancialService/Img2.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceComponentshared\\FinancialServiceSection3.jsx",
+        "Line":  12,
+        "Content":  "import Img3 from \u0027../../../../../assets/WhatWedo/ByIndustry/FinancialService/Img3.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceComponentshared\\FinancialServiceSection3.jsx",
+        "Line":  13,
+        "Content":  "import Img4 from \u0027../../../../../assets/WhatWedo/ByIndustry/FinancialService/Img4.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceComponentshared\\FinancialServiceSection3.jsx",
+        "Line":  14,
+        "Content":  "import Img5 from \u0027../../../../../assets/WhatWedo/ByIndustry/FinancialService/Img5.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\FinancialService\\FinancialServiceStory\\Transformationsharedcomponent\\TransformationStorySection1.jsx",
+        "Line":  2,
+        "Content":  "import bgimg1 from \u0027../../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/bgimg1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\FederalSharedComponent\\FederalSection1.jsx",
+        "Line":  3,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/Federal/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\FederalSharedComponent\\FederalSection1.jsx",
+        "Line":  4,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/Federal/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\GovernementShareComponent\\GovernmentSection1.jsx",
+        "Line":  3,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\GovernementShareComponent\\GovernmentSection1.jsx",
+        "Line":  4,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\GovernementShareComponent\\GovernmentSection2.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Technology/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\GovernementShareComponent\\GovernmentSection4.jsx",
+        "Line":  5,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\LearnAboutMoreReporting.jsx",
+        "Line":  5,
+        "Content":  "import Logo2 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/Logo2.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\LearnAboutMoreReporting.jsx",
+        "Line":  6,
+        "Content":  "import bgimg2 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/bgimg2.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\LearnAboutMoreReporting.jsx",
+        "Line":  14,
+        "Content":  "import Img6 from \"../../../../../assets/WhatWedo/ByIndustry/Government/International/Img6.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\LearnAboutMoreReporting.jsx",
+        "Line":  15,
+        "Content":  "import Img7 from \"../../../../../assets/WhatWedo/ByIndustry/Government/International/Img7.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\LearnAboutMoreReporting.jsx",
+        "Line":  16,
+        "Content":  "import Img8 from \"../../../../../assets/WhatWedo/ByIndustry/Government/International/Img8.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\PartnerWithUs.jsx",
+        "Line":  3,
+        "Content":  "import bgimg4 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/bgimg4.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\ReadAboutUserManageMent.jsx",
+        "Line":  5,
+        "Content":  "import Logo1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/Logo1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\ReadAboutUserManageMent.jsx",
+        "Line":  6,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/bgimg1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\ReadAboutUserManageMent.jsx",
+        "Line":  14,
+        "Content":  "import Img2 from \"../../../../../assets/WhatWedo/ByIndustry/Government/International/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\ReadAboutUserManageMent.jsx",
+        "Line":  15,
+        "Content":  "import Img3 from \"../../../../../assets/WhatWedo/ByIndustry/Government/International/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\ReadAboutUserManageMent.jsx",
+        "Line":  16,
+        "Content":  "import Img4 from \"../../../../../assets/WhatWedo/ByIndustry/Government/International/Img4.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\ReadAboutUserManageMent.jsx",
+        "Line":  17,
+        "Content":  "import Img5 from \"../../../../../assets/WhatWedo/ByIndustry/Government/International/Img5.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\ViewOurIntegration.jsx",
+        "Line":  6,
+        "Content":  "import Logo3 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/Logo3.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\International\\ViewOurIntegration.jsx",
+        "Line":  7,
+        "Content":  "import bgimg3 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/bgimg3.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\InternationalSharedComponent\\InternationalSection1.jsx",
+        "Line":  3,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\InternationalSharedComponent\\InternationalSection1.jsx",
+        "Line":  4,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\InternationalSharedComponent\\InternationalSection2.jsx",
+        "Line":  5,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/International/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\InternationalSharedComponent\\InternationalSection3.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Technology/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\StateAndLocalSharedComponent\\StateAndLocalSection1.jsx",
+        "Line":  3,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/StateAndLocal/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\StateAndLocalSharedComponent\\StateAndLocalSection1.jsx",
+        "Line":  4,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/StateAndLocal/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\StateAndLocalSharedComponent\\StateAndLocalSection3.jsx",
+        "Line":  2,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/StateAndLocal/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Government\\StateAndLocalSharedComponent\\StateAndLocalSection4.jsx",
+        "Line":  2,
+        "Content":  "import Img2 from \u0027../../../../../assets/WhatWedo/ByIndustry/Government/StateAndLocal/Img2.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\HigherEducation\\HigherEducationSharedComponent\\HigherEducationSection1.jsx",
+        "Line":  3,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByIndustry/HigherEducation/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\HigherEducation\\HigherEducationSharedComponent\\HigherEducationSection1.jsx",
+        "Line":  4,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/HigherEducation/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\HigherEducation\\HigherEducationSharedComponent\\HigherEducationSection2.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/HigherEducation/Img1.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\HigherEducation\\HigherEducationSharedComponent\\HigherEducationSection2.jsx",
+        "Line":  4,
+        "Content":  "import Img2 from \u0027../../../../../assets/WhatWedo/ByIndustry/HigherEducation/Img2.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\HigherEducation\\HigherEducationSharedComponent\\HigherEducationSection2.jsx",
+        "Line":  5,
+        "Content":  "import Img3 from \u0027../../../../../assets/WhatWedo/ByIndustry/HigherEducation/Img3.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\HigherEducation\\HigherEducationSharedComponent\\HigherEducationSection3.jsx",
+        "Line":  2,
+        "Content":  "import Img4 from \u0027../../../../../assets/WhatWedo/ByIndustry/HigherEducation/Img4.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Manufacture\\ManufactureShareCompoenents\\ManufactureSection2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/Manufacture/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Manufacture\\ManufactureShareCompoenents\\ManufactureSection3.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Technology/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Manufacture\\ManufactureShareCompoenents\\ManufactureSection4.jsx",
+        "Line":  2,
+        "Content":  "import Img1 from \"../../../../../assets/WhatWedo/ByIndustry/Manufacture/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Manufacture\\ManufactureShareCompoenents\\ManufacureSection1.jsx",
+        "Line":  3,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByIndustry/Manufacture/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Manufacture\\ManufactureShareCompoenents\\ManufacureSection1.jsx",
+        "Line":  4,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/Manufacture/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\ProfessionalService\\ProfessionalServiceSharedComponent\\ProfessionalServiceSection1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByIndustry/ProfessionalService/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\ProfessionalService\\ProfessionalServiceSharedComponent\\ProfessionalServiceSection1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/ProfessionalService/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\ProfessionalService\\ProfessionalServiceSharedComponent\\ProfessionalServiceSection2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/ProfessionalService/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\ProfessionalService\\ProfessionalServiceSharedComponent\\ProfessionalServiceSection3.jsx",
+        "Line":  7,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Technology/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\ProfessionalService\\ProfessionalServiceSharedComponent\\ProfessionalServiceSection5.jsx",
+        "Line":  2,
+        "Content":  "import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\ProfessionalService\\ProfessionalServiceSharedComponent\\ProfessionalServiceSection5.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Technology\\TechnologysharedComponent\\TechnologySection1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByIndustry/Technology/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Technology\\TechnologysharedComponent\\TechnologySection1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/Technology/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Technology\\TechnologysharedComponent\\TechnologySection2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByIndustry/Technology/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Technology\\TechnologysharedComponent\\TechnologySection3.jsx",
+        "Line":  3,
+        "Content":  "import Img1 from \u0027../../../../../assets/WhatWedo/ByIndustry/Technology/Img1.png\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByIndustry\\Technology\\TechnologysharedComponent\\TechnologySection4.jsx",
+        "Line":  2,
+        "Content":  "import Img4 from \"../../../../../assets/WhatWedo/RemoteAndHybrid/Img4.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\AiUpskillingSharedComponent\\AiUpskillingSection1.jsx",
+        "Line":  2,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/AiUpskilling/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\AiUpskillingSharedComponent\\AiUpskillingSection1.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiUpskilling/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\AiUpskillingSharedComponent\\AiUpskillingSection2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiUpskilling/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\AiUpskillingSharedComponent\\AiUpskillingSection4.jsx",
+        "Line":  2,
+        "Content":  "import TickImg from \u0027../../../../../assets/WhatWedo/AiUpskilling/TickImg.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\AiUpskillingSharedComponent\\AiUpskillingSection5.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/CertificatePrepAndBadges/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\ExploreAiStarterPathComponent\\AiStarterPathSection1.jsx",
+        "Line":  2,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/AiUpskilling/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\ExploreAiStarterPathComponent\\AiStarterPathSection1.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiUpskilling/AiStarterPath/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiIntroductionForAllEmployee.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiProductivity.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiSkillForCustomerService.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiSkillForDesign.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiSkillForFinance.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiSkillForHuman.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiSkillForMarketing.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiSkillforProductManagements.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiSkillForProjectManagements.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiSkillForSale.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\AiToolForAllEmployee.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForBusinessProfessional\\GenerativeAiForDataScience.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForLeader\\LearningPathForLeaderSection1.jsx",
+        "Line":  1,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/bgimg.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiDrivenForDeveloper.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiEngineering.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiForCyberSecurity.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiForDevOps.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiForPenetrationTester.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiForQaSoftware.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiForSOCAnalysis.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiFoundationForTechTeam.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiOnAzure.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiOnGoogleCloud.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AiSkillForSoftware.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AjenticAi.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\AjenticArchitecture.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\BuildLLMPoweredApplication.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\DataAnalysisWithChatGpt.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\Llmops.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\LlmPerformance.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\RagSyatem.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\AI Upskilling\\LearningPathForTechnicalProfessional\\StrategicEnablerForAi.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/AiToolForEmployee/bgimg1.jpg\u0027"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\CertificatePrepAndBadges\\downloadshared\\Section1.jsx",
+        "Line":  2,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/CertificatePrepAndBadges/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\ViewCourseSharedComponent\\ViewCourseSection1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/assets/WhatWedo/Enterpriseimage/ViewCourse/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\ViewCourseSharedComponent\\ViewCourseSection1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/assets/WhatWedo/Enterpriseimage/ViewCourse/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\EnterpriseWide.jsx",
+        "Line":  4,
+        "Content":  "import Img1 from \u0027../../../../assets/WhatWedo/Enterpriseimage/Img1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\EnterpriseWide.jsx",
+        "Line":  5,
+        "Content":  "import Img2 from \"../../../../assets/WhatWedo/Enterpriseimage/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\EnterpriseWide.jsx",
+        "Line":  6,
+        "Content":  "import featureImg1 from \"../../../../assets/WhatWedo/Enterpriseimage/featureImg1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\EnterpriseWide.jsx",
+        "Line":  7,
+        "Content":  "import featureImg2 from \"../../../../assets/WhatWedo/Enterpriseimage/featureImg2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\EnterpriseWide.jsx",
+        "Line":  8,
+        "Content":  "import featureImg3 from \"../../../../assets/WhatWedo/Enterpriseimage/featureImg3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\EnterpriseWide.jsx",
+        "Line":  9,
+        "Content":  "import Img3 from \"../../../../assets/WhatWedo/Enterpriseimage/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\EnterpriseWide.jsx",
+        "Line":  10,
+        "Content":  "import Img4 from \"../../../../assets/WhatWedo/Enterpriseimage/Img4.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\EnterpriseWide.jsx",
+        "Line":  11,
+        "Content":  "import Img5 from \"../../../../assets/WhatWedo/Enterpriseimage/Img5.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\EnterpriseWideTraining\\EnterpriseWide.jsx",
+        "Line":  12,
+        "Content":  "import Img6 from \"../../../../assets/WhatWedo/Enterpriseimage/Img6.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\LeadershipDevelopment\\sharedComponent\\Section1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/LeadershipDevelopment/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\LeadershipDevelopment\\sharedComponent\\Section1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/LeadershipDevelopment/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\LeadershipDevelopment\\sharedComponent\\Section2.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/LeadershipDevelopment/bgimg1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\RemoteAndHybrid\\SharedComponent\\Section1.jsx",
+        "Line":  2,
+        "Content":  "import Logo from \u0027../../../../../assets/assets/WhatWedo/RemoteAndHybrid/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\RemoteAndHybrid\\SharedComponent\\Section1.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/assets/WhatWedo/RemoteAndHybrid/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\RemoteAndHybrid\\SharedComponent\\Section2.jsx",
+        "Line":  5,
+        "Content":  "import Img1 from \"../../../../../assets/assets/WhatWedo/RemoteAndHybrid/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\RemoteAndHybrid\\SharedComponent\\Section2.jsx",
+        "Line":  6,
+        "Content":  "import Img2 from \"../../../../../assets/assets/WhatWedo/RemoteAndHybrid/Img2.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\RemoteAndHybrid\\SharedComponent\\Section2.jsx",
+        "Line":  7,
+        "Content":  "import Img3 from \"../../../../../assets/assets/WhatWedo/RemoteAndHybrid/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\RemoteAndHybrid\\SharedComponent\\Section3.jsx",
+        "Line":  2,
+        "Content":  "import Img4 from \"../../../../../assets/WhatWedo/RemoteAndHybrid/Img4.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\sharedComponent\\Section3.jsx",
+        "Line":  1,
+        "Content":  "import Img1 from \"../../../../../assets/SmallTrainingTeam/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\sharedComponent\\Section4.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/SmallTrainingTeam/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\sharedComponent\\Section4.jsx",
+        "Line":  4,
+        "Content":  "import Vector from \"../../../../../assets/SmallTrainingTeam/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\sharedComponent\\Section5.jsx",
+        "Line":  1,
+        "Content":  "import Img2 from \"../../../../../assets/SmallTrainingTeam/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\sharedComponent\\Section5.jsx",
+        "Line":  2,
+        "Content":  "import Img3 from \"../../../../../assets/SmallTrainingTeam/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\sharedComponent\\Section6.jsx",
+        "Line":  2,
+        "Content":  "import bgimg1 from \"../../../../../assets/SmallTrainingTeam/bgimg1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\SmallTrainingPage1.jsx",
+        "Line":  3,
+        "Content":  "import Logo from \"../../../../assets/SmallTrainingTeam/Logo.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\SmallTrainingPage1.jsx",
+        "Line":  5,
+        "Content":  "import bgimg from \"../../../../assets/SmallTrainingTeam/bgimg.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\SmallTrainingPage1.jsx",
+        "Line":  7,
+        "Content":  "import img1 from \"../../../../assets/SmallTrainingTeam/Man.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\SmallTrainingPage1.jsx",
+        "Line":  8,
+        "Content":  "import img2 from \"../../../../assets/SmallTrainingTeam/Bag.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\SmallTrainingTeam\\SmallTrainingPage1.jsx",
+        "Line":  9,
+        "Content":  "import img3 from \"../../../../assets/SmallTrainingTeam/Cap.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\TechTraining\\SharedComponent\\Section1.jsx",
+        "Line":  2,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/TechTraining/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\TechTraining\\SharedComponent\\Section1.jsx",
+        "Line":  3,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/TechTraining/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\TechTraining\\SharedComponent\\Section2.jsx",
+        "Line":  2,
+        "Content":  "import featureImg1 from \"../../../../../assets/WhatWedo/TechTraining/featureImg1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\TechTraining\\SharedComponent\\Section2.jsx",
+        "Line":  3,
+        "Content":  "import featureImg2 from \"../../../../../assets/WhatWedo/TechTraining/featureImg2.jpg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\TechTraining\\SharedComponent\\Section2.jsx",
+        "Line":  4,
+        "Content":  "import featureImg3 from \"../../../../../assets/WhatWedo/TechTraining/featureImg3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByNeed\\TechTraining\\SharedComponent\\Section3.jsx",
+        "Line":  2,
+        "Content":  "import featureImg4 from \"../../../../../assets/WhatWedo/TechTraining/featureImg4.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\DataScience\\DataScienceSharedComponent\\DataScienceSection1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByTeam/DataScience/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\DataScience\\DataScienceSharedComponent\\DataScienceSection1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByTeam/ITOperation/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\DataScience\\DataScienceSharedComponent\\DataScienceSection2.jsx",
+        "Line":  2,
+        "Content":  "import Img1 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\DataScience\\DataScienceSharedComponent\\DataScienceSection2.jsx",
+        "Line":  3,
+        "Content":  "import Img2 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\DataScience\\DataScienceSharedComponent\\DataScienceSection2.jsx",
+        "Line":  4,
+        "Content":  "import Img3 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\DataScience\\DataScienceSharedComponent\\DataScienceSection3.jsx",
+        "Line":  2,
+        "Content":  "import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\DataScience\\DataScienceSharedComponent\\DataScienceSection3.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\DataScience\\DataScienceSharedComponent\\DataScienceSection4.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/bgimg1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\Engineering\\sharedComponent\\Section1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByTeam/Engineering/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\Engineering\\sharedComponent\\Section1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByTeam/Engineering/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\Engineering\\sharedComponent\\Section2.jsx",
+        "Line":  2,
+        "Content":  "import Img1 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\Engineering\\sharedComponent\\Section2.jsx",
+        "Line":  3,
+        "Content":  "import Img2 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\Engineering\\sharedComponent\\Section2.jsx",
+        "Line":  4,
+        "Content":  "import Img3 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\Engineering\\sharedComponent\\Section3.jsx",
+        "Line":  2,
+        "Content":  "import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\Engineering\\sharedComponent\\Section3.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\HumanResources\\sharedComponent\\Section1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByTeam/HumanResources/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\HumanResources\\sharedComponent\\Section1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByTeam/HumanResources/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\HumanResources\\sharedComponent\\Section2.jsx",
+        "Line":  2,
+        "Content":  "import Img1 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\HumanResources\\sharedComponent\\Section2.jsx",
+        "Line":  3,
+        "Content":  "import Img2 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\HumanResources\\sharedComponent\\Section2.jsx",
+        "Line":  4,
+        "Content":  "import Img3 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\HumanResources\\sharedComponent\\Section4.jsx",
+        "Line":  2,
+        "Content":  "import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\HumanResources\\sharedComponent\\Section4.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\HumanResources\\sharedComponent\\Section5.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/bgimg1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\ITpoeration\\shardComponent\\ITOperationSection1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByTeam/ITOperation/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\ITpoeration\\shardComponent\\ITOperationSection1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByTeam/ITOperation/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\ITpoeration\\shardComponent\\ITOperationSection2.jsx",
+        "Line":  2,
+        "Content":  "import Img1 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\ITpoeration\\shardComponent\\ITOperationSection2.jsx",
+        "Line":  3,
+        "Content":  "import Img2 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\ITpoeration\\shardComponent\\ITOperationSection2.jsx",
+        "Line":  4,
+        "Content":  "import Img3 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\ITpoeration\\shardComponent\\ITOperationSection3.jsx",
+        "Line":  2,
+        "Content":  "import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\ITpoeration\\shardComponent\\ITOperationSection3.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/bgimg1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section3.jsx",
+        "Line":  2,
+        "Content":  "import Img1 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section3.jsx",
+        "Line":  3,
+        "Content":  "import Img2 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section3.jsx",
+        "Line":  4,
+        "Content":  "import Img3 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section5.jsx",
+        "Line":  2,
+        "Content":  "import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section5.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section6.jsx",
+        "Line":  2,
+        "Content":  "import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section6.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LeaderAndExecutive\\sharedComponent\\Section7.jsx",
+        "Line":  3,
+        "Content":  "import bgimg1 from \"../../../../../assets/assets/WhatWedo/ByTeam/LeaderAndExectutive/bgimg1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section1.jsx",
+        "Line":  6,
+        "Content":  "import Logo from \u0027../../../../../assets/WhatWedo/ByTeam/LearningAndDevelopment/Logo.png\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section1.jsx",
+        "Line":  7,
+        "Content":  "import bgimg from \u0027../../../../../assets/WhatWedo/ByTeam/LearningAndDevelopment/bgimg.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section2.jsx",
+        "Line":  2,
+        "Content":  "import bgimg1 from \u0027../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/bgimg1.jpg\u0027;"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section3.jsx",
+        "Line":  2,
+        "Content":  "import Img1 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img1.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section3.jsx",
+        "Line":  3,
+        "Content":  "import Img2 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img2.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section3.jsx",
+        "Line":  4,
+        "Content":  "import Img3 from \"../../../../../assets/WhatWedo/ByTeam/LeaderAndExectutive/Img3.png\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section4.jsx",
+        "Line":  2,
+        "Content":  "import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section4.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section5.jsx",
+        "Line":  2,
+        "Content":  "import Vector from \"../../../../../assets/OnDemandLearning/BusinessSkill/Vector.svg\";"
+    },
+    {
+        "File":  "D:\\Integratedcode\\QgeniiFrontentandBackendLastest\\Qgeni-Frontends\\src\\Pages\\WhatWedo\\ByTeam\\LearningAndDevelopment\\sharedComponent\\Section5.jsx",
+        "Line":  3,
+        "Content":  "import Star from \"../../../../../assets/OnDemandLearning/BusinessSkill/Star.svg\";"
+    }
+]

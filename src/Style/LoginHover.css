@@ -1,0 +1,75 @@
+.login-container {
+  position: relative;
+  display: inline-block;
+}
+
+.login-btn {
+  padding: 10px 24px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background: var(--Brand-Color, #0c316e);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.login-content {
+  display: none;
+  position: absolute;
+  top: 105%; /* below the button */
+  left: 100%;
+  transform: translateX(-50%);
+  background: #f9f9f9;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 175px;
+  text-align: stretch;
+  z-index: 1;
+
+  width: 200px;
+  padding: 15px 0;
+
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  /* background: #fff; */
+}
+
+.login-container:hover .login-content {
+  cursor: pointer;
+  display: block;
+  transition: all 5s ease-in-out;
+  -webkit-transition: all 5s ease-in-out;
+  -moz-transition: all 5s ease-in-out;
+  -ms-transition: all 5s ease-in-out;
+  -o-transition: all 5s ease-in-out;
+}
+
+p {
+  color: #000;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px 10px;
+}
+
+.login-container:hover .login-content {
+  display: block;
+}
+
+/* 🚫 Disabled state */
+.login-container.disabled .login-btn {
+  /* background-color: gray !important; */
+  /* cursor: not-allowed; */
+  cursor: default;
+}
+
+.login-container.disabled .login-content {
+  display: none !important; /* force disable dropdown */
+}

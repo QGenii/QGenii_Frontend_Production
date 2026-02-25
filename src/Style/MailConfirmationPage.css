@@ -1,0 +1,77 @@
+.mail-confirmation-page {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-confirmation-page-container {
+  width: 843px;
+  height: 522px;
+  flex-shrink: 0;
+  background: var(--bg-Color, #fafafa);
+  margin: 0 auto;
+}
+
+.mail-confirmation-page-header h2 {
+    padding: 34px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+  background: var(
+    --gardient-1,
+    linear-gradient(319deg, #0c316e 48.28%, #0288e7 106.13%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.mail-confirmation-page-Content{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.checkmark{
+    width: 88.291px;
+height: 89.395px;
+flex-shrink: 0;
+margin-top: 50px;
+}
+
+.mail-confirmation-page-Content h4{
+   color: black;
+
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.mail-confirmation-page-Content p{
+    text-align: left;
+    width: 552px;
+    color: #000;
+
+text-align: center;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+
+}
+

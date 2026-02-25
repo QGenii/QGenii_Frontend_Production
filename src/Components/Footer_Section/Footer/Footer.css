@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  overflow-x: auto;
+}
+
+.footer-box {
+  width: 100%;
+  background-color: #000000;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  color: #DAD5DC;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.footer-text-group {
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f4f4f4;
+  margin: 0;
+}
+
+.footer-subtitle {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.teach-button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1.5px solid #959698;
+  background-color: #0C316E;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-highlight {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.highlight-blue {
+  color: #2B85DA;
+}
+
+.footer-divider {
+  border-top: 1px solid #fff;
+  margin: 30px 0 10px;
+}
+
+.footer-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+
+.footer-careers-row,
+.footer-bottom-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.footer-career-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.career-list p {
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .teach-button {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer-careers-row,
+  .footer-bottom-row {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .footer-box {
+    padding: 40px 16px;
+  }
+}
+
+.career-list12 button {
+
+  cursor: pointer;
+
+}

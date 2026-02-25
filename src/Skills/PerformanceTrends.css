@@ -1,0 +1,83 @@
+.performance-trends-page {
+  background-color: #fafafa;
+  padding: 20px 0 60px 0;
+  min-height: 100vh;
+}
+
+.breadcrumb-wrapper {
+  background-color: #f3f3f3;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+}
+
+.breadcrumb a {
+  color: #143b6e;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.performance-trends-header {
+  margin-bottom: 30px;
+}
+
+.performance-trends-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.chart-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.legend-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.legend-color.blue {
+  background-color: #1976d2;
+}
+
+.legend-color.red {
+  background-color: #e53935;
+}
+
+.legend-color.green {
+  background-color: #4caf50;
+}
+
+.legend-label {
+  font-size: 13px;
+  color: #555;
+}

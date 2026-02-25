@@ -1,0 +1,98 @@
+.Header-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  margin: 0 auto;
+}
+
+
+.Header {
+ 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 48px;
+  padding: 15px;
+
+  
+background: #FFF;
+  /* background-color: red; */
+}
+.header-list {
+  display: flex;
+  padding: 17px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: #000;
+}
+
+.header-button{
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+h3{
+    font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+background: var(--gardient-1, linear-gradient(319deg, #0C316E 48.28%, #0288E7 106.13%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent
+}
+div {
+  color: #000;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+button{
+   
+color: #fff;
+display: flex;
+padding: 10px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border: none;
+border-radius: 5px;
+background: var(--Brand-Color, #0C316E);
+}
+
+/* Login / Sign Up links on HOME1 - match button style */
+.header-button .login-link-btn,
+.header-button .signup-link-btn {
+  color: #fff;
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 5px;
+  background: var(--Brand-Color, #0C316E);
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.header-button .login-link-btn:hover,
+.header-button .signup-link-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+

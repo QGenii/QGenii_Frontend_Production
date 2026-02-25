@@ -1,0 +1,120 @@
+.mail-page{
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.mail-page-container {
+  width: 843px;
+  height: 522px;
+  flex-shrink: 0;
+  background: var(--bg-Color, #fafafa);
+  margin: 0 auto;
+}
+.mail-page-header h2 {
+  padding: 34px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+   
+  
+  /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.mail-page-content {
+  gap: 10px;
+}
+
+.mail-page-form {
+ 
+  /* text-align: left; */
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  
+  input {
+   
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.mail-page-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  border-radius: 5px;
+  
+ 
+}
+.mail-page-form label {
+    width: 50%;
+    
+    display: block;
+    text-align: left;
+  color: #000;
+
+  font-family: Poppins;
+  font-size: 10.028px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* padding: 30px; */
+
+  span {
+    color: #f00;
+    font-family: Poppins;
+    font-size: 10.028px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+
+
+.mail-page-form input {
+  
+
+  height: 37.963px;
+  padding: 10.028px 16.475px;
+  align-items: center;
+  gap: 7.163px;
+  align-self: stretch;
+  border-radius: 3.581px;
+  border: 0.716px solid #000;
+}
+
+.btn-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.send-btn {
+  border-radius: 5px;
+  padding: 10px 42px;
+  background: var(--Brand-Color, #0c316e);
+  color: #fff;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

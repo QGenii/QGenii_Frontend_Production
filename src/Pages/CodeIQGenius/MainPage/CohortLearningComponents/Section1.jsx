@@ -1,0 +1,55 @@
+import React from 'react'
+import bgimg from '../../../../assets/CodeIQGenius/MainPage/CohortLearning/bgimg.jpg';
+import Logo from '../../../../assets/CodeIQGenius/MainPage/CohortLearning/Logo.png';
+
+const Section1 = () => {
+  return (
+     <div
+                style={{
+                  backgroundImage: `url(${bgimg}) `,
+                }}
+                className="learning-eco-system-container w-full h-[441px] grid items-center  bg-cover bg-center mb-10 "
+              >
+                <div className="learning-eco-system-content flex items-center justify-evenly gap-[10rem]   ">
+                  {/* Left Side */}
+                  <div className="learning-eco-system-left-side max-w-md font-poppins flex flex-col items-start   ">
+                    <h4 className="text-[#0c316e] font-poppins text-[1rem] font-semibold uppercase mb-1">
+                     COHORT LEARNING
+                    </h4>
+                    <h2 className="text-black font-poppins text-[2.25rem] font-medium capitalize w-[38rem] mb-1">
+                  Empower leaders to collaborate 
+and inspire
+                    </h2>
+                    <div
+                      style={{ fontSize: "0.875rem" }}
+                      className="text-black font-poppins mb-2 not-italic  text-[0.875rem] font-light leading-normal capitalize w-[46rem]"
+                    >
+                  When leadership teams learn together, they can impact cultural change and drive business results.
+                    </div>
+    
+                    <div className="flex w-[30rem]  gap-3">
+                      <button className="px-2 py-3 bg-[#0c316e] text-white font-poppins font-semibold text-base rounded-md shadow-md transition">
+                    
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+  <path d="M20.45 21C18.3667 21 16.3083 20.546 14.275 19.638C12.2417 18.73 10.3917 17.4423 8.725 15.775C7.05833 14.1077 5.771 12.2577 4.863 10.225C3.955 8.19233 3.50067 6.134 3.5 4.05C3.5 3.75 3.6 3.5 3.8 3.3C4 3.1 4.25 3 4.55 3H8.6C8.83333 3 9.04167 3.07933 9.225 3.238C9.40833 3.39667 9.51667 3.584 9.55 3.8L10.2 7.3C10.2333 7.56667 10.225 7.79167 10.175 7.975C10.125 8.15833 10.0333 8.31667 9.9 8.45L7.475 10.9C7.80833 11.5167 8.204 12.1123 8.662 12.687C9.12 13.2617 9.62433 13.816 10.175 14.35C10.6917 14.8667 11.2333 15.346 11.8 15.788C12.3667 16.23 12.9667 16.634 13.6 17L15.95 14.65C16.1 14.5 16.296 14.3877 16.538 14.313C16.78 14.2383 17.0173 14.2173 17.25 14.25L20.7 14.95C20.9333 15.0167 21.125 15.1377 21.275 15.313C21.425 15.4883 21.5 15.684 21.5 15.9V19.95C21.5 20.25 21.4 20.5 21.2 20.7C21 20.9 20.75 21 20.45 21Z" fill="white"/>
+</svg></span>
+                       Contact sales
+                      </button>
+                   
+                    </div>
+                  </div>
+    
+                  {/* Right Side */}
+                  <div className="learning-eco-system-right-side w-[24.34rem] h-[23.4rem]  aspect-[195/188] flex-shrink-0 ml-6 overflow-hidden ">
+                    <img
+                      src={Logo}
+                      alt="Enterprise Training"
+                      className="object-cover rounded-lg shadow"
+                    />
+                  </div>
+                </div>
+              </div>
+  )
+}
+
+export default Section1

@@ -1,0 +1,178 @@
+.job-details-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-logo-container {
+  margin-right: 15px;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.job-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-location {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.location-icon {
+  color: #0C316E;
+  margin-right: 5px;
+}
+
+.posted-date {
+  color: #777;
+  margin-left: 15px;
+}
+
+.job-badges {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.job-badge {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.apply-now-btn {
+  background-color: #0C316E;
+  border: none;
+  padding: 8px 25px;
+  font-size: 15px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.job-section {
+  margin-bottom: 30px;
+}
+
+.job-section p {
+  white-space: pre-line;
+  color: #555;
+  line-height: 1.6;
+}
+
+.job-section {
+  margin-bottom: 30px;
+}
+
+.job-section ul {
+  padding-left: 20px;
+}
+
+.job-section li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.apply-now-btn {
+  background-color: #0C316E;
+  border: none;
+  padding: 8px 24px;
+}
+
+.apply-now-btn:hover {
+  background-color: #092658;
+}
+
+.apply-btn-lg {
+  background-color: #0C316E;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+}
+
+.apply-btn-lg:hover {
+  background-color: #092658;
+}
+
+.job-sidebar-card h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.overview-label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.overview-value {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.benefits-list {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.job-section ul {
+  padding-left: 20px;
+}
+
+.job-section li {
+  margin-bottom: 10px;
+  color: #555;
+}

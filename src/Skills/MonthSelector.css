@@ -1,0 +1,80 @@
+.selector-container {
+  margin-bottom: 15px;
+}
+
+.selector-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.selector-button {
+  background-color: #f9f9f9 !important;
+  border: 1px solid #ddd !important;
+  color: #333 !important;
+  border-radius: 6px !important;
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+  box-shadow: none !important;
+}
+
+.selector-button:hover, .selector-button:focus {
+  background-color: #f0f0f0 !important;
+}
+
+.dropdown-menu-list {
+  padding: 12px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  min-width: 200px;
+}
+
+.month-dropdown-header {
+  padding: 8px 16px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+}
+
+.dropdown-item {
+  color: #333;
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+.dropdown-item:hover {
+  background-color: #f7f7f7;
+}
+
+.dropdown-item.active {
+  background-color: #e6f0ff;
+  color: #143b6e;
+  font-weight: 500;
+}
+
+.year-dropdown-menu {
+  max-width: 300px;
+}
+
+.year-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0 8px;
+}
+
+.year-item {
+  text-align: center;
+  padding: 8px 4px;
+  margin: 2px;
+}
+
+.month-list, .day-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.selector-dropdown {
+  z-index: 1050;
+}

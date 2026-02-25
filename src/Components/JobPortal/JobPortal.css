@@ -1,0 +1,417 @@
+/* JobPortal.css */
+
+.job-portal {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.search-container {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-bar {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+  height: 46px;
+  font-size: 15px;
+}
+
+.search-btn {
+  border-radius: 0 4px 4px 0;
+  background-color: #0C316E;
+  border-color: #0C316E;
+  min-width: 100px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.filter-sidebar {
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  float: right; /* Ensure filters appear on the right */
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.filter-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.filter-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.filter-options {
+  margin-left: 5px;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+.form-check-label {
+  font-size: 14px;
+  color: #444;
+}
+
+.clear-filters-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-dropdown-btn {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 120px;
+}
+
+.filter-dropdown-btn.active {
+  background-color: #f0f7ff;
+  border-color: #0C316E;
+  color: #0C316E;
+}
+
+.filter-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  min-width: 160px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.dropdown-item.active {
+  background-color: #0C316E;
+  color: #fff;
+}
+
+.job-list-header {
+  border-bottom: 2px solid #0C316E;
+  padding-bottom: 5px;
+  width: fit-content;
+}
+
+.job-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  float: left; /* Ensure job listings appear on the left */
+}
+
+.filter-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.filter-box {
+  margin-bottom: 20px;
+}
+
+.job-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.job-details-page .badge {
+  font-weight: 500;
+  padding: 8px 15px;
+}
+
+.job-description p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0C316E;
+}
+
+/* Salary Range Filter Styles */
+.salary-range-inputs {
+  width: 100%;
+}
+
+.salary-range-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.salary-input-label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.salary-input {
+  height: 38px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.salary-apply-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.salary-apply-btn {
+  background-color: #0C316E;
+  border: none;
+  padding: 6px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 100px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .filter-section {
+    padding: 15px 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-title {
+    font-size: 15px;
+  }
+  
+  .job-card .card-body {
+    padding: 15px;
+  }
+  
+  .job-details-page .badge {
+    margin-bottom: 8px;
+  }
+  
+  .company-logo {
+    font-size: 16px;
+  }
+}
+
+/* Filter toggle for mobile */
+.filter-toggle-btn {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .filter-toggle-btn {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .mobile-filters {
+    display: none;
+  }
+  
+  .mobile-filters.show {
+    display: block;
+  }
+}
+
+/* Fix for smaller screens */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 15px;
+  }
+  
+  h2.card-title {
+    font-size: 1.5rem;
+  }
+  
+  .job-type-badges .badge {
+    margin-bottom: 8px;
+  }
+  
+  .search-bar {
+    flex-direction: column;
+  }
+  
+  .search-input {
+    border-radius: 4px;
+    border-right: 1px solid #ced4da;
+    margin-bottom: 10px;
+  }
+  
+  .search-btn {
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+
+/* Responsive styles for mobile filters */
+@media (max-width: 767px) {
+  .job-portal .row {
+    flex-direction: column-reverse;
+  }
+  
+  .filter-sidebar {
+    margin-top: 20px;
+    padding: 15px;
+  }
+  
+  .filter-section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+  
+  .filter-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .filter-options {
+    display: block;
+  }
+  
+  .job-listings {
+    width: 100%;
+  }
+  
+  .filter-actions {
+    gap: 10px !important;
+    flex-wrap: wrap;
+  }
+  
+  .dropdown-container {
+    width: 100%;
+  }
+  
+  .filter-dropdown-btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .filter-dropdown-menu {
+    width: 100%;
+  }
+  
+  .job-card-content {
+    flex-wrap: wrap;
+  }
+  
+  .job-card-middle {
+    width: calc(100% - 65px);
+  }
+  
+  .job-card-right {
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 65px;
+  }
+  
+  .job-list-header {
+    width: 100%;
+  }
+  
+  .section-title {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .clear-filters-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-bar {
+    flex-direction: column;
+  }
+  
+  .search-input {
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .search-btn {
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+
+/* Filter toggle icon styles */
+.filter-toggle-icon {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.filter-section.active .filter-title {
+  color: #0C316E;
+}
+
+.filter-section.active {
+  border-bottom-color: #0C316E;
+}
+
+@media (min-width: 768px) {
+  .filter-toggle-icon {
+    display: none;
+  }
+}
