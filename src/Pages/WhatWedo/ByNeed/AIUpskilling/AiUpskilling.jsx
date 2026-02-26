@@ -9,7 +9,7 @@ import AiUpskillingSection5 from './AiUpskillingSharedComponent/AiUpskillingSect
 
 
 // import from codeiqgenius main page
-import Section5 from '../../../../pages/CodeIQGenius/MainPage/CodeIqGeniusComponents/Section5'
+import Section5 from '../../../CodeIQGenius/MainPage/CodeIqGeniusComponents/Section5'
 
 const AiUpskilling = () => {
   return (

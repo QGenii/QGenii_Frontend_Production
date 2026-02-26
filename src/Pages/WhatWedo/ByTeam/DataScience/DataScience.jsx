@@ -14,7 +14,7 @@ import Feature from '../LeaderAndExecutive/sharedComponent/Section4'
 import CodeIqGeniusPlatform from '../../../CodeIQGenius/MainPage/CodeIqGeniusComponents/Section7'
 
 // ?import from learning and development
-import Resources from '../../ByTeam/LearningAndDevelopment/sharedComponent/Section5'
+import Resources from '../LearningAndDevelopment/sharedComponent/Section5'
 
 const DataScience = () => {
   return (

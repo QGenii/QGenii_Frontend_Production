@@ -1,6 +1,6 @@
 ﻿
 import React from 'react'
-import bgimg1 from '../../../../assets/assets/HowDoWeIt/RealWorldInstructor/bgimg.jpg';
+import bgimg1 from '../../../../assets/assets/HowDoWeIt/RealWorldInstructor/bgImg.jpg';
 
 export default function MultiLanguageCollectionSection4() {
     const items = [

@@ -118,26 +118,26 @@ import RequestDemo from "./Pages/DedicatedCustomerSuccessTeam/RequestDemo.jsx";
 
 
 //? By Industry
-// import ProfessionalService from "./pages/WhatWedo/ByIndustry/ProfessionalService/ProfessionalService.jsx";
-// import FinancialService from "./pages/WhatWedo/ByIndustry/FinancialService/FinancialService.jsx";
-// import Manufacture from "./pages/WhatWedo/ByIndustry/Manufacture/Manufacture.jsx";
+// import ProfessionalService from "./Pages/WhatWedo/ByIndustry/ProfessionalService/ProfessionalService.jsx";
+// import FinancialService from "./Pages/WhatWedo/ByIndustry/FinancialService/FinancialService.jsx";
+// import Manufacture from "./Pages/WhatWedo/ByIndustry/Manufacture/Manufacture.jsx";
 // !government
-// import Government from "./pages/WhatWedo/ByIndustry/Government/Government.jsx";
-// import StateAndLocal from "./pages/WhatWedo/ByIndustry/Government/StateAndLocal.jsx";
-// import Federal from "./pages/WhatWedo/ByIndustry/Government/Federal.jsx";
-// import International from "./pages/WhatWedo/ByIndustry/Government/International.jsx";
-// import ReadAboutUserManageMent from "./pages/WhatWedo/ByIndustry/Government/International/ReadAboutUserManageMent.jsx";
-// import LearnAboutMoreReporting from "./pages/WhatWedo/ByIndustry/Government/International/LearnAboutMoreReporting.jsx";
-// import ViewOurIntegration from "./pages/WhatWedo/ByIndustry/Government/International/ViewOurIntegration.jsx";
-// import PartnerWithUs from "./pages/WhatWedo/ByIndustry/Government/International/PartnerWithUs.jsx";
+// import Government from "./Pages/WhatWedo/ByIndustry/Government/Government.jsx";
+// import StateAndLocal from "./Pages/WhatWedo/ByIndustry/Government/StateAndLocal.jsx";
+// import Federal from "./Pages/WhatWedo/ByIndustry/Government/Federal.jsx";
+// import International from "./Pages/WhatWedo/ByIndustry/Government/International.jsx";
+// import ReadAboutUserManageMent from "./Pages/WhatWedo/ByIndustry/Government/International/ReadAboutUserManageMent.jsx";
+// import LearnAboutMoreReporting from "./Pages/WhatWedo/ByIndustry/Government/International/LearnAboutMoreReporting.jsx";
+// import ViewOurIntegration from "./Pages/WhatWedo/ByIndustry/Government/International/ViewOurIntegration.jsx";
+// import PartnerWithUs from "./Pages/WhatWedo/ByIndustry/Government/International/PartnerWithUs.jsx";
 // // !higher education
-// import HigherEducation from "./pages/WhatWedo/ByIndustry/HigherEducation/HigherEducation.jsx";
+// import HigherEducation from "./Pages/WhatWedo/ByIndustry/HigherEducation/HigherEducation.jsx";
 
 // //! financial service  in story
-// import TransformationStory from "./pages/WhatWedo/ByIndustry/FinancialService/FinancialServiceStory/TransformationStory.jsx";
-// import SuccessStory from "./pages/WhatWedo/ByIndustry/FinancialService/FinancialServiceStory/SuccessStory.jsx";
-// import CompanySuccess from "./pages/WhatWedo/ByIndustry/FinancialService/FinancialServiceStory/CompanySuccess.jsx";
-// import TrainingTransformation from "./pages/WhatWedo/ByIndustry/FinancialService/FinancialServiceStory/TrainingTranformation.jsx";
+// import TransformationStory from "./Pages/WhatWedo/ByIndustry/FinancialService/FinancialServiceStory/TransformationStory.jsx";
+// import SuccessStory from "./Pages/WhatWedo/ByIndustry/FinancialService/FinancialServiceStory/SuccessStory.jsx";
+// import CompanySuccess from "./Pages/WhatWedo/ByIndustry/FinancialService/FinancialServiceStory/CompanySuccess.jsx";
+// import TrainingTransformation from "./Pages/WhatWedo/ByIndustry/FinancialService/FinancialServiceStory/TrainingTranformation.jsx";
 
 // ! how we do it
 import AiEnabledLearning from "./Pages/HowWedoit/AiEnabledLearning/AiEnabledLearning.jsx";
@@ -219,7 +219,7 @@ import CourseManageDashboard from "./Pages/manage/CourseManageDashboard";
 import { ContentCreate } from "./Pages/manage/ContentCreate";
 import ContentEdit from "./Pages/manage/ContentEdit";
 import EnrollmentsManager from "./Pages/manage/EnrollmentsManager";
-import ProblemDashboard from './components/PracticePage/PastProblems/ProblemDashboard';
+import ProblemDashboard from './Components/PracticePage/PastProblems/ProblemDashboard';
 
 // !job portal
 

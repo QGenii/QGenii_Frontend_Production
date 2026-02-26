@@ -1,5 +1,5 @@
 ﻿import React from 'react'
-import bgimg from '../../../../assets/assets/HowDoWeIt/LeadingGenAiInovationprogram/bgimg.jpg';
+import bgimg from '../../../../assets/assets/HowDoWeIt/LeadingGenAiInovationprogram/bgImg.jpg';
 const tabs = [
     {
         icon: <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">

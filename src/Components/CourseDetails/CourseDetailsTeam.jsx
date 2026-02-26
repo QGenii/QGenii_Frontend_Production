@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FrequentlyBought from './FrequentlyBought';
 import CourseContent from './CourseContent';
 import AllCourses from './AllCourses';
-// import MainNavbar from '.././MainNavbar';
+// import MainNavbar from '../MainNavbar';
 import { useNavigate } from 'react-router-dom';
 
 const CourseDetailsTeam = () => {

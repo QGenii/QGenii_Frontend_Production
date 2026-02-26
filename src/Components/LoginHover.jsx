@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom"; // import useLocation
 import "../Style/LoginHover.css";
-import MailPage from "../pages/MailPage.jsx";
+import MailPage from "../Pages/MailPage.jsx";
 const LoginHover = () => {
   const [showContent, setShowContent] = useState(false);
   const [showEmailPage, setShowEmailPage] = useState(false)

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import accelerateformbg from '../../../../assets/CodeIQGenius/AcceleratepageImg/Accelerateformbg.jpg';
+import accelerateformbg from '../../../../assets/CodeIQGenius/AcceleratepageImg/accelerateformbg.jpg';
 
 
 export default function ProductDemoSection() {

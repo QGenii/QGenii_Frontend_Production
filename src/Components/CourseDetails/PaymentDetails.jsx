@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import MainNavbar from '.././MainNavbar'; 
+// import MainNavbar from '../MainNavbar'; 
 
 const PaymentDetails = () => {
   const [selectedPlan, setSelectedPlan] = useState('annual');

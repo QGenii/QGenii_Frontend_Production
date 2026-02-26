@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Logo from '../../../../assets/assets/HowDoWeIt/UnlockingGenAiWithAws/Logo.png';
-import bgimg from '../../../../assets/assets/HowDoWeIt/UnlockingGenAiWithAws/bgimg.jpg';
+import bgimg from '../../../../assets/assets/HowDoWeIt/UnlockingGenAiWithAws/bgImg.jpg';
 import { Link } from 'react-router-dom';
 const UnlockingGenAiWithAwsSection1 = () => {
     return (

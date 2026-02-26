@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import bgimg from "../../../../assets/assets/SmallTrainingTeam/bgimg.jpg";
 
 import img1 from "../../../../assets/assets/SmallTrainingTeam/Man.svg";
-import img2 from "../../../../assets/assets/SmallTrainingTeam/Bag.svg";
-import img3 from "../../../../assets/assets/SmallTrainingTeam/Cap.svg";
+import img2 from "../../../../assets/assets/SmallTrainingTeam/bag.svg";
+import img3 from "../../../../assets/assets/SmallTrainingTeam/cap.svg";
 
 import Section2 from "./sharedComponent/Section2";
 import Section3 from "./sharedComponent/Section3";

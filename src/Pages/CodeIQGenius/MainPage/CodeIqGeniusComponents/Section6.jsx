@@ -4,7 +4,7 @@ import Img5 from '../../../../assets/CodeIQGenius/sharedImg/Img5.png';
 import Img6 from '../../../../assets/CodeIQGenius/sharedImg/Img6.png';
 import Img7 from '../../../../assets/CodeIQGenius/sharedImg/Img7.png';
 import Img8 from '../../../../assets/CodeIQGenius/sharedImg/Img8.png';
-import bgImg from '../../../../assets/CodeIQGenius/sharedImg/bgImg.jpg';
+import bgImg from '../../../../assets/CodeIQGenius/sharedImg/bgimg.jpg';
 import bgImg1 from '../../../../assets/CodeIQGenius/sharedImg/bgImg1.jpg';
 import bgimg2 from '../../../../assets/CodeIQGenius/sharedImg/bgimg2.jpg';
 import bgimg3 from '../../../../assets/CodeIQGenius/sharedImg/bgimg3.jpg';

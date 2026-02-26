@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Logo from '../../../../assets/assets/HowDoWeIt/LeadingGenAiInovationprogram/Logo.png';
-import bgimg from '../../../../assets/assets/HowDoWeIt/LeadingGenAiInovationprogram/bgimg.jpg';
+import bgimg from '../../../../assets/assets/HowDoWeIt/LeadingGenAiInovationprogram/bgImg.jpg';
 import { Link } from 'react-router-dom';
 const InvestLeaderProgramSection1 = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Style/MailPage.css";
-import MailConfirmPage from "../pages/MailConfirmationPage.jsx";
+import MailConfirmPage from "./MailConfirmationPage.jsx";
 import emailjs from '@emailjs/browser';
 
 const MailPage = ({onClose}) => {

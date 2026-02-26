@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react';
 
 import Logo from '../../../assets/assets/HowDoWeIt/CaseStudies/Logo.png';
-import bgimg from '../../../assets/assets/HowDoWeIt/CaseStudies/bgimg.jpg';
+import bgimg from '../../../assets/assets/HowDoWeIt/CaseStudies/bgImg.jpg';
 
 const integrations = new Array(12).fill({
     name: "How Devoteam Rapidly Upskilled its Workforce in AI",

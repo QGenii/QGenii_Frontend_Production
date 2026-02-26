@@ -12,7 +12,7 @@ import Section3 from './sharedComponent/Section3'
 
 import Feature from '../LeaderAndExecutive/sharedComponent/Section4'
 // ?import from learning and development
-import Resources from '../../ByTeam/LearningAndDevelopment/sharedComponent/Section5'
+import Resources from '../LearningAndDevelopment/sharedComponent/Section5'
 
 // import from human resources
 import Section5 from '../HumanResources/sharedComponent/Section5'

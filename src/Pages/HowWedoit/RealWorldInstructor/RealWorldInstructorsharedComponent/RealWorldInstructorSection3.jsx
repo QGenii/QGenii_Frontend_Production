@@ -1,6 +1,6 @@
 ﻿
 import React from 'react'
-import bgimg1 from '../../../../assets/assets/HowDoWeIt/RealWorldInstructor/bgimg1.jpg';
+import bgimg1 from '../../../../assets/assets/HowDoWeIt/RealWorldInstructor/bgImg1.jpg';
 
 export default function RealWorldInstructorSection3() {
     const items = [

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IoSettingsSharp } from 'react-icons/io5';
 import { MdSubtitles } from 'react-icons/md';
-// import MainNavbar from '.././MainNavbar';   
+// import MainNavbar from '../MainNavbar';   
 
 const VideoModal = ({ isOpen, onClose, videoUrl }) => {
   const [showSettings, setShowSettings] = useState(false);

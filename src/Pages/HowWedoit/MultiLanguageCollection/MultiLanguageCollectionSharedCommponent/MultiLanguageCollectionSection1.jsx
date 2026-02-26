@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Logo from '../../../../assets/assets/HowDoWeIt/MultiLanguageCollection/Logo.png';
-import bgimg from '../../../../assets/assets/HowDoWeIt/MultiLanguageCollection/bgimg.jpg';
+import bgimg from '../../../../assets/assets/HowDoWeIt/MultiLanguageCollection/bgImg.jpg';
 import { Link } from 'react-router-dom';
 const MultiLanguageCollectionSection1 = () => {
     return (

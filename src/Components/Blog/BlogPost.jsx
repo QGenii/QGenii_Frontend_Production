@@ -27,7 +27,7 @@ import Dialog from "@mui/material/Dialog";
 import IconButton from "@mui/material/IconButton";
 import api from "../../lib/api";
 import { toast } from "react-hot-toast";
-import ShareButton from "../../Components/ui/ShareButton";
+import ShareButton from "../ui/ShareButton";
 
 export default function BlogPost({ post, onPostUpdated }) {
   // // UI state

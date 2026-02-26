@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Download, Share2, CheckCircle, XCircle, AlertCircle } from 'lucide-react';
 import api from '../lib/api';
-import CertificateRenderer from '../components/certificates/CertificateRenderer';
+import CertificateRenderer from '../Components/certificates/CertificateRenderer';
 
 const VerifyCertificate = () => {
   const { id } = useParams();

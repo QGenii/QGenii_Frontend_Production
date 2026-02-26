@@ -7,7 +7,7 @@ import api from '../../lib/api';
 import { BookOpen, Plus, Edit, Eye, Trash2, FileText } from 'lucide-react';
 import { Badge } from '../../Components/ui/Badge';
 import { Sidebar } from '../../Components/layout/Sidebar';
-import ContestsCatalog from '../../Pages/Contest/ContestsCatalog';
+import ContestsCatalog from '../Contest/ContestsCatalog';
 
 export const MentorDashboard = () => {
   const [courses, setCourses] = useState([]);

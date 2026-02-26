@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../../../../../assets/assets/WhatWedo/TechTraining/Logo.png';
-import bgimg from '../../../../../assets/assets/WhatWedo/TechTraining/bgimg.jpg';
+import bgimg from '../../../../../assets/assets/WhatWedo/TechTraining/bgImg.jpg';
 import { Link } from 'react-router-dom';
 
 const Section1 = () => {

@@ -9,7 +9,7 @@ import Section7 from '../../../CodeIQGenius/MainPage/CodeIqGeniusComponents/Sect
 import Section3 from './sharedComponent/Section3'
 import Section4 from './sharedComponent/Section4'
 // ?import from learning and development
-import Resources from '../../ByTeam/LearningAndDevelopment/sharedComponent/Section5'
+import Resources from '../LearningAndDevelopment/sharedComponent/Section5'
 
 import Section5 from './sharedComponent/Section5'
 

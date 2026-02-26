@@ -13,7 +13,7 @@ import CodeIqGeniusPlatform from '../../../CodeIQGenius/MainPage/CodeIqGeniusCom
 import Feature from '../LeaderAndExecutive/sharedComponent/Section4'
 
 // ?import from learning and development
-import Resources from '../../ByTeam/LearningAndDevelopment/sharedComponent/Section5'
+import Resources from '../LearningAndDevelopment/sharedComponent/Section5'
 
 // ?import from learning and developement
 import Section7 from '../LeaderAndExecutive/sharedComponent/Section7'

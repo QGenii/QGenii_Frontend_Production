@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import VideoModal from './VideoModal';
 import { FaInstagram, FaLinkedinIn, FaGlobeAsia, FaPlay } from 'react-icons/fa';
-// import MainNavbar from '.././MainNavbar';   
+// import MainNavbar from '../MainNavbar';   
 
 const InstructorDetails = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
