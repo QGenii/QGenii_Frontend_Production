@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import '../../../../style/EnterpriseWide.css';
+import '../../../../Style/EnterpriseWide.css';
 import Header from "../../../../Components/Header";
 import Img1 from '../../../../assets/assets/WhatWedo/Enterpriseimage/Img1.jpg';
 import Img2 from "../../../../assets/assets/WhatWedo/Enterpriseimage/Img2.png";

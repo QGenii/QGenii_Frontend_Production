@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/MainContent.css";
+import "../Style/MainContent.css";
 
 
 import ContentImage1 from "../assets/ContentImage1.jpg";

@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/MainContent.css";
+import "../Style/MainContent.css";
 
 import { useForm } from "react-hook-form";
 import ContentImage3 from "../assets/ContentImage3.png";

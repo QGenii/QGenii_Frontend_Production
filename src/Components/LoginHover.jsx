@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom"; // import useLocation
-import "../style/LoginHover.css";
+import "../Style/LoginHover.css";
 import MailPage from "../pages/MailPage.jsx";
 const LoginHover = () => {
   const [showContent, setShowContent] = useState(false);

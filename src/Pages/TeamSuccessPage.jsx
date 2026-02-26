@@ -3,7 +3,7 @@ import Header from "../Components/Header";
 import teamsuccessImage1 from "../assets/assets/images/teamsuccessImage1.png";
 import ContentImage3 from "../assets/assets/ContentImage3.png";
 import { useForm } from "react-hook-form";
-import "../style/TeamSuccessPage.css";
+import "../Style/TeamSuccessPage.css";
 import ContentImage2 from "../assets/assets/ContentImage2.jpg";
 
 

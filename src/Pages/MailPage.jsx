@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../style/MailPage.css";
+import "../Style/MailPage.css";
 import MailConfirmPage from "../pages/MailConfirmationPage.jsx";
 import emailjs from '@emailjs/browser';
 

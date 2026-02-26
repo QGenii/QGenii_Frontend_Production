@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../style/Header.css";
+import "../Style/Header.css";
 import LoginHover from "./LoginHover";
 import WhatWeDo from "./WhatWeDo";
 import HowWeDoIt from './HowWeDoIt';

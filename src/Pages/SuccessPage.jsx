@@ -1,5 +1,5 @@
 // import React from "react";
-// import "../style/SuccessPage.css";
+// import "../Style/SuccessPage.css";
 // import Header from "../Components/Header";
 // import successImage1 from "../assets/successImage1.png";
 // import { FaHandshakeSimple } from "react-icons/fa6"
