@@ -43,7 +43,7 @@ import AiSkillForHuman from "./Pages/WhatWedo/ByNeed/AIUpskilling/LearningPathFo
 import AiSkillForFinance from "./Pages/WhatWedo/ByNeed/AIUpskilling/LearningPathForBusinessProfessional/AiSkillForFinance.jsx";
 import AiSkillForMarketing from "./Pages/WhatWedo/ByNeed/AIUpskilling/LearningPathForBusinessProfessional/AiSkillForMarketing.jsx";
 import AiSkillForProjectManagement from "./Pages/WhatWedo/ByNeed/AIUpskilling/LearningPathForBusinessProfessional/AiSkillForProjectManagements.jsx";
-import AiSkillForProductManagements from "./Pages/WhatWedo/ByNeed/AIUpskilling/LearningPathForBusinessProfessional/AiSkillForProductManagements.jsx";
+import AiSkillForProductManagements from "./Pages/WhatWedo/ByNeed/AIUpskilling/LearningPathForBusinessProfessional/AiSkillforProductManagements.jsx";
 import AiSkillForSale from "./Pages/WhatWedo/ByNeed/AIUpskilling/LearningPathForBusinessProfessional/AiSkillForSale.jsx";
 import AiSkillForCustomerService from "./Pages/WhatWedo/ByNeed/AIUpskilling/LearningPathForBusinessProfessional/AiSkillForCustomerService.jsx";
 import AiIntroductionForAllEmployee from "./Pages/WhatWedo/ByNeed/AIUpskilling/LearningPathForBusinessProfessional/AiIntroductionForAllEmployee.jsx";
