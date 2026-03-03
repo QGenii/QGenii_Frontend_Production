@@ -114,17 +114,17 @@ export default function Header() {
           {/* Desktop center nav links */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-10">
             <Link
-              to="/home"
-              className="text-black font-bold text-base lg:text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide"
+              to="/"
+              className="text-black font-bold text-base lg:text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide no-underline"
             >
               HOME
             </Link>
-            <span
-              className="text-black font-bold text-base lg:text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide"
-              onClick={() => (window.location.href = "https://codeiqgenius-frontend-nitesh.vercel.app/blog")}
+            <Link
+              to="/blog"
+              className="text-black font-bold text-base lg:text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide no-underline"
             >
               BLOG
-            </span>
+            </Link>
             <span
               className="text-black font-bold text-base lg:text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide"
               onClick={() => (window.location.href = "https://codeiqgenius-frontend-nitesh.vercel.app/partnership")}
@@ -143,7 +143,7 @@ export default function Header() {
           {disablelogin && (
             <div className="hidden md:flex items-center gap-3">
               <button
-                className="border border-blue-900 text-blue-900 px-3 py-1.5 rounded-md text-sm font-semibold hover:bg-blue-50 transition-colors"
+                className="border border-blue-900 bg-blue-900 text-white px-3 py-1.5 rounded-md text-sm font-semibold hover:bg-blue-800 transition-colors"
                 onClick={() => navigate("/login")}
               >
                 Log In
@@ -171,18 +171,19 @@ export default function Header() {
         {menuOpen && (
           <div className="md:hidden bg-white border-t px-4 py-4 space-y-3 shadow-md">
             <Link
-              to="/home"
-              className="block text-black font-bold text-lg hover:text-blue-600 uppercase"
+              to="/"
+              className="block text-black font-bold text-lg hover:text-blue-600 uppercase no-underline"
               onClick={() => setMenuOpen(false)}
             >
               HOME
             </Link>
-            <span
-              className="block text-black font-bold text-lg hover:text-blue-600 cursor-pointer uppercase"
-              onClick={() => { setMenuOpen(false); window.location.href = "https://codeiqgenius-frontend-nitesh.vercel.app/blog"; }}
+            <Link
+              to="/blog"
+              className="block text-black font-bold text-lg hover:text-blue-600 cursor-pointer uppercase no-underline"
+              onClick={() => { setMenuOpen(false); }}
             >
               BLOG
-            </span>
+            </Link>
             <span
               className="block text-black font-bold text-lg hover:text-blue-600 cursor-pointer uppercase"
               onClick={() => { setMenuOpen(false); window.location.href = "https://codeiqgenius-frontend-nitesh.vercel.app/partnership"; }}
@@ -198,7 +199,12 @@ export default function Header() {
 
             {/* Mobile middle bar links */}
             <hr className="my-2" />
-            <span className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer">Compiler</span>
+            <span
+              className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer"
+              onClick={() => { setMenuOpen(false); navigate("/compiler"); }}
+            >
+              Compiler
+            </span>
             <span
               className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer"
               onClick={() => { setMenuOpen(false); navigate("/"); }}
@@ -218,7 +224,7 @@ export default function Header() {
             {disablelogin && (
               <div className="flex gap-3 pt-2">
                 <button
-                  className="flex-1 border border-blue-900 text-blue-900 py-2 rounded-md text-sm font-semibold"
+                  className="flex-1 border border-blue-900 bg-blue-900 text-white py-2 rounded-md text-sm font-semibold"
                   onClick={() => { setMenuOpen(false); navigate("/login"); }}
                 >
                   Log In
@@ -235,11 +241,32 @@ export default function Header() {
             {/* Bottom bar links in mobile */}
             <hr className="my-2" />
             <div className="grid grid-cols-3 gap-2 pb-2">
-              {["All courses", "Study Plan", "Practice", "Contest", "Community"].map((item) => (
-                <span key={item} className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600">
-                  {item}
-                </span>
-              ))}
+              <span
+                className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600"
+                onClick={() => { setMenuOpen(false); navigate("/courses/allCourses"); }}
+              >
+                All courses
+              </span>
+              <span
+                className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600"
+                onClick={() => { setMenuOpen(false); navigate("/skills/study-plan"); }}
+              >
+                Study Plan
+              </span>
+              <span
+                className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600"
+                onClick={() => { setMenuOpen(false); navigate("/practice"); }}
+              >
+                Practice
+              </span>
+              <span
+                className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600"
+                onClick={() => { setMenuOpen(false); navigate("/contest"); }}
+              >                Contest
+              </span>
+              <span className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600">
+                Community
+              </span>
             </div>
           </div>
         )}
@@ -269,15 +296,20 @@ export default function Header() {
 
           {/* Center nav links */}
           <nav className="hidden md:flex items-center gap-5 lg:gap-8 text-[#f1f1f1] flex-1 justify-center">
-            <span className="font-semibold text-base lg:text-xl cursor-pointer hover:underline whitespace-nowrap">Compiler</span>
+            <span
+              className="font-semibold text-base lg:text-xl cursor-pointer whitespace-nowrap no-underline"
+              onClick={() => navigate("/compiler")}
+            >
+              Compiler
+            </span>
             <span
               className="font-semibold text-base lg:text-xl cursor-pointer hover:underline whitespace-nowrap"
               onClick={() => navigate("/")}
             >
               QGenii Business
             </span>
-            <span className="font-semibold text-base lg:text-xl cursor-pointer hover:underline whitespace-nowrap">Teach On QGenii</span>
-            <Link to="/mystudying" className="font-semibold text-base lg:text-xl cursor-pointer hover:underline whitespace-nowrap text-[#f1f1f1]">
+            <span className="font-semibold text-base lg:text-xl cursor-pointer whitespace-nowrap no-underline">Teach On QGenii</span>
+            <Link to="/mystudying" className="font-semibold text-base lg:text-xl cursor-pointer whitespace-nowrap text-[#f1f1f1] no-underline">
               My Studying
             </Link>
           </nav>
@@ -350,13 +382,26 @@ export default function Header() {
             <div className="flex justify-center gap-6 md:gap-12 lg:gap-20 xl:gap-28 text-center text-sm md:text-base whitespace-nowrap text-white">
               <span
                 className="cursor-pointer hover:text-blue-300"
-                onClick={() => (window.location.href = "https://codeiqgenius-frontend-g17v.vercel.app/coursecatalog")}
+                onClick={() => navigate("/courses/allCourses")}
               >
                 All courses
               </span>
-              <span className="cursor-pointer hover:text-blue-300">Study Plan</span>
-              <span className="cursor-pointer hover:text-blue-300">Practice</span>
-              <span className="cursor-pointer hover:text-blue-300">Contest</span>
+              <span
+                className="cursor-pointer hover:text-blue-300"
+                onClick={() => navigate("/skills/study-plan")}
+              >
+                Study Plan
+              </span>
+              <span
+                className="cursor-pointer hover:text-blue-300"
+                onClick={() => navigate("/practice")}
+              >
+                Practice
+              </span>
+              <span
+                className="cursor-pointer hover:text-blue-300"
+                onClick={() => navigate("/contest")}
+              >Contest</span>
               <span className="cursor-pointer hover:text-blue-300">Community</span>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { Briefcase, User, Flag, Users, GraduationCap, Calendar, Wrench, Layout } from "lucide-react";
 
 // const categories = [
@@ -55,12 +55,17 @@ export default function Section2() {
                 className="w-full border-none text-sm text-gray-500 mb-4 mt-2 outline-none focus:ring-0"
               />
               <div className="flex justify-between">
-                <button className="bg-[#6c2bd9] hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-semibold">
-                  Study Python
-                </button>
-                <button className="border border-[#6c2bd9] text-[#6c2bd9] hover:bg-purple-50 px-4 py-2 rounded-md text-sm font-semibold">
-                  Try Python
-                </button>
+              <Link to="/coursecatalog/LearnPython">
+  <button className="bg-[#6c2bd9] hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-semibold">
+    Study Python
+  </button>
+</Link>
+
+<Link to="/compiler">
+  <button className="border border-[#6c2bd9] text-[#6c2bd9] hover:bg-purple-50 px-4 py-2 rounded-md text-sm font-semibold">
+    Try Python
+  </button>
+</Link>
               </div>
             </div>
 
