@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login } from "./Pages/public/Login";
 import LoginSignupPage from "./Pages/Loginpage";
 import { Register } from "./Pages/public/Register";
-
+import ComingSoon from "./Pages/ComingSoon";
 
 //!pages
 import InstructionDetails from "./Pages/InstructionDetails.jsx";
@@ -952,7 +952,7 @@ const App = () => {
             }
           />
           <Route path="/contests/:id/leaderboard" element={<ContestLeaderboard />} />
-
+            <Route path="/coming-soon" element={<ComingSoon />} />
           <Route
             path="/contests/create"
             element={

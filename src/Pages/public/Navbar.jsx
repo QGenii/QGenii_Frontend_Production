@@ -24,6 +24,7 @@ export default function Header() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const modalRef = useRef();
 
   // Close mobile menu on route change
@@ -41,6 +42,27 @@ export default function Header() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const handleSearchSubmit = () => {
+    const q = searchQuery.trim();
+    if (!q) return;
+
+    if (typeof window !== "undefined") {
+      // Try to use the browser's built‑in find for page text
+      // This behaves similarly to Ctrl+F / Cmd+F "Find next"
+      if (typeof window.find === "function") {
+        const found = window.find(q, false, false, true, false, false, false);
+        if (!found) {
+          console.debug("Navbar search: text not found on page:", q);
+        }
+      } else {
+        const exists = document.body.innerText.toLowerCase().includes(q.toLowerCase());
+        if (!exists) {
+          console.debug("Navbar search: text not found on page (fallback):", q);
+        }
+      }
+    }
+  };
 
   const item = [
     {
@@ -127,13 +149,13 @@ export default function Header() {
             </Link>
             <span
               className="text-black font-bold text-base lg:text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide"
-              onClick={() => (window.location.href = "https://codeiqgenius-frontend-nitesh.vercel.app/partnership")}
+              onClick={() => navigate("/coming-soon")}
             >
               PARTNERSHIP
             </span>
             <span
               className="text-black font-bold text-base lg:text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide whitespace-nowrap"
-              onClick={() => (window.location.href = "https://codeiqgenius-frontend-nitesh.vercel.app/contact-us")}
+              onClick={() => navigate("/coming-soon")}
             >
               CONTACT US
             </span>
@@ -143,14 +165,14 @@ export default function Header() {
           {disablelogin && (
             <div className="hidden md:flex items-center gap-3">
               <button
-                className="border border-blue-900 bg-blue-900 text-white px-3 py-1.5 rounded-md text-sm font-semibold hover:bg-blue-800 transition-colors"
+                className="border border-blue-900 bg-white text-blue-900 px-3 py-2.5 rounded-md text-sm font-semibold hover:bg-blue-800 transition-colors"
                 onClick={() => navigate("/login")}
               >
                 Log In
               </button>
               <button
-                className="bg-blue-900 text-white px-4 py-1.5 rounded-md text-sm font-semibold hover:bg-blue-800 transition-colors"
-                onClick={() => navigate("/signup")}
+                className="bg-indigo-800 text-white px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-indigo-900 transition-colors"
+                onClick={() => navigate("/register")}
               >
                 Sign Up
               </button>
@@ -186,13 +208,13 @@ export default function Header() {
             </Link>
             <span
               className="block text-black font-bold text-lg hover:text-blue-600 cursor-pointer uppercase"
-              onClick={() => { setMenuOpen(false); window.location.href = "https://codeiqgenius-frontend-nitesh.vercel.app/partnership"; }}
+              onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}
             >
               PARTNERSHIP
             </span>
             <span
               className="block text-black font-bold text-lg hover:text-blue-600 cursor-pointer uppercase"
-              onClick={() => { setMenuOpen(false); window.location.href = "https://codeiqgenius-frontend-nitesh.vercel.app/contact-us"; }}
+              onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}
             >
               CONTACT US
             </span>
@@ -207,11 +229,13 @@ export default function Header() {
             </span>
             <span
               className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer"
-              onClick={() => { setMenuOpen(false); navigate("/"); }}
+              onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}
             >
               QGenii Business
             </span>
-            <span className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer">Teach On QGenii</span>
+            <span className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer"
+             onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}
+            >Teach On QGenii</span>
             <Link
               to="/mystudying"
               className="block text-gray-700 font-semibold text-base hover:text-blue-600"
@@ -224,13 +248,13 @@ export default function Header() {
             {disablelogin && (
               <div className="flex gap-3 pt-2">
                 <button
-                  className="flex-1 border border-blue-900 bg-blue-900 text-white py-2 rounded-md text-sm font-semibold"
+                  className="flex-1 border-2 border-indigo-700 bg-white text-indigo-700 py-2 rounded-full text-sm font-semibold"
                   onClick={() => { setMenuOpen(false); navigate("/login"); }}
                 >
-                  Log In
+                  Login In
                 </button>
                 <button
-                  className="flex-1 bg-blue-900 text-white py-2 rounded-md text-sm font-semibold"
+                  className="flex-1 bg-indigo-800 text-white py-2 rounded-lg text-sm font-semibold"
                   onClick={() => { setMenuOpen(false); navigate("/signup"); }}
                 >
                   Sign Up
@@ -283,13 +307,23 @@ export default function Header() {
               Try Out
             </button>
             <div className="relative bg-white rounded-full shadow-sm flex items-center h-10 w-[200px] md:w-[280px] lg:w-[340px]">
-              <span className="absolute left-3 top-1/2 -translate-y-1/2">
+              <span
+                className="absolute left-3 top-1/2 -translate-y-1/2 cursor-pointer"
+                onClick={handleSearchSubmit}
+              >
                 <Search className="text-black w-4 h-4" />
               </span>
               <input
                 type="text"
                 placeholder="Search for something"
                 className="w-full pl-10 pr-3 py-2 rounded-full border-none outline-none text-black text-sm placeholder:text-gray-500"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleSearchSubmit();
+                  }
+                }}
               />
             </div>
           </div>
@@ -303,12 +337,14 @@ export default function Header() {
               Compiler
             </span>
             <span
-              className="font-semibold text-base lg:text-xl cursor-pointer hover:underline whitespace-nowrap"
-              onClick={() => navigate("/")}
+              className="font-semibold text-base lg:text-xl cursor-pointer whitespace-nowrap no-underline"
+              onClick={() => navigate("/coming-soon")}
             >
               QGenii Business
             </span>
-            <span className="font-semibold text-base lg:text-xl cursor-pointer whitespace-nowrap no-underline">Teach On QGenii</span>
+            <span className="font-semibold text-base lg:text-xl cursor-pointer whitespace-nowrap no-underline"
+             onClick={() => navigate("/coming-soon")}
+            >Teach On QGenii</span>
             <Link to="/mystudying" className="font-semibold text-base lg:text-xl cursor-pointer whitespace-nowrap text-[#f1f1f1] no-underline">
               My Studying
             </Link>
@@ -402,7 +438,9 @@ export default function Header() {
                 className="cursor-pointer hover:text-blue-300"
                 onClick={() => navigate("/contest")}
               >Contest</span>
-              <span className="cursor-pointer hover:text-blue-300">Community</span>
+              <span className="cursor-pointer hover:text-blue-300"
+              onClick={() => navigate("/coming-soon")}
+              >Community</span>
             </div>
           </div>
         </div>

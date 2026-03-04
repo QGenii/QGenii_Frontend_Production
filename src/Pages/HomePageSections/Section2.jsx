@@ -3,15 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { Briefcase, User, Flag, Users, GraduationCap, Calendar, Wrench, Layout } from "lucide-react";
 
 const categories = [
-  { name: "Jobs", icon: <Briefcase size={18} />, url: "https://codeiqgenius-frontend-nitesh.vercel.app/jobs" },
-  { name: "Internships", icon: <User size={18} />, url: "https://codeiqgenius-frontend-nitesh.vercel.app/internships" },
-  { name: "Competitions", icon: <Flag size={18} />, url: "https://codeiqgenius-frontend-nitesh.vercel.app/competition" },
-  { name: "Mentorships", icon: <Users size={18} />, url: "https://codeiqgenius-frontend-nitesh.vercel.app/mentorships" },
-  { name: "Scholarships", icon: <GraduationCap size={18} />, url: "https://codeiqgenius-frontend-nitesh.vercel.app/scholarships" },
-  { name: "Cultural Events", icon: <Calendar size={18} />, url: "https://codeiqgenius-frontend-nitesh.vercel.app/cultural" },
-  { name: "Workshops", icon: <Wrench size={18} />, url: "https://codeiqgenius-frontend-nitesh.vercel.app/workshops" },
-  { name: "Conferences", icon: <Layout size={18} />, url: "https://codeiqgenius-frontend-nitesh.vercel.app/conference" },
-];
+    { name: "Jobs", icon: <Briefcase size={18} />, url: "/coming-soon" },
+    { name: "Internships", icon: <User size={18} />, url: "/coming-soon" },
+    { name: "Competitions", icon: <Flag size={18} />, url: "/coming-soon" },
+    { name: "Mentorships", icon: <Users size={18} />, url: "/coming-soon" },
+    { name: "Scholarships", icon: <GraduationCap size={18} />, url: "/coming-soon" },
+    { name: "Workshops", icon: <Wrench size={18} />, url: "/coming-soon" },
+    { name: "Conferences", icon: <Layout size={18} />, url: "/coming-soon" },
+  ];
 
   const handleClick = (url) => {
     window.location.href = url;
@@ -67,7 +66,7 @@ export default function Section2() {
     ];
 
     return (
-        <div className="flex flex-col items-start justify-center gap-8  py-4 ">
+        <div className="flex flex-col items-start justify-center gap-8  py-[-1rem] ">
             {/* <div className="w-full  bg-[linear-gradient(91deg,var(--Brand-Color,#2800AE)_3.96%,#175ED4_100.37%)] py-3 mt-[3rem] ">
 
       <div className="flex gap-3 px-4  items-center justify-between w-full">

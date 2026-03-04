@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import {useAuth } from '../../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 import {
   Briefcase,
   User,
@@ -17,20 +18,75 @@ import {
 } from "lucide-react";
 
 const menuItems = [
-  { name: "Jobs", icon: <Briefcase size={20} /> },
-  { name: "Internship", icon: <User size={20} /> },
-  { name: "Competition", icon: <Flag size={20} /> },
-  { name: "Scholarship", icon: <GraduationCap size={20} /> },
-  { name: "Cultural Events", icon: <Calendar size={20} /> },
-  { name: "Workshops", icon: <Wrench size={20} /> },
-  { name: "Conferences", icon: <Layout size={20} /> },
-  { name: "Blogs", icon: <BookText size={20} /> },
-  { name: "Teach On Qgenii", icon: <Monitor size={20} /> },
-  { name: "Create Contest", icon: <Plus size={20} /> },
+  {
+    name: "Jobs",
+    icon: <Briefcase size={20} />,
+    className: "border border-[#3B82F6] bg-white",
+    color: "#1D4ED8",
+    link: "/coming-soon",
+  },
+  {
+    name: "Internship",
+    icon: <User size={20} />,
+    className: "border border-[#22C55E] bg-white",
+    color: "#15803D",
+    link: "/coming-soon",
+  },
+  {
+    name: "Competition",
+    icon: <Flag size={20} />,
+    className: "border border-[#F97373] bg-white",
+    color: "#DC2626",
+    link: "/coming-soon",
+  },
+  {
+    name: "Scholarship",
+    icon: <GraduationCap size={20} />,
+    className: "border border-[#FBBF24] bg-white",
+    color: "#D97706",
+    link: "/coming-soon",
+  },
+  
+  {
+    name: "Workshops",
+    icon: <Wrench size={20} />,
+    className: "border border-[#2DD4BF] bg-white",
+    color: "#0F766E",
+    link: "/coming-soon",
+  },
+  {
+    name: "Conferences",
+    icon: <Layout size={20} />,
+    className: "border border-[#EC4899] bg-white",
+    color: "#9D174D",
+    link: "/coming-soon",
+  },
+  {
+    name: "Blogs",
+    icon: <BookText size={20} />,
+    className: "border border-[#FACC15] bg-white",
+    color: "#A16207",
+    link: "/blog",
+  },
+  {
+    name: "Teach On Qgenii",
+    icon: <Monitor size={20} />,
+    className: "border border-[#38BDF8] bg-white",
+    color: "#0369A1",
+    link: "/coming-soon",
+  },
+  {
+    name: "Create Contest",
+    icon: <Plus size={20} />,
+    className: "border border-transparent bg-transparent",
+    color: "#111827",
+    link: "/coming-soon",
+  },
 ];
 
 export default function Section1() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="bg-[#f2f2f2] w-full py-8 px-4 ">
@@ -38,44 +94,51 @@ export default function Section1() {
 
       
              
-      {/* Toggle Button */}
-      <div className="w-full   flex justify-end px-4 py-3">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2  font-medium bg-transparent border border-white/40 px-4 py-2 rounded-lg bg-white text-blue-700 transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
+      {/* Toggle Button + Dropdown */}
+      <div className="w-full flex justify-end px-2 py-0">
+        <div className="relative inline-block">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="flex items-center gap-2 text-white font-medium bg-blue-700 border border-blue-700 px-4 py-2 rounded-lg hover:bg-blue-800 transition"
           >
-            <path
-              d="M19 19V5H5V19H19ZM19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM11 7H13V11H17V13H13V17H11V13H7V11H11V7Z"
-              fill="currentColor"
-            />
-          </svg>
-          Host
-        </button>
-      </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M19 19V5H5V19H19ZM19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM11 7H13V11H17V13H13V17H11V13H7V11H11V7Z"
+                fill="currentColor"
+              />
+            </svg>
+            Host
+          </button>
 
-      {/* Sidebar Options */}
-      {isOpen && (
-        <div className="absolute right-0  bg-[#F6F4FF] w-64 rounded-lg shadow-md mt-2  p-4 transition-all duration-300">
-          <ul className="flex flex-col gap-3 justify-end">
-            {menuItems.map((item, index) => (
-             <div > <li
-                key={index}
-                className="flex items-center gap-3 text-gray-800 font-medium px-3 py-2 rounded-md hover:bg-white hover:shadow-sm transition-all duration-200 cursor-pointer"
-              >
-                {item.icon}
-                <span>{item.name}</span>
-              </li></div>
-            ))}
-          </ul>
+          {/* Sidebar Options (overlay, tight under button) */}
+          {isOpen && (
+            <div className="absolute right-0 mt-1 bg-white w-64 rounded-2xl shadow-lg p-4 transition-all duration-300 z-30">
+              <ul className="flex flex-col gap-3 justify-end">
+                {menuItems.map((item, index) => (
+                  <li
+                    key={index}
+                    onClick={() => navigate(item.link)}
+                    className={`flex items-center justify-between px-4 py-2 rounded-xl cursor-pointer hover:shadow-md transition-all duration-200 ${item.className}`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span style={{ color: item.color }}>{item.icon}</span>
+                      <span className="font-semibold text-sm" style={{ color: item.color }}>
+                        {item.name}
+                      </span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     
 
 
