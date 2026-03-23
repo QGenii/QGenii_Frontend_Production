@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../context/AuthContext';
+import { AuthContext } from '../../Context/AuthContext';
 import axios from 'axios';
 import { Trophy, Medal, Award, TrendingUp, Search, RefreshCw, Info, Users } from 'lucide-react';
 
