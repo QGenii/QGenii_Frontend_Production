@@ -13,10 +13,10 @@ function HomePage() {
             {/* <TopHeader /> */}
             <Section1 />
             <Section2 />
-            <Section3 />
+            {/* <Section3 /> */}
             <Section4 />
-            <Footer />
-            <Footerbottomarea />
+            {/* <Footer /> */}
+            {/* <Footerbottomarea /> */}
 
 
         </>

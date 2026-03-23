@@ -13,7 +13,7 @@ export default function SkillTestManage() {
   const [showQuestionsFor, setShowQuestionsFor] = useState(null);
   const [questions, setQuestions] = useState([]);
   const [questionForm, setQuestionForm] = useState({ questionText: '', options: '', correctAnswer: '', difficultyLevel: 'easy' });
-  // Question type: 'mcq', 'content', 'mcq-coding'
+  // Question type: 'mcq', 'msq', 'content', 'mcq-coding'
   const [questionType, setQuestionType] = useState('mcq');
   // MCQ style options state (used in modal)
   const [mcqOptions, setMcqOptions] = useState([{ text: '', isCorrect: false }, { text: '', isCorrect: false }]);
@@ -264,6 +264,30 @@ export default function SkillTestManage() {
         difficultyLevel: questionForm.difficultyLevel,
         explanation: mcqExplanation.trim(),
       };
+    } else if (questionType === 'msq') {
+      // MSQ (Multiple Select) validation
+      if (!questionForm.questionText.trim()) {
+        alert('Please enter a question text');
+        return;
+      }
+      const validOptions = mcqOptions.filter(o => o.text.trim());
+      if (validOptions.length < 2) {
+        alert('Please add at least 2 options');
+        return;
+      }
+      if (!validOptions.some(o => o.isCorrect)) {
+        alert('Please select at least one correct answer');
+        return;
+      }
+      // MSQ payload: correctAnswer is an array of correct option texts
+      payload = {
+        type: 'msq',
+        questionText: questionForm.questionText.trim(),
+        options: validOptions.map(o => ({ text: o.text.trim(), isCorrect: !!o.isCorrect })),
+        correctAnswer: validOptions.filter(o => o.isCorrect).map(o => o.text.trim()),
+        difficultyLevel: questionForm.difficultyLevel,
+        explanation: mcqExplanation.trim(),
+      };
     } else if (questionType === 'content') {
       // Validation
       const validContent = contentItems.filter(item => item.title?.trim() || item.description?.trim());
@@ -372,9 +396,7 @@ export default function SkillTestManage() {
     setEditingQuestion(question);
 
     // Set selected module if question has a module
-    // Check if it's the first module (which should map to "first-module" in dropdown)
     if (question.module) {
-      // If the question's module is the first actual module, map it to "first-module"
       if (modules.length > 0 && question.module === modules[0]._id) {
         setSelectedModule('first-module');
       } else {
@@ -389,16 +411,18 @@ export default function SkillTestManage() {
     setQuestionForm({
       questionText: question.questionText || '',
       options: '',
-      correctAnswer: question.correctAnswer || '',
+      correctAnswer: qType === 'msq' && Array.isArray(question.correctAnswer) ? question.correctAnswer : (question.correctAnswer || ''),
       difficultyLevel: question.difficultyLevel || 'easy'
     });
 
-    if (qType === 'mcq' || qType === 'mcq-coding') {
-      // Set MCQ options from question
+    if (qType === 'mcq' || qType === 'mcq-coding' || qType === 'msq') {
+      // Set MCQ/MSQ options from question
       if (question.options && question.options.length > 0) {
         setMcqOptions(question.options.map(opt => ({
           text: opt.text || '',
-          isCorrect: opt.isCorrect || false
+          isCorrect: qType === 'msq'
+            ? (Array.isArray(question.correctAnswer) ? question.correctAnswer.includes(opt.text) : !!opt.isCorrect)
+            : !!opt.isCorrect
         })));
       } else {
         setMcqOptions([{ text: '', isCorrect: false }, { text: '', isCorrect: false }]);
@@ -763,14 +787,17 @@ export default function SkillTestManage() {
                           className="border-2 border-gray-300 rounded-lg px-4 py-2 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all font-medium"
                         >
                           <option value="mcq">MCQ</option>
+                          <option value="msq">MSQ (Multi-Select)</option>
                           <option value="content">Content</option>
                           <option value="mcq-coding">MCQ with Coding</option>
                         </select>
-                        <span className={`px-3 py-1 rounded-lg text-xs font-semibold ${questionType === 'mcq' ? 'bg-blue-100 text-blue-700' :
+                        <span className={`px-3 py-1 rounded-lg text-xs font-semibold ${
+                          questionType === 'mcq' ? 'bg-blue-100 text-blue-700' :
+                          questionType === 'msq' ? 'bg-yellow-100 text-yellow-700' :
                           questionType === 'content' ? 'bg-purple-100 text-purple-700' :
-                            'bg-green-100 text-green-700'
-                          }`}>
-                          {questionType === 'mcq' ? 'MCQ' : questionType === 'content' ? 'Content' : 'MCQ + Coding'}
+                          'bg-green-100 text-green-700'
+                        }`}>
+                          {questionType === 'mcq' ? 'MCQ' : questionType === 'msq' ? 'MSQ' : questionType === 'content' ? 'Content' : 'MCQ + Coding'}
                         </span>
                       </div>
                     </div>
@@ -885,22 +912,33 @@ export default function SkillTestManage() {
                       </div>
                     )}
 
-                    {/* MCQ and MCQ-Coding: Options */}
-                    {(questionType === 'mcq' || questionType === 'mcq-coding') && (
+                    {/* MCQ, MSQ, and MCQ-Coding: Options */}
+                    {(questionType === 'mcq' || questionType === 'msq' || questionType === 'mcq-coding') && (
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-3">Answer Options *</label>
                         <div className="space-y-3">
                           {mcqOptions.map((opt, oi) => (
                             <div key={oi} className="flex items-center gap-3 bg-white p-3 rounded-lg border-2 border-gray-200 hover:border-blue-300 transition-colors">
-                              <input
-                                type="radio"
-                                name={`correct-${showQuestionsFor?._id}`}
-                                checked={!!opt.isCorrect}
-                                onChange={() => {
-                                  setMcqOptions(prev => prev.map((o, i) => i === oi ? { ...o, isCorrect: true } : { ...o, isCorrect: false }));
-                                }}
-                                className="w-5 h-5 text-blue-600"
-                              />
+                              {questionType === 'msq' ? (
+                                <input
+                                  type="checkbox"
+                                  checked={!!opt.isCorrect}
+                                  onChange={() => {
+                                    setMcqOptions(prev => prev.map((o, i) => i === oi ? { ...o, isCorrect: !o.isCorrect } : o));
+                                  }}
+                                  className="w-5 h-5 text-yellow-600"
+                                />
+                              ) : (
+                                <input
+                                  type="radio"
+                                  name={`correct-${showQuestionsFor?._id}`}
+                                  checked={!!opt.isCorrect}
+                                  onChange={() => {
+                                    setMcqOptions(prev => prev.map((o, i) => i === oi ? { ...o, isCorrect: true } : { ...o, isCorrect: false }));
+                                  }}
+                                  className="w-5 h-5 text-blue-600"
+                                />
+                              )}
                               <input
                                 value={opt.text}
                                 onChange={(e) => setMcqOptions(prev => prev.map((o, i) => i === oi ? { ...o, text: e.target.value } : o))}
@@ -1039,11 +1077,13 @@ export default function SkillTestManage() {
                               <div className="flex-1">
                                 {/* Question Type Badge and Module Info */}
                                 <div className="flex items-center gap-2 mb-3 flex-wrap">
-                                  <span className={`px-3 py-1 rounded-full text-xs font-semibold ${qType === 'mcq' ? 'bg-blue-100 text-blue-700' :
+                                  <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                                    qType === 'mcq' ? 'bg-blue-100 text-blue-700' :
+                                    qType === 'msq' ? 'bg-yellow-100 text-yellow-700' :
                                     qType === 'content' ? 'bg-purple-100 text-purple-700' :
-                                      'bg-green-100 text-green-700'
-                                    }`}>
-                                    {qType === 'mcq' ? 'MCQ' : qType === 'content' ? 'Content' : 'MCQ + Coding'}
+                                    'bg-green-100 text-green-700'
+                                  }`}>
+                                    {qType === 'mcq' ? 'MCQ' : qType === 'msq' ? 'MSQ' : qType === 'content' ? 'Content' : 'MCQ + Coding'}
                                   </span>
                                   <span className="flex items-center gap-1 text-sm text-gray-600">
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1072,8 +1112,8 @@ export default function SkillTestManage() {
                                   </span>
                                 </div>
 
-                                {/* MCQ and MCQ-Coding: Show Question Text */}
-                                {(qType === 'mcq' || qType === 'mcq-coding') && (
+                                {/* MCQ, MSQ, and MCQ-Coding: Show Question Text */}
+                                {(qType === 'mcq' || qType === 'msq' || qType === 'mcq-coding') && (
                                   <>
                                     <div className="font-semibold text-gray-900 mb-3">{q.questionText}</div>
 
@@ -1088,9 +1128,17 @@ export default function SkillTestManage() {
                                     {q.options && q.options.length > 0 && (
                                       <div className="space-y-1 mb-3">
                                         {q.options.map((o, idx) => (
-                                          <div key={idx} className={`text-sm p-2 rounded ${o.isCorrect ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-gray-50 text-gray-700'}`}>
+                                          <div
+                                            key={idx}
+                                            className={`flex items-center gap-2 text-sm p-2 rounded ${o.isCorrect ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-gray-50 text-gray-700'}`}
+                                          >
+                                            {qType === 'msq' ? (
+                                              <input type="checkbox" checked={!!o.isCorrect} readOnly className="w-4 h-4 text-yellow-600" />
+                                            ) : (
+                                              <input type="radio" checked={!!o.isCorrect} readOnly className="w-4 h-4 text-blue-600" />
+                                            )}
                                             {o.isCorrect && <span className="font-semibold mr-2">✓</span>}
-                                            {o.text}
+                                            <span className={o.isCorrect ? 'font-semibold' : ''}>{o.text}</span>
                                           </div>
                                         ))}
                                       </div>

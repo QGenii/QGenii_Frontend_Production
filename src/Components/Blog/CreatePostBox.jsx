@@ -1,37 +1,42 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AiOutlinePicture, AiOutlineVideoCamera } from 'react-icons/ai';
+import api from "../../lib/api";
 import { useAuth } from "../../hooks/useAuth";
 
-const CreatePostBox = () => {
+const CreatePostBox = ({ onPostCreated }) => {
   const [postText, setPostText] = useState('');
-  const [image, setImage] = useState(null);
-   const [imagePreview, setImagePreview] = useState(null);
   const navigate = useNavigate();
+  const [isPosting, setIsPosting] = useState(false);
 
-  const handleCreatePost = (e) => {
-    console.log(e.target);
-    // navigate('/blog/new-post');
+  const handleCreatePost = async () => {
+    const trimmed = postText.trim();
+    if (!trimmed || isPosting) return;
+
+    setIsPosting(true);
+    try {
+      const firstLine = trimmed.split('\n')[0] || 'New post';
+      const title = firstLine.slice(0, 80) || 'New post';
+
+      await api.post("/blogs/", {
+        title,
+        content: trimmed,
+      });
+
+      setPostText('');
+      if (onPostCreated) {
+        onPostCreated();
+      }
+    } catch (err) {
+      console.error("Failed to create quick post", err);
+    } finally {
+      setIsPosting(false);
+    }
   };
   const EnterTitle = (e) => {
     setPostText(e.target.value);
     console.log(e.target.value);
   };
 
-  const handlePhotoUpload = (e) => {
-
-       const file = e.target.files[0];
-
-    console.log(setImage(file));
-    setImage(file);
-
-    setImagePreview(URL.createObjectURL(file));
-    navigate('/blog/new-post');
-  };
-
-  const handleVideoUpload = () => {
-    navigate('/blog/new-post');
-  };
   const { user } = useAuth()
   ;
  const initials = (user?.name || 'User')
@@ -108,49 +113,29 @@ const CreatePostBox = () => {
             {initials}
           </div>
 
-          {/* Input (full width) */}
-          <input
-            type="text"
+          {/* Input (full width, multiline) */}
+          <textarea
             className="form-control w-full mt-2"
             placeholder="Write your post here"
             value={postText}
             onChange={EnterTitle}
+            rows={2}
             style={{
               borderRadius: 30,
               paddingLeft: 20,
               paddingRight: 20,
-              height: 44,
+              paddingTop: 15,
+              paddingBottom: 15,
               fontSize: 15,
               border: '1px solid #e6e9ee',
               background: 'white',
+              resize: 'none',
             }}
           />
         </div>
 
         {/* Actions row */}
-        <div className="d-flex align-items-center justify-content-between mt-3">
-          <div className="flex align-items-center gap-[3rem]">
-            <button
-              type="button"
-              className="btn btn-link d-flex align-items-center"
-              onClick={handlePhotoUpload}
-              style={{ color: '#6c757d', textDecoration: 'none' }}
-            >
-              <AiOutlinePicture style={{ marginRight: 8 }} />
-              <span style={{ fontSize: 15 }}>Photo</span>
-            </button>
-
-            <button
-              type="button"
-              className="btn btn-link d-flex align-items-center"
-              onClick={handleVideoUpload}
-              style={{ color: '#6c757d', textDecoration: 'none' }}
-            >
-              <AiOutlineVideoCamera style={{ marginRight: 8 }} />
-              <span style={{ fontSize: 15 }}>Video</span>
-            </button>
-          </div>
-
+        <div className="d-flex align-items-center justify-content-end mt-3">
           <div className='flex justify-end '>
             <button
               type="button"
@@ -161,12 +146,13 @@ const CreatePostBox = () => {
                 color: 'white',
                 padding: '8px 22px',
                 borderRadius: 999,
-                boxShadow: '0 6px 18px rgba(12,102,255,0.18)',
+                boxShadow: '0 6px 18px rgba(5, 93, 246, 0.18)',
                 border: 'none',
                 fontWeight: 600,
               }}
-            >
-              Write Article
+              disabled={isPosting || !postText.trim()}
+              >
+              {isPosting ? 'Posting...' : 'Post'}
             </button>
           </div>
         </div>

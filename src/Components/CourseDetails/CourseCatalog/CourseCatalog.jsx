@@ -1377,7 +1377,7 @@ export default function CourseCatalog({ selectedTopic = null }) {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 place-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 justify-center items-stretch auto-rows-fr">
         {/* Loading state */}
         {loading &&
           !error &&
@@ -1469,7 +1469,8 @@ export default function CourseCatalog({ selectedTopic = null }) {
             return (
               <div
                 key={course._id}
-                className="w-[200px] h-[200px]  border-[2px] border-[#0C316E] rounded-xl flex flex-col items-start justify-start p-4 bg-white cursor-pointer"
+                className="w-full max-w-[250px] min-h-[210px] h-full border-2 border-[#1A2F6D] rounded-xl bg-white flex flex-col justify-between p-4 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer relative mx-auto"
+                style={{ boxShadow: '0 2px 8px 0 rgba(44, 62, 80, 0.06)' }}
                 onClick={() =>
                   handleNextCourseContent(
                     course._id,
@@ -1478,8 +1479,13 @@ export default function CourseCatalog({ selectedTopic = null }) {
                   )
                 }
               >
-                {/* Top: Icon + Level badge */}
-                <div className="w-full flex justify-between items-start mb-3">
+                {/* Badge at top-right */}
+                <span className="absolute top-3 right-3 bg-[#7B97C9] text-white text-xs font-semibold px-4 py-1 rounded-md z-10">
+                  {levelLabel}
+                </span>
+
+                {/* Icon centered */}
+                <div className="flex justify-start items-center mb-2 mt-1">
                   <img
                     src={
                       course.thumbnail ||
@@ -1489,98 +1495,48 @@ export default function CourseCatalog({ selectedTopic = null }) {
                     alt={course.title}
                     className="w-10 h-10 object-contain"
                   />
-                  <span className="bg-[#5F7FBD] text-white text-xs font-semibold px-2 py-[2px] rounded-full">
-                    {levelLabel}
-                  </span>
                 </div>
 
                 {/* Title */}
-                <div className=" w-full  flex justify-between  items-center ">
-                  <h2 className="text-[16px] font-bold text-[#1A2F6D] leading-tight ">
+                <div className="mb-2 mt-1">
+                  <h2 className="text-[18px] font-bold text-[#2B2B8F] leading-tight mb-0" style={{lineHeight:'1.2'}}>
                     {course.title}
                   </h2>
-                  <div className=" p-1"  onClick={(e) => e.stopPropagation()}>
-                    <StyledWrapper>
-                      <div
-                        className="heart-container"
-                        title="Wishlist"
-                       
-                      >
-                        <input
-                          type="checkbox"
-                          className="checkbox"
-                          id={`wishlist-${course._id}`}
-                          checked={wishlistIds.has(course._id)}
-                          onChange={() => {
-                            handleCourseWishlist(course._id);
-                          }}
-                        />
-                        <div className="svg-container">
-                          <svg
-                            viewBox="0 0 24 24"
-                            className="svg-outline"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path>
-                          </svg>
-                          <svg
-                            viewBox="0 0 24 24"
-                            className="svg-filled"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path>
-                          </svg>
-                          <svg
-                            className="svg-celebrate"
-                            width={100}
-                            height={100}
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <polygon points="10,10 20,20" />
-                            <polygon points="10,50 20,50" />
-                            <polygon points="20,80 30,70" />
-                            <polygon points="90,10 80,20" />
-                            <polygon points="90,50 80,50" />
-                            <polygon points="80,80 70,70" />
-                          </svg>
-                        </div>
-                      </div>
-                    </StyledWrapper>
-                  </div>
                 </div>
 
                 {/* Rating Row */}
-                <div className="flex items-center space-x-1 mb-2">
-                  <div className="flex">
+                <div className="flex items-center mb-2 mt-1">
+                  <div className="flex mr-2">
                     {Array.from({ length: 5 }, (_, i) => (
                       <span
                         key={i}
-                        className="text-[#F2B827] text-sm leading-none"
+                        className={`text-[18px] ${i < Math.round(ratingValue) ? 'text-[#F2B827]' : 'text-[#E0E0E0]'}`}
+                        style={{marginRight: i !== 4 ? '2px' : 0}}
                       >
-                        {i < Math.round(ratingValue) ? "★" : "☆"}
+                        {i < Math.round(ratingValue) ? "★" : "★"}
                       </span>
                     ))}
                   </div>
-                  <span className="text-[14px] font-semibold text-gray-800">
+                  <span className="text-[16px] font-medium text-[#444] ml-1">
                     {ratingValue.toFixed(1)}
                   </span>
-                  <span className="text-[13px] text-gray-600">
-                    ({reviewsValue.toLocaleString()} reviews)
+                  <span className="text-[15px] text-[#444] ml-1">
+                    ({reviewsValue.toLocaleString()})
                   </span>
                 </div>
 
-                {/* Stats */}
-                <div className="flex items-center text-[13px] text-gray-800 font-medium mt-auto whitespace-nowrap">
+                {/* Stats Row */}
+                <div className="flex items-center text-[15px] text-[#444] font-medium mt-auto mb-1">
                   <span>
                     {learnersValue > 0
                       ? `${learnersValue.toLocaleString()} Learners`
                       : "New course"}
                   </span>
-                  <span className="mx-1 text-gray-400">•</span>
+                  <span className="mx-2 text-[#BDBDBD]">•</span>
                   <span>
                     {lessonsValue > 0
                       ? `${lessonsValue} Lessons`
-                      : "Flexible lessons"}
+                      : "0 lessons"}
                   </span>
                 </div>
               </div>

@@ -164,7 +164,7 @@ const PracticeDetail = () => {
       <div className="col-lg-12" style={{ padding: "20px", width: "100%" }}>
         <PracticeHeroCard
           title={data.title}
-          description="Solve C++ Practice problems online with the Practice C++ path on CodeIqGenius. Answer MCQs exercises and write code for over 200 C++ coding challenges."
+          description="Solve C++ Practice problems online with the Practice C++ path on QGenii. Answer MCQs exercises and write code for over 200 C++ coding challenges."
           courses={6}
           duration="6 months"
           problems={710}

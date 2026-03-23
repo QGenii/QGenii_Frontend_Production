@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login } from "./Pages/public/Login";
 import LoginSignupPage from "./Pages/Loginpage";
 import { Register } from "./Pages/public/Register";
+import { VerifyEmail } from "./Pages/public/VerifyEmail";
 import ComingSoon from "./Pages/ComingSoon";
 
 //!pages
@@ -80,9 +81,9 @@ import Enginerring from "./Pages/WhatWedo/ByTeam/Engineering/Enginerring.jsx";
 import ItOperation from "./Pages/WhatWedo/ByTeam/ITpoeration/ItOperation.jsx";
 //! Data Science
 import DataScience from "./Pages/WhatWedo/ByTeam/DataScience/DataScience.jsx";
-import Forgotpassword from "./Pages/SecondLink/ForgetPassword.jsx";
+import { ForgotPassword } from "./Pages/public/ForgotPassword.jsx";
 import SendEmailStatus from "./Pages/SendEmailStatus.jsx";
-
+import ComingSoonn from "./Pages/Comingsoonn.jsx";
 
 //? By Industry
 import Technology from "./Pages/WhatWedo/ByIndustry/Technology/Technology.jsx";
@@ -109,6 +110,7 @@ import TrainingTransformation from "./Pages/WhatWedo/ByIndustry/FinancialService
 
 // import RestPassword from "./Pages/ResetPassword.jsx";
 import ResetPasswordMessage from "./Pages/ResetPasswordMessage.jsx";
+import { ResetPassword } from "./Pages/public/ResetPassword.jsx";
 
 
 //! Dedicated Customer Success Team
@@ -153,7 +155,7 @@ import PartnerWithQgenii from './Pages/HowWedoit/PartnerWithQgenii/PartnerWithQg
 import SignUp from "./Pages/SecondLink/SignUp.jsx";
 import LoginPage from "./Pages/SecondLink/Login.jsx";
 import ForgetPassword from "./Pages/SecondLink/ForgetPassword.jsx";
-import ResetPassword from "./Pages/SecondLink/ResetPassword.jsx";
+import ResetPasswordPage from "./Pages/SecondLink/ResetPassword.jsx";
 import PaymentDetails from './Pages/SecondLink/PaymentDetails.jsx';
 
 //! Code IQ Genius
@@ -297,6 +299,7 @@ import ContestCreate from './Pages/Contest/ContestCreate';
 import ContestManageDashboard from './Pages/Contest/ContestManageDashboard';
 import ContestQuestionsManager from './Pages/Contest/ContestQuestionsManager';
 import ContactForm from './Components/ContactForm';
+import Leaderboard from "./Pages/public/Leaderboard.jsx";
 
 
 // UpperNavbar
@@ -381,12 +384,12 @@ const DashboardRoute = () => {
     return <SuperAdminDashboard />;
   } else if (isAdmin()) {
     return <AdminDashboard />;
-  } else if (isMentor()) {
-    return <MentorDashboard />;
-  } else if (user?.role === "HIRING_PARTNER") {
-    return <HiringPartnerDashboard />;
-  } else {
-    return <UserDashboard />;
+  // } else if (isMentor()) {
+  //   return <MentorDashboard />;
+  // } else if (user?.role === "HIRING_PARTNER") {
+  //   return <HiringPartnerDashboard />;
+  // } else {
+  //   return <UserDashboard />;
   }
 };
 
@@ -415,7 +418,9 @@ const App = () => {
           {/* <Route index element={<HomePage />} /> */}
           <Route path="/home" element={<Home2 />} />
           <Route path="/login" element={<LoginSignupPage />} />
-          <Route path="/forgot-password" element={<Forgotpassword />} />
+          <Route path="/verify-email" element={<VerifyEmail />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/resetpassword" element={<ResetPassword />} />
           <Route path="/send-emailstatus" element={<SendEmailStatus />} />
           <Route
             path="/resetpassword-status"
@@ -458,7 +463,7 @@ const App = () => {
           <Route path="secondlinksignup" element={<SignUp />} />
           <Route path="secondlinklogin" element={<LoginPage />} />
           <Route path="secondlinkforgetpassword" element={<ForgetPassword />} />
-          <Route path="secondlinkresetpassword" element={<ResetPassword />} />
+          <Route path="secondlinkresetpassword" element={<ResetPasswordPage />} />
           <Route path="paymentdetails" element={<PaymentDetails />} />
 
 
@@ -646,17 +651,17 @@ const App = () => {
           <Route path="/users/:username/dashboard" element={<ProblemDashboard />} />
 
 
-          {/* Recent Context */}
+          {/* Recent Contest */}
           <Route
-            path="/recent-context/bookmarked"
+            path="/recent-contest/bookmarked"
             element={<BookmarkedProblems />}
           />
           <Route
-            path="/recent-context/explained"
+            path="/recent-contest/explained"
             element={<ExplainedProblems />}
           />
           <Route
-            path="/recent-context/contest"
+            path="/recent-contest/contest"
             element={<RecentContestProblems />}
           />
 
@@ -899,6 +904,7 @@ const App = () => {
             }
           />
           <Route
+          
             path="/admin/courses/edit/:id"
             element={
               <ProtectedRoute requireAdmin>
@@ -953,10 +959,11 @@ const App = () => {
           />
           <Route path="/contests/:id/leaderboard" element={<ContestLeaderboard />} />
             <Route path="/coming-soon" element={<ComingSoon />} />
+            <Route path="/coming-soonn" element={<ComingSoonn />} />
           <Route
             path="/contests/create"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute requireAdmin={true}>
                 <ContestCreate />
               </ProtectedRoute>
             }
@@ -1003,6 +1010,8 @@ const App = () => {
               </ProtectedRoute>
             }
           />
+                  <Route path="/practice/leaderboard" element={<Leaderboard />} />
+
           <Route
             path="/dashboard/leaderboard-config"
             element={

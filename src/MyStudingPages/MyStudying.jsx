@@ -418,6 +418,36 @@ const MyStudying = () => {
     setReminders([...reminders, reminder]);
   };
 
+  const handleAddToCalendar = (r) => {
+    if (r.calendar === "Google") {
+      const title = encodeURIComponent(r.name || "Study Reminder");
+      const details = encodeURIComponent(`Course: ${r.course}\nFrequency: ${r.frequency}`);
+
+      let hours = 0;
+      let minutes = 0;
+      if (r.time) {
+        const timeParts = r.time.match(/(\d+):(\d+)\s*(AM|PM)?/i);
+        if (timeParts) {
+          hours = parseInt(timeParts[1], 10);
+          minutes = parseInt(timeParts[2], 10);
+          if (timeParts[3]) {
+            const ampm = timeParts[3].toUpperCase();
+            if (ampm === "PM" && hours < 12) hours += 12;
+            if (ampm === "AM" && hours === 12) hours = 0;
+          }
+        }
+      }
+
+      const startDate = r.date ? new Date(r.date) : new Date();
+      startDate.setHours(hours, minutes, 0, 0);
+      const endDate = new Date(startDate.getTime() + 60 * 60 * 1000); 
+
+      const formatDate = (date) => date.toISOString().replace(/-|:|\.\d\d\d/g, "");
+      const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&dates=${formatDate(startDate)}/${formatDate(endDate)}`;
+      window.open(googleCalendarUrl, "_blank");
+    }
+  };
+
   // Helper functions for progress stats
   const getStreakWeeks = () => {
     if (!progressData) return 0;
@@ -1343,7 +1373,10 @@ const MyStudying = () => {
                           </div>
 
                           {/* Calendar Button */}
-                          <div className="reminder-pill">
+                          <div 
+                            className={`reminder-pill ${r.calendar === 'Google' ? 'cursor-pointer' : ''}`}
+                            onClick={() => handleAddToCalendar(r)}
+                          >
                             {r.calendar === "Google" && <FcGoogle size={20} />}
                             {r.calendar === "Apple" && <FaApple size={20} />}
                             {r.calendar === "Outlook" && (

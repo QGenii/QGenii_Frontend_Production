@@ -35,7 +35,7 @@ export const studyPlanApi = {
   // Generate progress report
   generateProgressReport: async (reportConfig) => {
     const params = new URLSearchParams();
-    
+
     // Fix date serialization - only add valid dates
     if (reportConfig.startDate) {
       let startDate;
@@ -48,7 +48,7 @@ export const studyPlanApi = {
         params.append('startDate', startDate);
       }
     }
-    
+
     if (reportConfig.endDate) {
       let endDate;
       if (typeof reportConfig.endDate === 'string' && reportConfig.endDate.trim()) {
@@ -60,11 +60,11 @@ export const studyPlanApi = {
         params.append('endDate', endDate);
       }
     }
-    
+
     if (reportConfig.format) params.append('format', reportConfig.format.toLowerCase());
     if (reportConfig.groupBy) params.append('groupBy', reportConfig.groupBy);
     if (reportConfig.sortBy) params.append('sortBy', reportConfig.sortBy);
-    
+
     // Status filters
     const statusFilters = [];
     if (reportConfig.includeCompleted) statusFilters.push('COMPLETED');
@@ -72,20 +72,26 @@ export const studyPlanApi = {
     if (reportConfig.includePending) statusFilters.push('PENDING');
     if (reportConfig.includeOverdue) statusFilters.push('OVERDUE');
     if (reportConfig.includeCancelled) statusFilters.push('CANCELLED');
-    
+
     if (statusFilters.length > 0) {
       params.append('status', statusFilters.join(','));
     }
-    
+
     // Content options
     if (reportConfig.includeSubtasks) params.append('includeSubtasks', 'true');
     if (reportConfig.includeProgressHistory) params.append('includeProgressHistory', 'true');
     if (reportConfig.includeStatistics) params.append('includeStatistics', 'true');
-    
-    const response = await api.get(`/study-plans/reports/progress?${params.toString()}`);
-    
+
+    // Set responseType: 'blob' for CSV or JSON download
+    const isCSV = reportConfig.format && reportConfig.format.toUpperCase() === 'CSV';
+    const isJSON = reportConfig.format && reportConfig.format.toUpperCase() === 'JSON';
+    const response = await api.get(
+      `/study-plans/reports/progress?${params.toString()}`,
+      isCSV || isJSON ? { responseType: 'blob' } : {}
+    );
+
     // Handle CSV download
-    if (reportConfig.format === 'CSV') {
+    if (isCSV) {
       const blob = new Blob([response.data], { type: 'text/csv' });
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
@@ -96,7 +102,20 @@ export const studyPlanApi = {
       link.remove();
       window.URL.revokeObjectURL(url);
     }
-    
+
+    // Handle JSON download
+    if (isJSON) {
+      const blob = new Blob([response.data], { type: 'application/json' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', `study-plan-report-${new Date().toISOString().split('T')[0]}.json`);
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+    }
+
     return response;
   },
 

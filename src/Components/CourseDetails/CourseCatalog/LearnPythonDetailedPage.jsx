@@ -369,8 +369,12 @@ export default function LearnPythonDetailedPage({ courseKey: propCourseKey }) {
       }
       try {
         const res = await enrollmentApi.getEnrollment(contentId);
-        if (res.data.success || res.status === 200) {
+        // Only set as enrolled if actual enrollment data exists (adjust as per backend response)
+        const enrollment = res.data?.data?.enrollment || res.data?.enrollment || res.data?.data;
+        if (enrollment && (enrollment._id || enrollment.user || enrollment.course)) {
           setIsEnrolled(true);
+        } else {
+          setIsEnrolled(false);
         }
       } catch (err) {
         if (err.response?.status === 400 || err.response?.status === 404) {
@@ -431,8 +435,12 @@ export default function LearnPythonDetailedPage({ courseKey: propCourseKey }) {
       setIsEnrolled(false);
       toast.success("Successfully unenrolled from the course.");
     } catch (err) {
-      console.error("Unenrollment failed:", err);
-      toast.error(err.response?.data?.message || "Failed to unenroll. Please try again.");
+      if (err.response?.status === 404) {
+        toast.error("You are not enrolled in this course or enrollment not found.");
+      } else {
+        console.error("Unenrollment failed:", err);
+        toast.error(err.response?.data?.message || "Failed to unenroll. Please try again.");
+      }
     } finally {
       setEnrollmentLoading(false);
     }
@@ -837,7 +845,20 @@ export default function LearnPythonDetailedPage({ courseKey: propCourseKey }) {
                     Enrolled
                   </div>
                   <button
-                    onClick={handleEnrollmentAction}
+                    onClick={() => {
+                      // Only navigate to course content, do not enroll again
+                      if (modules && modules.length > 0 && modules[0].contents?.length > 0) {
+                        const firstLessonId = modules[0].contents[0]._id;
+                        toast.success("Redirecting to course content...");
+                        navigate(`/coursecatalog/${contentId}/problems/${firstLessonId}`);
+                      } else if (modules && modules.length > 0 && modules[0].items?.length > 0) {
+                        const firstLessonId = modules[0].items[0]._id;
+                        toast.success("Redirecting to course content...");
+                        navigate(`/coursecatalog/${contentId}/problems/${firstLessonId}`);
+                      } else {
+                        toast.info("Course content is being prepared.");
+                      }
+                    }}
                     className="bg-[#0D2A63] hover:bg-[#0b224e] text-white px-5 py-2 rounded-md text-sm font-medium"
                   >
                     Start Studying

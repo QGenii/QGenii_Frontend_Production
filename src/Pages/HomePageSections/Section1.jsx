@@ -44,13 +44,6 @@ const menuItems = [
     link: "/coming-soon",
   },
   {
-    name: "Cultural Events",
-    icon: <Calendar size={20} />,
-    className: "border border-[#8B5CF6] bg-white",
-    color: "#4C1D95",
-    link: "/coming-soon",
-  },
-  {
     name: "Workshops",
     icon: <Wrench size={20} />,
     className: "border border-[#2DD4BF] bg-white",
@@ -72,7 +65,7 @@ const menuItems = [
     link: "/blog",
   },
   {
-    name: "Teach On Qgenii",
+    name: "Teach On QGenii",
     icon: <Monitor size={20} />,
     className: "border border-[#38BDF8] bg-white",
     color: "#0369A1",

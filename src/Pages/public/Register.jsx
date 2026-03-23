@@ -18,12 +18,16 @@ export const Register = () => {
     role: 'USER',
   });
   const [error, setError] = useState('');
+  const [emailError, setEmailError] = useState('');
   const [loading, setLoading] = useState(false);
 
   const { register } = useAuth();
   const navigate = useNavigate();
 
   const handleChange = (e) => {
+    if (e.target.name === 'email') {
+      setEmailError('');
+    }
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -33,13 +37,30 @@ export const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+    setEmailError('');
     setLoading(true);
+
+    // Basic email format validation before hitting API
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(formData.email)) {
+      setEmailError('Please enter a valid email address');
+      setLoading(false);
+      return;
+    }
 
     try {
       await register(formData);
-      navigate('/');
+      // After registration, ask user to verify email, then login
+      navigate('/login');
     } catch (err) {
-      setError(err.response?.data?.message || 'Registration failed');
+      const message = err.response?.data?.message || 'Registration failed';
+
+      // If backend says email already exists, show it on the email field
+      if (message.toLowerCase().includes('email') && message.toLowerCase().includes('already')) {
+        setEmailError(message);
+      } else {
+        setError(message);
+      }
     } finally {
       setLoading(false);
     }
@@ -47,9 +68,9 @@ export const Register = () => {
 
   const roleOptions = [
     { value: 'USER', label: 'Student' },
-    { value: 'MENTOR', label: 'Mentor' },
-    { value: 'HIRING_PARTNER', label: 'Hiring Partner' },
-    { value: 'OTHER', label: 'Other' },
+    // { value: 'MENTOR', label: 'Mentor' },
+    // { value: 'HIRING_PARTNER', label: 'Hiring Partner' },
+    // { value: 'OTHER', label: 'Other' },
   ];
 
   return (
@@ -89,6 +110,7 @@ export const Register = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="john@example.com"
+                error={emailError}
                 required
               />
 

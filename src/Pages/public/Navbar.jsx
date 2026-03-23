@@ -7,7 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Search, Heart, ShoppingCart, User, Menu, X, Globe } from "lucide-react";
 
 export default function Header() {
-  const { logout } = useAuth();
+  const { logout, user, isAdmin, isSuperAdmin } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -155,10 +155,31 @@ export default function Header() {
             </span>
             <span
               className="text-black font-bold text-base lg:text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide whitespace-nowrap"
-              onClick={() => navigate("/coming-soon")}
+              onClick={() => navigate("/contactus")}
             >
               CONTACT US
             </span>
+            {/* Dashboard link for admin/superadmin */}
+            {(user && (isSuperAdmin() || isAdmin())) && (
+              <Link
+                to="/dashboard"
+                className="flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-semibold text-sm shadow-md hover:from-blue-700 hover:to-indigo-800 transition-all ml-4"
+                style={{ minWidth: '110px', height: '32px', justifyContent: 'center' }}
+              >
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" className="mr-1"><path d="M3 13.5V21h6v-4h6v4h6v-7.5L12 3 3 13.5z" stroke="white" strokeWidth="1.5"/></svg>
+                Dashboard
+              </Link>
+            )}
+            {/* Dashboard link for admin/superadmin */}
+            {/* {(user && (isSuperAdmin() || isAdmin())) && (
+              <Link
+                to="/dashboard"
+                className="text-blue-700 font-bold text-base lg:text-sm hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide no-underline ml-2"
+                style={{ position: 'absolute', right: 0, top: 0, marginRight: '16px' }}
+              >
+                Dashboard
+              </Link>
+            )} */}
           </nav>
 
           {/* Desktop Login/Signup — show only on homepage */}

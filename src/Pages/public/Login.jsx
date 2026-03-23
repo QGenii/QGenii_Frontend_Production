@@ -70,6 +70,15 @@ export const Login = () => {
                 required
               />
 
+              <div className="flex justify-end -mt-2">
+                <Link
+                  to="/forgot-password"
+                  className="text-sm text-primary-600 hover:text-primary-700 hover:underline font-medium"
+                >
+                  Forgot password?
+                </Link>
+              </div>
+
               <Button type="submit" className="w-full" disabled={loading}>
                 {loading ? 'Signing in...' : 'Sign In'}
               </Button>

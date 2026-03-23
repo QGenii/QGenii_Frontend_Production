@@ -82,8 +82,8 @@ const ProgrammingLanguageSection = () => {
       <div className="language-header mb-4 d-flex justify-content-between align-items-center flex-wrap">
         <h2 className="text-2xl font-bold">Programming Language</h2>
         <div className="language-nav">
-          <a href="/recent-context/contest" className="language-link me-4">Recent Context Problems</a>
-          <a href="/past/problems" className="language-link">Old practice page</a>
+          <a href="/recent-contest/contest" className="language-link me-4 no-underline">Recent Contest Problems</a>
+          {/* <a href="/past/problems" className="language-link">Old practice problems</a> */}
         </div>
       </div>
 

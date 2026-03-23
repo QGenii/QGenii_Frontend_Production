@@ -12,7 +12,7 @@ const BlogPage = () => {
         <div className="row mb-4">
           <div className="col-md-8 mx-auto">
             <div className="flex justify-content-between align-items-center  w-[50rem] mx-auto">
-              <h1 className="h2 text-4xl text-black" style={{ fontWeight: 'bold', color: '#333' }}>Blog</h1>
+              <h1 className="h2 text-4xl text-black" style={{ fontWeight: 'bold', color: '#f1ecec' }}>Blog</h1>
             </div>
           </div> 
         </div>

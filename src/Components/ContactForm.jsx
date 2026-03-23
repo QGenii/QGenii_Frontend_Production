@@ -74,9 +74,9 @@ const ContactForm = ({ onClose }) => {
             <h3 className="text-xl font-bold text-gray-900">Message Sent!</h3>
             <button
               onClick={onClose}
-              className="text-gray-400 hover:text-gray-600 transition-colors"
+              className="text-white bg-[#0C66FF] hover:bg-[#0C66FF] transition-colors"
             >
-              <X size={24} />
+              <X size={24} className="text-white" />
             </button>
           </div>
 
@@ -127,7 +127,7 @@ const ContactForm = ({ onClose }) => {
           </div>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 transition-colors"
+            className="text-white bg-[#0C66FF] hover:bg-[#0C66FF] transition-colors"
           >
             <X size={24} />
           </button>
@@ -143,7 +143,7 @@ const ContactForm = ({ onClose }) => {
                 <Mail className="w-5 h-5 text-blue-600 mt-1" />
                 <div>
                   <p className="font-medium text-gray-900">Email</p>
-                  <p className="text-sm text-gray-600">support@studyplanner.com</p>
+                    <p className="text-sm text-gray-600">Support@qgenii.com</p>
                 </div>
               </div>
 
@@ -151,7 +151,7 @@ const ContactForm = ({ onClose }) => {
                 <Phone className="w-5 h-5 text-blue-600 mt-1" />
                 <div>
                   <p className="font-medium text-gray-900">Phone</p>
-                  <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-sm text-gray-600">+91 9876543210</p>
                 </div>
               </div>
 
@@ -231,7 +231,7 @@ const ContactForm = ({ onClose }) => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+91 9876543210"
                   />
                 </div>
 
@@ -288,7 +288,7 @@ const ContactForm = ({ onClose }) => {
                 <button
                   type="button"
                   onClick={onClose}
-                  className="px-4 py-2 text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                  className="px-4 py-2 text-white bg-[#0C66FF] border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
                 >
                   Cancel
                 </button>

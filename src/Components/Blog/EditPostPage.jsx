@@ -112,7 +112,7 @@ const EditPostPage = () => {
                   className="btn btn-outline-secondary rounded-pill px-4 me-2"
                   onClick={handlePreview}
                   disabled={!postText.trim()}
-                  style={{ borderColor: '#0C316E', color: '#0C316E' }}
+                  style={{ borderColor: '#0C66FF', color: '#0C66FF' }}
                 >
                   <AiOutlineEye style={{ marginRight: '5px' }} /> Preview
                 </button>
@@ -120,7 +120,7 @@ const EditPostPage = () => {
                   className="btn rounded-pill px-5 text-white"
                   onClick={handlePost}
                   disabled={!postText.trim()}
-                  style={{ backgroundColor: '#0C316E', borderColor: '#0C316E' }}
+                  style={{ backgroundColor: '#0C66FF', borderColor: '#0C66FF' }}
                 >
                   <AiOutlineSend style={{ marginRight: '5px' }}  /> Post
                 </button>

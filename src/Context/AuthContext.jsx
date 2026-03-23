@@ -59,12 +59,10 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     const response = await api.post("/auth/register", userData);
-    const { user, token } = response.data.data;
+    const { user } = response.data.data;
 
-    localStorage.setItem("token", token);
-    localStorage.setItem("user", JSON.stringify(user));
-    setUser(user);
-    toast.success("Registered Successfully");
+    // Do NOT auto-login on register; require email verification first
+    toast.success("Account created. Please check your email to verify before logging in.");
     return user;
   };
 

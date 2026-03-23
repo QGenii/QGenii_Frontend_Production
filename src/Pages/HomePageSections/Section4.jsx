@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const features = [
   {
@@ -42,7 +43,7 @@ const features = [
     isLargeText: true,
   },
   {
-    title: 'Show off what you’ve got and learn from top coders worldwide.',
+    title: 'Show off what youve got and learn from top coders worldwide.',
     description: 'Join contests at global, national, and even college levels.',
     bullets: [
       'Climb our leaderboards and showcase your success.',
@@ -68,6 +69,19 @@ const features = [
 ];
 
 export default function Section4() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (buttonText) => {
+    if (buttonText === 'Start Practice') {
+      navigate('/practice');
+    }
+    else if(buttonText==='Explore Compiler')
+    {
+      navigate('/compiler')
+    }
+    // Add more navigation logic for other buttons as needed
+  };
+
   return (
     <div className="py-16 px-4 md:px-10 lg:px-20 space-y-24">
       {features.map((feature, index) => {
@@ -108,7 +122,10 @@ export default function Section4() {
                   <li key={i}>{point}</li>
                 ))}
               </ul>
-              <button className="bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-700 transition">
+              <button
+                onClick={() => handleButtonClick(feature.buttonText)}
+                className="bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
                 {feature.buttonText}
               </button>
             </div>

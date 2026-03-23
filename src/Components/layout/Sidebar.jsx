@@ -136,12 +136,12 @@ export const Sidebar = () => {
       </div>
       )}
 
-      <nav className="px-4 space-y-1">
+      <nav className="px-4 space-y-1 ">
         {filteredMenuItems.map((item) => (
           <Link
             key={item.path}
             to={item.path}
-            className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
+            className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors no-underline ${
               isActive(item.path)
                 ? 'bg-primary-50 text-primary-700'
                 : 'text-gray-700 hover:bg-gray-50'

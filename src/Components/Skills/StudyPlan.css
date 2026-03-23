@@ -18,7 +18,11 @@
   margin-bottom: 8px;
   color: #333;
 }
-
+.calendar-month-year{
+  color: #2800AE;      /* change to any color */
+  font-weight: 700;
+  font-size: 22px;
+}
 .study-plan-header p {
   font-size: 16px;
   color: #666;
@@ -46,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0a1528;
+  background-color: #aab7cc;
   color: white;
   padding: 8px 16px;
 }

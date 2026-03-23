@@ -1,13 +1,11 @@
 // Study Plan API Service
 const API_BASE_URL = 'http://localhost:5000/study-plans';
-const getAuthToken = () => {
-  return localStorage.getItem('token');
-};
 
-const headers = {
+// Always read token fresh so it's available after login
+const getHeaders = () => ({
   'Content-Type': 'application/json',
-  'Authorization': `Bearer ${getAuthToken()}`
-};
+  'Authorization': `Bearer ${localStorage.getItem('token') || ''}`
+});
 
 export const studyPlanService = {
   // Get all study plans with filters and pagination
@@ -16,7 +14,7 @@ export const studyPlanService = {
       const params = new URLSearchParams(filters);
       const response = await fetch(`${API_BASE_URL}?${params}`, {
         method: 'GET',
-        headers
+        headers: getHeaders()
       });
       if (!response.ok) throw new Error('Failed to fetch study plans');
       return await response.json();
@@ -31,7 +29,7 @@ export const studyPlanService = {
     try {
       const response = await fetch(`${API_BASE_URL}/${id}`, {
         method: 'GET',
-        headers
+        headers: getHeaders()
       });
       if (!response.ok) throw new Error('Failed to fetch study plan');
       return await response.json();
@@ -46,12 +44,13 @@ export const studyPlanService = {
     try {
       const response = await fetch(`${API_BASE_URL}/dashboard/stats`, {
         method: 'GET',
-        headers
+        headers: getHeaders()
       });
       if (!response.ok) throw new Error('Failed to fetch dashboard stats');
       return await response.json();
     } catch (error) {
       console.error('Error fetching dashboard stats:', error);
+      return null;
     }
   },
 
@@ -61,7 +60,7 @@ export const studyPlanService = {
       const params = new URLSearchParams(filters);
       const response = await fetch(`${API_BASE_URL}/calendar?${params}`, {
         method: 'GET',
-        headers
+        headers: getHeaders()
       });
       if (!response.ok) throw new Error('Failed to fetch calendar view');
       return await response.json();
@@ -76,12 +75,12 @@ export const studyPlanService = {
     try {
       const response = await fetch(`${API_BASE_URL}/today`, {
         method: 'GET',
-        headers
+        headers: getHeaders()
       });
-      if (!response.ok) throw new Error('Failed to fetch today\'s tasks');
+      if (!response.ok) throw new Error("Failed to fetch today's tasks");
       return await response.json();
     } catch (error) {
-      console.error('Error fetching today\'s tasks:', error);
+      console.error("Error fetching today's tasks:", error);
       throw error;
     }
   },
@@ -92,7 +91,7 @@ export const studyPlanService = {
       const params = new URLSearchParams(filters);
       const response = await fetch(`${API_BASE_URL}/reports/progress?${params}`, {
         method: 'GET',
-        headers
+        headers: getHeaders()
       });
       if (!response.ok) throw new Error('Failed to generate progress report');
       return await response.json();
@@ -107,7 +106,7 @@ export const studyPlanService = {
     try {
       const response = await fetch(API_BASE_URL, {
         method: 'POST',
-        headers,
+        headers: getHeaders(),
         body: JSON.stringify(data)
       });
       if (!response.ok) throw new Error('Failed to create study plan');
@@ -123,7 +122,7 @@ export const studyPlanService = {
     try {
       const response = await fetch(`${API_BASE_URL}/${id}`, {
         method: 'PUT',
-        headers,
+        headers: getHeaders(),
         body: JSON.stringify(data)
       });
       if (!response.ok) throw new Error('Failed to update study plan');
@@ -139,7 +138,7 @@ export const studyPlanService = {
     try {
       const response = await fetch(`${API_BASE_URL}/${id}/progress`, {
         method: 'PATCH',
-        headers,
+        headers: getHeaders(),
         body: JSON.stringify(progressData)
       });
       if (!response.ok) throw new Error('Failed to update progress');
@@ -155,7 +154,7 @@ export const studyPlanService = {
     try {
       const response = await fetch(`${API_BASE_URL}/${id}`, {
         method: 'DELETE',
-        headers
+        headers: getHeaders()
       });
       if (!response.ok) throw new Error('Failed to delete study plan');
       return await response.json();

@@ -385,6 +385,28 @@ const StudyPlan = () => {
           <DownloadPlanModal
             show={showDownloadModal}
             handleClose={() => setShowDownloadModal(false)}
+            studyPlanData={{
+              userName: dashboardStats?.userName || 'User',
+              generatedDate: new Date().toLocaleDateString(),
+              goalName: '', // User will input in modal
+              selectedDomain: dashboardStats?.selectedDomain || '',
+              targetRole: dashboardStats?.targetRole || '',
+              estimatedCompletionTime: dashboardStats?.estimatedCompletionTime || '',
+              currentLevel: dashboardStats?.currentLevel || '',
+              dailyProgress: dailyProgress,
+              weeklyProgress: weeklyProgress,
+              overallProgress: dashboardStats?.overallProgress || '',
+              learningRoadmap: dashboardStats?.learningRoadmap || [],
+              goalsChecklist: dashboardStats?.goalsChecklist || [],
+              weakAreas: dashboardStats?.weakAreas || [],
+              recommendations: dashboardStats?.recommendations || [],
+              notes: dashboardStats?.notes || '',
+              performanceInsights: dashboardStats?.performanceInsights || {},
+              graphsData: dashboardStats?.graphsData || {},
+              logo: '/skills/4871715_1.png',
+              platformName: 'QGenii',
+              website: 'https://qgenii.com',
+            }}
           />
         </>
       )}

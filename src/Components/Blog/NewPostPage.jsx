@@ -45,7 +45,7 @@ const NewPostPage = () => {
               <div style={{ 
                 width: '120px', 
                 height: '120px', 
-                border: '2px solid #0C316E',
+                border: '2px solid #0C66FF',
                 borderRadius: '8px',
                 display: 'flex',
                 alignItems: 'center',
@@ -79,7 +79,7 @@ const NewPostPage = () => {
             <button 
               className="btn d-block w-100 py-2 rounded-pill text-white"
               onClick={handleUploadClick}
-              style={{ backgroundColor: '#0C316E', borderColor: '#0C316E' }}
+              style={{ backgroundColor: '#0C66FF', borderColor: '#0C316E' }}
             >
               <AiOutlineCloudUpload style={{ marginRight: '8px', fontSize: '18px' }} /> 
               Upload from device
@@ -92,7 +92,7 @@ const NewPostPage = () => {
             <button 
               className="btn px-5 py-2 text-white"
               onClick={handleNext}
-              style={{ backgroundColor: '#0C316E', borderColor: '#0C316E' }}
+              style={{ backgroundColor: '#0C66FF', borderColor: '#0C66FF' }}
             >
               Next
             </button>

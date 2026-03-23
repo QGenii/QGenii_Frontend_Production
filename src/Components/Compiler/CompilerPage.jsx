@@ -19,7 +19,9 @@ const CompilerPage = () => {
   const [searchQuery, setSearchQuery] = useState(""); // search query for filtering languages
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // dropdown visibility
   const dropdownRef = useRef(null);
-
+const uniqueLanguages = [
+  ...new Map(runtimes.map((item) => [item.language, item])).values(),
+];
   // Load template when selected language changes
   // useEffect(() => {
   //   setCode(getCodeTemplate(showLanguage));
@@ -108,12 +110,12 @@ const CompilerPage = () => {
               Online Compiler
             </h2>
             <a
-              href="/"
+              href="/practice"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1d3557] text-white text-sm font-medium hover:opacity-95"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#0C66FF] rounded-full  text-white text-sm font-medium hover:opacity-95"
             >
-              Checkout our practise section{" "}
+              Checkout our practice section{" "}
               <HiExternalLink className="w-5 h-5" />
             </a>
           </div>
@@ -144,8 +146,10 @@ const CompilerPage = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onFocus={() => setIsDropdownOpen(true)}
-                    className="block w-48 py-2 px-3 border border-gray-200 rounded-md bg-white text-sm focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400"
-                  />
+className="block w-full pl-9 pr-3 py-2.5 border-4 border-black rounded-lg 
+bg-white text-sm text-gray-700 placeholder-gray-400
+focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
+shadow-sm transition-all"                 />
 
                   {/* Dropdown list */}
                   {isDropdownOpen && (
@@ -156,7 +160,7 @@ const CompilerPage = () => {
                             <div
                               key={rt.language}
                               onClick={() => {
-                                setShowLanguage(rt.language);
+              setShowLanguage(`${rt.language} ${rt.version}`);
                                 setSearchQuery("");
                                 setIsDropdownOpen(false);
                               }}
@@ -166,7 +170,7 @@ const CompilerPage = () => {
                                   : ""
                               }`}
                             >
-                              {rt.language}
+                              {rt.language }{   rt.version}
                             </div>
                           );
                         })
@@ -179,7 +183,7 @@ const CompilerPage = () => {
                   )}
                 </div>
 
-                <div className="text-sm text-gray-500">
+                <div className="text-xl text-gray-500">
                   <span className="hidden sm:inline">Selected: </span>
                   <span className="font-medium text-gray-700 ml-1">
                     {showLanguage}
@@ -224,7 +228,8 @@ const CompilerPage = () => {
                       setOutput("");
                       setInput("");
                     }}
-                    className="text-sm text-gray-500 hover:text-gray-700"
+                    className="text-sm bg-[#0C66FF] text-white
+                    hover:text-gray-700"
                   >
                     Clear
                   </button>
@@ -282,46 +287,18 @@ const CompilerPage = () => {
             <h4 className="font-medium mb-2">
               Check out our other online compilers
             </h4>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 list-disc pl-5 text-sm text-indigo-700">
-              <li>
-                <a className="hover:underline" href="/compiler/language/python">
-                  Online Python Compiler
-                </a>
-              </li>
-              <li>
-                <a className="hover:underline" href="/compiler/language/java">
-                  Online Java Compiler
-                </a>
-              </li>
-              <li>
-                <a className="hover:underline" href="/compiler/language/cpp">
-                  Online C++ Compiler
-                </a>
-              </li>
-              <li>
-                <a className="hover:underline" href="/compiler/language/c">
-                  Online C Compiler
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:underline"
-                  href="/compiler/language/javascript"
-                >
-                  Online JavaScript Compiler
-                </a>
-              </li>
-              <li>
-                <a className="hover:underline" href="/compiler/language/php">
-                  Online PHP Compiler
-                </a>
-              </li>
-              <li>
-                <a className="hover:underline" href="/compiler/language/ruby">
-                  Online Ruby Compiler
-                </a>
-              </li>
-            </ul>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 list-disc pl-5 text-sm text-indigo-700">
+  {uniqueLanguages.map((lang) => (
+    <li key={lang.language}>
+      <a
+        className="hover:underline"
+        href={`/compiler`}
+      >
+        Online {lang.language.toUpperCase()} Compiler
+      </a>
+    </li>
+  ))}
+</ul>
           </div>
         </div>
       </div>

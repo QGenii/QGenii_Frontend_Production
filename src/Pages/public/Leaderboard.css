@@ -1,0 +1,363 @@
+.leaderboard-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 0;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Type Selector */
+.type-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.type-button {
+  padding: 0.75rem 2rem;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.type-button:hover {
+  background: white;
+  color: #667eea;
+}
+
+.type-button.active {
+  background: white;
+  color: #667eea;
+}
+
+/* Podium */
+.podium-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.podium-item {
+  flex: 0 0 auto;
+}
+
+.podium-1 {
+  order: 2;
+}
+
+.podium-2 {
+  order: 1;
+}
+
+.podium-3 {
+  order: 3;
+}
+
+.podium-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.podium-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.podium-1 .podium-card {
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+}
+
+.podium-2 .podium-card {
+  padding: 2rem;
+  background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+}
+
+.podium-3 .podium-card {
+  padding: 2rem;
+  background: linear-gradient(135deg, #cd7f32 0%, #daa520 100%);
+}
+
+.podium-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.podium-1 .podium-avatar {
+  width: 120px;
+  height: 120px;
+  border-width: 5px;
+}
+
+.podium-avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.podium-1 .podium-avatar-placeholder {
+  width: 120px;
+  height: 120px;
+}
+
+.podium-rank-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.podium-rank-badge.rank-1 {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  width: 60px;
+  height: 60px;
+  top: -15px;
+}
+
+.podium-rank-badge.rank-2 {
+  background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+}
+
+.podium-rank-badge.rank-3 {
+  background: linear-gradient(135deg, #cd7f32 0%, #daa520 100%);
+}
+
+.podium-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.podium-1 .podium-name {
+  font-size: 1.5rem;
+}
+
+.podium-stats {
+  text-align: center;
+}
+
+/* Leaderboard Table */
+.leaderboard-table {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 100px 1fr 200px 200px;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 200px 200px;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+}
+
+.table-row:hover {
+  background: #f9fafb;
+  transform: translateX(4px);
+}
+
+.table-row.rank-1 {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.1) 0%, transparent 100%);
+}
+
+.table-row.rank-2 {
+  background: linear-gradient(90deg, rgba(192, 192, 192, 0.1) 0%, transparent 100%);
+}
+
+.table-row.rank-3 {
+  background: linear-gradient(90deg, rgba(205, 127, 50, 0.1) 0%, transparent 100%);
+}
+
+.table-cell {
+  display: flex;
+  align-items: center;
+}
+
+.rank-col {
+  justify-content: center;
+  font-weight: 700;
+}
+
+.user-col {
+  flex-direction: row;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+}
+
+.user-avatar-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 2px solid #e5e7eb;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.stat-value {
+  font-weight: 700;
+  color: #667eea;
+  font-size: 1.125rem;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 80px 1fr 150px 150px;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .podium-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .podium-1,
+  .podium-2,
+  .podium-3 {
+    order: initial;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 60px 1fr 100px;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .table-header .header-cell:last-child,
+  .table-row .table-cell:last-child {
+    display: none;
+  }
+
+  .user-avatar,
+  .user-avatar-placeholder {
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-name {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .leaderboard-page {
+    padding: 1rem 0;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .podium-card {
+    padding: 1.5rem;
+  }
+
+  .podium-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .podium-1 .podium-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .podium-name {
+    font-size: 1rem;
+  }
+
+  .podium-1 .podium-name {
+    font-size: 1.25rem;
+  }
+}

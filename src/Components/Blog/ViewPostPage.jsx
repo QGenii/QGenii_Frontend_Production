@@ -30,10 +30,10 @@ const ViewPostPage = () => {
                 <div className="d-flex justify-content-center align-items-center" style={{ 
                   width: '100%', 
                   height: '100%', 
-                  border: '2px solid #0C316E',
+                  border: '2px solid #0C66FF',
                   borderRadius: '4px'
                 }}>
-                  <AiOutlinePicture style={{ color: '#0C316E', fontSize: '32px' }} />
+                  <AiOutlinePicture style={{ color: '#0C66FF', fontSize: '32px' }} />
                 </div>
               </div>
             </div>
@@ -45,21 +45,21 @@ const ViewPostPage = () => {
               <div className="d-flex align-items-center mt-4 mb-4">
                 <div className="d-flex align-items-center me-5">
                   <div className="d-flex align-items-center justify-content-center me-1" style={{ marginRight: '8px' }}>
-                    <AiOutlineLike style={{ color: '#0C316E', fontSize: '20px' }} />
+                    <AiOutlineLike style={{ color: '#0C66FF', fontSize: '20px' }} />
                   </div>
                   <span className="text-muted" style={{ fontSize: '14px' }}>30</span>
                 </div>
                 
                 <div className="d-flex align-items-center me-5">
                   <div className="d-flex align-items-center justify-content-center me-1" style={{ marginRight: '8px' }}>
-                    <AiOutlineComment style={{ color: '#0C316E', fontSize: '20px' }} />
+                    <AiOutlineComment style={{ color: '#0C66FF', fontSize: '20px' }} />
                   </div>
                   <span className="text-muted" style={{ fontSize: '14px' }}>1</span>
                 </div>
                 
                 <div className="d-flex align-items-center">
                   <div className="d-flex align-items-center justify-content-center me-1" style={{ marginRight: '8px' }}>
-                    <AiOutlineShareAlt style={{ color: '#0C316E', fontSize: '20px' }} />
+                    <AiOutlineShareAlt style={{ color: '#0C66FF', fontSize: '20px' }} />
                   </div>
                   <span className="text-muted" style={{ fontSize: '14px' }}>2</span>
                 </div>
@@ -78,8 +78,8 @@ const ViewPostPage = () => {
             onClick={handleBack}
             style={{ 
               borderRadius: '4px', 
-              backgroundColor: '#0C316E',
-              borderColor: '#0C316E',
+              backgroundColor: '#0C66FF',
+              borderColor: '#0C66FF',
               fontWeight: '500',
               minWidth: '120px',
               width: '120px'

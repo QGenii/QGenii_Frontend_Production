@@ -23,7 +23,7 @@ import InviteFriend from "./ProfilesharedComponents/InviteFriend";
 import HelpAndSupport from "./ProfilesharedComponents/HelpAndSupport";
 import DeleteAccount from "./ProfilesharedComponents/DeleteAccount";
 import LogoutConfirm from "./ProfilesharedComponents/Logout";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import api from "../../lib/api";
 import { useAuth } from "../../hooks/useAuth";
 
@@ -54,13 +54,14 @@ const disabledList = [
 ];
 
 const item = [
+  
   {
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
         fill="none"
       >
         <path
@@ -80,14 +81,15 @@ const item = [
       </svg>
     ),
     title: "My Profile",
+    route: '/coming-soonn',
   },
   {
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
         fill="none"
       >
         <path
@@ -107,14 +109,15 @@ const item = [
       </svg>
     ),
     title: "Language Selector",
+    route: '/coming-soon',
   },
   {
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
         fill="none"
       >
         <path
@@ -126,14 +129,15 @@ const item = [
       </svg>
     ),
     title: "Wishlist",
+    route: '/coming-soonn',
   },
   {
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
         fill="none"
       >
         <path
@@ -146,38 +150,15 @@ const item = [
       </svg>
     ),
     title: "Notifications",
+    route: '/coming-soon',
   },
   {
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-      >
-        <path
-          d="M9.547 3.75V20.25M3.75 7.25C3.75 6.32174 4.11875 5.4315 4.77513 4.77513C5.4315 4.11875 6.32174 3.75 7.25 3.75H16.75C17.6783 3.75 18.5685 4.11875 19.2249 4.77513C19.8813 5.4315 20.25 6.32174 20.25 7.25V16.75C20.25 17.6783 19.8813 18.5685 19.2249 19.2249C18.5685 19.8813 17.6783 20.25 16.75 20.25H7.25C6.32174 20.25 5.4315 19.8813 4.77513 19.2249C4.11875 18.5685 3.75 17.6783 3.75 16.75V7.25Z"
-          stroke="#2800AE"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    ),
-    title: (
-      <h4 className="text-[#2800AE] text-[1rem] font-normal">
-        Organizer Panel
-      </h4>
-    ),
-  },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
         fill="none"
       >
         <path
@@ -186,9 +167,66 @@ const item = [
         />
       </svg>
     ),
-    title: <h4 className="text-[#2800AE] text-[1rem] font-normal">Learning</h4>,
+    title: "Organizer Panel",
+    route: '/coming-soon',
   },
-
+  {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
+        fill="none"
+      >
+        <path
+          d="M6.616 21C6.15533 21 5.771 20.846 5.463 20.538C5.155 20.23 5.00067 19.8457 5 19.385V4.615C5 4.155 5.15433 3.771 5.463 3.463C5.77167 3.155 6.156 3.00067 6.616 3H17.385C17.845 3 18.2293 3.15433 18.538 3.463C18.8467 3.77167 19.0007 4.156 19 4.616V19.385C19 19.845 18.846 20.2293 18.538 20.538C18.23 20.8467 17.8453 21.0007 17.384 21H6.616ZM6.616 20H17.385C17.5383 20 17.6793 19.936 17.808 19.808C17.9367 19.68 18.0007 19.5387 18 19.384V4.616C18 4.462 17.936 4.32067 17.808 4.192C17.68 4.06333 17.5387 3.99933 17.384 4H16V9.414C16 9.57533 15.9327 9.69533 15.798 9.774C15.6633 9.85267 15.5257 9.84867 15.385 9.762L14.409 9.184C14.2683 9.09733 14.1297 9.054 13.993 9.054C13.8563 9.054 13.7177 9.09733 13.577 9.184L12.602 9.762C12.4607 9.84867 12.325 9.85267 12.195 9.774C12.065 9.69533 12 9.57533 12 9.414V4H6.616C6.462 4 6.32067 4.064 6.192 4.192C6.06333 4.32 5.99933 4.461 6 4.615V19.385C6 19.5383 6.064 19.6793 6.192 19.808C6.32 19.9367 6.461 20.0007 6.615 20M12 9.433V9.414C12 9.57533 12.065 9.69533 12.195 9.774C12.325 9.85267 12.4607 9.84867 12.602 9.762L13.577 9.184C13.7177 9.09733 13.8563 9.054 13.993 9.054C14.1297 9.054 14.2683 9.09733 14.409 9.184L15.384 9.762C15.5253 9.84867 15.6633 9.85267 15.798 9.774C15.9327 9.69533 16 9.57533 16 9.414V9.433C16 9.58167 15.9327 9.69533 15.798 9.774C15.6633 9.85267 15.5253 9.855 15.384 9.781L14.409 9.184C14.2683 9.09733 14.1297 9.054 13.993 9.054C13.8563 9.054 13.7177 9.09733 13.577 9.184L12.602 9.781C12.4607 9.855 12.325 9.85267 12.195 9.774C12.065 9.69533 12 9.58167 12 9.433Z"
+          fill="#2800AE"
+        />
+      </svg>
+    ),
+    title: <h6 className="text-[#2800AE] text-[1.25rem] font-bold">Learning</h6>,
+    route: '/coming-soon',
+  },
+{
+  
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 22 22"
+        fill="none"
+      >
+        <path
+          d="M13.7503 3.66797C12.7779 3.66797 11.8452 4.05428 11.1576 4.74191C10.47 5.42954 10.0837 6.36217 10.0837 7.33464C10.0837 8.3071 10.47 9.23973 11.1576 9.92736C11.8452 10.615 12.7779 11.0013 13.7503 11.0013C14.7228 11.0013 15.6554 10.615 16.343 9.92736C17.0307 9.23973 17.417 8.3071 17.417 7.33464C17.417 6.36217 17.0307 5.42954 16.343 4.74191C15.6554 4.05428 14.7228 3.66797 13.7503 3.66797ZM13.7503 5.40964C14.0031 5.40964 14.2534 5.45943 14.487 5.55617C14.7205 5.65291 14.9328 5.7947 15.1115 5.97345C15.2903 6.15221 15.4321 6.36442 15.5288 6.59797C15.6255 6.83152 15.6753 7.08184 15.6753 7.33464C15.6753 7.58743 15.6255 7.83775 15.5288 8.0713C15.4321 8.30485 15.2903 8.51706 15.1115 8.69582C14.9328 8.87457 14.7205 9.01636 14.487 9.1131C14.2534 9.20984 14.0031 9.25964 13.7503 9.25964C13.4975 9.25964 13.2472 9.20984 13.0137 9.1131C12.7801 9.01636 12.5679 8.87457 12.3891 8.69582C12.2104 8.51706 12.0686 8.30485 11.9719 8.0713C11.8751 7.83775 11.8253 7.58743 11.8253 7.33464C11.8253 6.82409 12.0281 6.33446 12.3891 5.97345C12.7502 5.61245 13.2398 5.40964 13.7503 5.40964ZM3.66699 6.41797V9.16797H0.916992V11.0013H3.66699V13.7513H5.50033V11.0013H8.25033V9.16797H5.50033V6.41797H3.66699ZM13.7503 11.918C11.3028 11.918 6.41699 13.1371 6.41699 15.5846V18.3346H21.0837V15.5846C21.0837 13.1371 16.1978 11.918 13.7503 11.918ZM13.7503 13.6596C16.4728 13.6596 19.342 14.998 19.342 15.5846V16.593H8.15866V15.5846C8.15866 14.998 11.0003 13.6596 13.7503 13.6596Z"
+          fill="#1E1E1E"
+        />
+      </svg>
+    ),
+    title: "Registeration & Application",
+    route: '/coming-soon',
+  },
+  {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 22 22"
+        fill="none"
+      >
+        <path
+          d="M8.25 4.125V7.5625M8.25 8.9375V13.75M8.25 15.125V17.875M2.0625 17.1875H19.9375V13.75C19.25 13.5204 17.875 12.65 17.875 11C17.875 8.9375 19.9375 8.9375 19.9375 8.25V4.8125H2.0625V8.25C2.75 8.47962 4.125 9.35 4.125 11C4.125 13.0625 2.0625 13.0625 2.0625 13.75V17.1875Z"
+          stroke="#1E1E1E"
+          stroke-width="1.375"
+          stroke-linejoin="round"
+        />
+      </svg>
+    ),
+    title: "My Studying",
+    route: '/coming-soon',
+  },
   {
     icon: (
       <svg
@@ -215,6 +253,7 @@ const item = [
       </svg>
     ),
     title: "My jobs / internships",
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -232,6 +271,7 @@ const item = [
       </svg>
     ),
     title: "My Opportunities",
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -252,6 +292,7 @@ const item = [
       </svg>
     ),
     title: "My rounds",
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -269,6 +310,7 @@ const item = [
       </svg>
     ),
     title: "Certifications",
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -294,77 +336,44 @@ const item = [
     ),
     title: "Blogs",
     
+    route: '/coming-soon',
   },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="22"
-        height="22"
-        viewBox="0 0 22 22"
-        fill="none"
-      >
-        <g clip-path="url(#clip0_5432_22901)">
-          <path
-            d="M5.16554 8.9375H16.8365M5.16554 4.8125H16.8365M2.1552 15.4688C2.1552 15.7847 2.21744 16.0976 2.33837 16.3896C2.45929 16.6815 2.63654 16.9468 2.85998 17.1702C3.08342 17.3937 3.34868 17.5709 3.64062 17.6918C3.93256 17.8128 4.24546 17.875 4.56145 17.875C4.87745 17.875 5.19035 17.8128 5.48229 17.6918C5.77423 17.5709 6.03949 17.3937 6.26293 17.1702C6.48637 16.9468 6.66361 16.6815 6.78454 16.3896C6.90546 16.0976 6.9677 15.7847 6.9677 15.4688C6.9677 14.8306 6.71419 14.2185 6.26293 13.7673C5.81167 13.316 5.19963 13.0625 4.56145 13.0625C3.92328 13.0625 3.31124 13.316 2.85998 13.7673C2.40872 14.2185 2.1552 14.8306 2.1552 15.4688ZM8.43437 21.3125C8.15412 20.5089 7.63078 19.8123 6.93691 19.3194C6.24304 18.8265 5.41302 18.5618 4.56191 18.5618C3.7108 18.5618 2.88078 18.8265 2.18691 19.3194C1.49304 19.8123 0.969704 20.5089 0.689453 21.3125H8.43437ZM15.0353 15.4688C15.0353 16.1069 15.2888 16.719 15.7401 17.1702C16.1913 17.6215 16.8034 17.875 17.4415 17.875C18.0797 17.875 18.6918 17.6215 19.143 17.1702C19.5943 16.719 19.8478 16.1069 19.8478 15.4688C19.8478 14.8306 19.5943 14.2185 19.143 13.7673C18.6918 13.316 18.0797 13.0625 17.4415 13.0625C16.8034 13.0625 16.1913 13.316 15.7401 13.7673C15.2888 14.2185 15.0353 14.8306 15.0353 15.4688ZM21.3135 21.3125C21.0333 20.5089 20.51 19.8123 19.8161 19.3194C19.1222 18.8265 18.2922 18.5618 17.4411 18.5618C16.59 18.5618 15.7599 18.8265 15.0661 19.3194C14.3722 19.8123 13.8489 20.5089 13.5686 21.3125H21.3135ZM4.81354 6.875C4.81354 8.51603 5.46543 10.0898 6.62581 11.2502C7.78619 12.4106 9.36001 13.0625 11.001 13.0625C12.6421 13.0625 14.2159 12.4106 15.3763 11.2502C16.5366 10.0898 17.1885 8.51603 17.1885 6.875C17.1885 5.23397 16.5366 3.66016 15.3763 2.49978C14.2159 1.3394 12.6421 0.6875 11.001 0.6875C9.36001 0.6875 7.78619 1.3394 6.62581 2.49978C5.46543 3.66016 4.81354 5.23397 4.81354 6.875Z"
-            stroke="#1E1E1E"
-            stroke-width="1.375"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M9.66545 0.832031C8.55494 4.83885 8.71832 9.09189 10.133 13.0017M12.3348 0.832031C12.8197 2.57553 13.0645 4.3777 13.0626 6.1872C13.0665 8.51086 12.6631 10.8172 11.871 13.0017"
-            stroke="#1E1E1E"
-            stroke-width="1.375"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </g>
-        <defs>
-          <clipPath id="clip0_5432_22901">
-            <rect width="22" height="22" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    ),
-    title: "My Referrals",
-  },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="22"
-        height="22"
-        viewBox="0 0 22 22"
-        fill="none"
-      >
-        <path
-          d="M13.7503 3.66797C12.7779 3.66797 11.8452 4.05428 11.1576 4.74191C10.47 5.42954 10.0837 6.36217 10.0837 7.33464C10.0837 8.3071 10.47 9.23973 11.1576 9.92736C11.8452 10.615 12.7779 11.0013 13.7503 11.0013C14.7228 11.0013 15.6554 10.615 16.343 9.92736C17.0307 9.23973 17.417 8.3071 17.417 7.33464C17.417 6.36217 17.0307 5.42954 16.343 4.74191C15.6554 4.05428 14.7228 3.66797 13.7503 3.66797ZM13.7503 5.40964C14.0031 5.40964 14.2534 5.45943 14.487 5.55617C14.7205 5.65291 14.9328 5.7947 15.1115 5.97345C15.2903 6.15221 15.4321 6.36442 15.5288 6.59797C15.6255 6.83152 15.6753 7.08184 15.6753 7.33464C15.6753 7.58743 15.6255 7.83775 15.5288 8.0713C15.4321 8.30485 15.2903 8.51706 15.1115 8.69582C14.9328 8.87457 14.7205 9.01636 14.487 9.1131C14.2534 9.20984 14.0031 9.25964 13.7503 9.25964C13.4975 9.25964 13.2472 9.20984 13.0137 9.1131C12.7801 9.01636 12.5679 8.87457 12.3891 8.69582C12.2104 8.51706 12.0686 8.30485 11.9719 8.0713C11.8751 7.83775 11.8253 7.58743 11.8253 7.33464C11.8253 6.82409 12.0281 6.33446 12.3891 5.97345C12.7502 5.61245 13.2398 5.40964 13.7503 5.40964ZM3.66699 6.41797V9.16797H0.916992V11.0013H3.66699V13.7513H5.50033V11.0013H8.25033V9.16797H5.50033V6.41797H3.66699ZM13.7503 11.918C11.3028 11.918 6.41699 13.1371 6.41699 15.5846V18.3346H21.0837V15.5846C21.0837 13.1371 16.1978 11.918 13.7503 11.918ZM13.7503 13.6596C16.4728 13.6596 19.342 14.998 19.342 15.5846V16.593H8.15866V15.5846C8.15866 14.998 11.0003 13.6596 13.7503 13.6596Z"
-          fill="#1E1E1E"
-        />
-      </svg>
-    ),
-    title: "Registeration & Application",
-  },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="22"
-        height="22"
-        viewBox="0 0 22 22"
-        fill="none"
-      >
-        <path
-          d="M8.25 4.125V7.5625M8.25 8.9375V13.75M8.25 15.125V17.875M2.0625 17.1875H19.9375V13.75C19.25 13.5204 17.875 12.65 17.875 11C17.875 8.9375 19.9375 8.9375 19.9375 8.25V4.8125H2.0625V8.25C2.75 8.47962 4.125 9.35 4.125 11C4.125 13.0625 2.0625 13.0625 2.0625 13.75V17.1875Z"
-          stroke="#1E1E1E"
-          stroke-width="1.375"
-          stroke-linejoin="round"
-        />
-      </svg>
-    ),
-    title: "My Studying",
-  },
+  // {
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       width="22"
+  //       height="22"
+  //       viewBox="0 0 22 22"
+  //       fill="none"
+  //     >
+  //       <g clip-path="url(#clip0_5432_22901)">
+  //         <path
+  //           d="M5.16554 8.9375H16.8365M5.16554 4.8125H16.8365M2.1552 15.4688C2.1552 15.7847 2.21744 16.0976 2.33837 16.3896C2.45929 16.6815 2.63654 16.9468 2.85998 17.1702C3.08342 17.3937 3.34868 17.5709 3.64062 17.6918C3.93256 17.8128 4.24546 17.875 4.56145 17.875C4.87745 17.875 5.19035 17.8128 5.48229 17.6918C5.77423 17.5709 6.03949 17.3937 6.26293 17.1702C6.48637 16.9468 6.66361 16.6815 6.78454 16.3896C6.90546 16.0976 6.9677 15.7847 6.9677 15.4688C6.9677 14.8306 6.71419 14.2185 6.26293 13.7673C5.81167 13.316 5.19963 13.0625 4.56145 13.0625C3.92328 13.0625 3.31124 13.316 2.85998 13.7673C2.40872 14.2185 2.1552 14.8306 2.1552 15.4688ZM8.43437 21.3125C8.15412 20.5089 7.63078 19.8123 6.93691 19.3194C6.24304 18.8265 5.41302 18.5618 4.56191 18.5618C3.7108 18.5618 2.88078 18.8265 2.18691 19.3194C1.49304 19.8123 0.969704 20.5089 0.689453 21.3125H8.43437ZM15.0353 15.4688C15.0353 16.1069 15.2888 16.719 15.7401 17.1702C16.1913 17.6215 16.8034 17.875 17.4415 17.875C18.0797 17.875 18.6918 17.6215 19.143 17.1702C19.5943 16.719 19.8478 16.1069 19.8478 15.4688C19.8478 14.8306 19.5943 14.2185 19.143 13.7673C18.6918 13.316 18.0797 13.0625 17.4415 13.0625C16.8034 13.0625 16.1913 13.316 15.7401 13.7673C15.2888 14.2185 15.0353 14.8306 15.0353 15.4688ZM21.3135 21.3125C21.0333 20.5089 20.51 19.8123 19.8161 19.3194C19.1222 18.8265 18.2922 18.5618 17.4411 18.5618C16.59 18.5618 15.7599 18.8265 15.0661 19.3194C14.3722 19.8123 13.8489 20.5089 13.5686 21.3125H21.3135ZM4.81354 6.875C4.81354 8.51603 5.46543 10.0898 6.62581 11.2502C7.78619 12.4106 9.36001 13.0625 11.001 13.0625C12.6421 13.0625 14.2159 12.4106 15.3763 11.2502C16.5366 10.0898 17.1885 8.51603 17.1885 6.875C17.1885 5.23397 16.5366 3.66016 15.3763 2.49978C14.2159 1.3394 12.6421 0.6875 11.001 0.6875C9.36001 0.6875 7.78619 1.3394 6.62581 2.49978C5.46543 3.66016 4.81354 5.23397 4.81354 6.875Z"
+  //           stroke="#1E1E1E"
+  //           stroke-width="1.375"
+  //           stroke-linecap="round"
+  //           stroke-linejoin="round"
+  //         />
+  //         <path
+  //           d="M9.66545 0.832031C8.55494 4.83885 8.71832 9.09189 10.133 13.0017M12.3348 0.832031C12.8197 2.57553 13.0645 4.3777 13.0626 6.1872C13.0665 8.51086 12.6631 10.8172 11.871 13.0017"
+  //           stroke="#1E1E1E"
+  //           stroke-width="1.375"
+  //           stroke-linecap="round"
+  //           stroke-linejoin="round"
+  //         />
+  //       </g>
+  //       <defs>
+  //         <clipPath id="clip0_5432_22901">
+  //           <rect width="22" height="22" fill="white" />
+  //         </clipPath>
+  //       </defs>
+  //     </svg>
+  //   ),
+  //   title: "My Referrals",
+  //   route: '/coming-soon',
+  // },
+  
   {
     icon: (
       <svg
@@ -383,11 +392,11 @@ const item = [
         />
       </svg>
     ),
-    title: (
-      <h4 className="text-[#2800AE] text-[1rem] font-normal">
-        Billing & Subscriptions
-      </h4>
-    ),
+
+    title: <h6 className="text-[#2800AE] text-[1.25rem] font-bold">Billing Subscription</h6>,
+      
+     
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -415,6 +424,7 @@ const item = [
       </svg>
     ),
     title: "Suscription",
+    route: '/coming-soon',
   },
 
   {
@@ -443,6 +453,7 @@ const item = [
       </svg>
     ),
     title: "QGenii Credits",
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -467,6 +478,7 @@ const item = [
       </svg>
     ),
     title: "Purchase History",
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -494,6 +506,7 @@ const item = [
       </svg>
     ),
     title: "QGenii Business Pro",
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -517,6 +530,7 @@ const item = [
       </svg>
     ),
     title: "QGenii Pro",
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -533,11 +547,9 @@ const item = [
         />
       </svg>
     ),
-    title: (
-      <h4 className="text-[#2800AE] text-[1rem] font-normal">
-        Privacy Setting
-      </h4>
-    ),
+    title: <h6 className="text-[#2800AE] text-[1.25rem] font-bold">Privacy Setting</h6>,
+
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -555,55 +567,58 @@ const item = [
       </svg>
     ),
     title: "Change Password",
+    route: '/coming-soon',
   },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-      >
-        <path
-          d="M12 9C13.933 9 15.5 7.433 15.5 5.5C15.5 3.567 13.933 2 12 2C10.067 2 8.5 3.567 8.5 5.5C8.5 7.433 10.067 9 12 9Z"
-          stroke="#1E1E1E"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M2 20.5C2 16.0815 6.0295 12.5 11 12.5M15.5 21L20.5 16L18.5 14L13.5 19V21H15.5Z"
-          stroke="#1E1E1E"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    ),
-    title: "Change Username",
-  },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="21"
-        viewBox="0 0 24 21"
-        fill="none"
-      >
-        <path
-          d="M21.75 19.5H2.25C1.005 19.5 0 18.495 0 17.25V3.75C0 2.505 1.005 1.5 2.25 1.5H21.75C22.995 1.5 24 2.505 24 3.75V17.25C24 18.495 22.995 19.5 21.75 19.5ZM2.25 3C1.83 3 1.5 3.33 1.5 3.75V17.25C1.5 17.67 1.83 18 2.25 18H21.75C22.17 18 22.5 17.67 22.5 17.25V3.75C22.5 3.33 22.17 3 21.75 3H2.25Z"
-          fill="#1E1E1E"
-        />
-        <path
-          d="M11.9972 13.4419C10.9472 13.4419 9.9872 13.0219 9.2672 12.2569L1.3922 3.88689C1.1072 3.58689 1.1222 3.10689 1.4222 2.82189C1.7222 2.53689 2.2022 2.55189 2.4872 2.85189L10.3622 11.2219C11.2172 12.1369 12.7772 12.1369 13.6322 11.2219L21.5072 2.86689C21.7922 2.56689 22.2722 2.55189 22.5722 2.83689C22.8722 3.12189 22.8872 3.60189 22.6022 3.90189L14.7272 12.2719C14.0072 13.0369 13.0472 13.4569 11.9972 13.4569V13.4419Z"
-          fill="#1E1E1E"
-        />
-      </svg>
-    ),
-    title: "Update Email Preferences",
-  },
+  // {
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       width="24"
+  //       height="24"
+  //       viewBox="0 0 24 24"
+  //       fill="none"
+  //     >
+  //       <path
+  //         d="M12 9C13.933 9 15.5 7.433 15.5 5.5C15.5 3.567 13.933 2 12 2C10.067 2 8.5 3.567 8.5 5.5C8.5 7.433 10.067 9 12 9Z"
+  //         stroke="#1E1E1E"
+  //         stroke-width="2"
+  //         stroke-linecap="round"
+  //         stroke-linejoin="round"
+  //       />
+  //       <path
+  //         d="M2 20.5C2 16.0815 6.0295 12.5 11 12.5M15.5 21L20.5 16L18.5 14L13.5 19V21H15.5Z"
+  //         stroke="#1E1E1E"
+  //         stroke-width="2"
+  //         stroke-linecap="round"
+  //         stroke-linejoin="round"
+  //       />
+  //     </svg>
+  //   ),
+  //   title: "Change Username",
+  //   route: '/coming-soon',
+  // },
+  // {
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       width="24"
+  //       height="21"
+  //       viewBox="0 0 24 21"
+  //       fill="none"
+  //     >
+  //       <path
+  //         d="M21.75 19.5H2.25C1.005 19.5 0 18.495 0 17.25V3.75C0 2.505 1.005 1.5 2.25 1.5H21.75C22.995 1.5 24 2.505 24 3.75V17.25C24 18.495 22.995 19.5 21.75 19.5ZM2.25 3C1.83 3 1.5 3.33 1.5 3.75V17.25C1.5 17.67 1.83 18 2.25 18H21.75C22.17 18 22.5 17.67 22.5 17.25V3.75C22.5 3.33 22.17 3 21.75 3H2.25Z"
+  //         fill="#1E1E1E"
+  //       />
+  //       <path
+  //         d="M11.9972 13.4419C10.9472 13.4419 9.9872 13.0219 9.2672 12.2569L1.3922 3.88689C1.1072 3.58689 1.1222 3.10689 1.4222 2.82189C1.7222 2.53689 2.2022 2.55189 2.4872 2.85189L10.3622 11.2219C11.2172 12.1369 12.7772 12.1369 13.6322 11.2219L21.5072 2.86689C21.7922 2.56689 22.2722 2.55189 22.5722 2.83689C22.8722 3.12189 22.8872 3.60189 22.6022 3.90189L14.7272 12.2719C14.0072 13.0369 13.0472 13.4569 11.9972 13.4569V13.4419Z"
+  //         fill="#1E1E1E"
+  //       />
+  //     </svg>
+  //   ),
+  //   title: "Update Email Preferences",
+  //   route: '/coming-soon',
+  // },
   {
     icon: (
       <svg
@@ -619,9 +634,9 @@ const item = [
         />
       </svg>
     ),
-    title: (
-      <h4 className="text-[#2800AE] text-[1rem] font-normal">Community</h4>
-    ),
+        title: <h6 className="text-[#2800AE] text-[1.25rem] font-bold">Community</h6>,
+
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -642,6 +657,7 @@ const item = [
       </svg>
     ),
     title: "Invite Friends",
+    route: '/coming-soon',
   },
   {
     icon: (
@@ -690,7 +706,7 @@ const item = [
         />
       </svg>
     ),
-    title: <h4 className="text-[#2800AE] text-[1rem] font-normal">Others</h4>,
+    title: <h6 className="text-[#2800AE] text-[1.25rem] font-bold">Others</h6>,
   },
   {
     icon: (
@@ -830,9 +846,9 @@ export default function Profile() {
   }, [form]);
 
   return (
-    <div className="h-screen  bg-white">
+    <div className="min-h-screen flex flex-col bg-white">
       {/* App Shell */}
-      <div className=" flex  gap-6 ">
+      <div className="flex flex-1 gap-6">
         {/* Sidebar */}
         <aside
           className=" flex flex-col items-center gap-[0.625rem] shadow-[-1px_4px_12px_0_rgba(40,0,174,0.10)] 
@@ -840,13 +856,15 @@ export default function Profile() {
 overflow-y-scroll hide-scrollbar "
         >
           <div className="flex  w-[15.75rem] gap-[0.625rem] p-[0.625rem]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
+           <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            viewBox="0 0 24 26"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -854,7 +872,7 @@ overflow-y-scroll hide-scrollbar "
                 fill="#2800AE"
               />
             </svg>
-            <h4 className="text-[#2800AE] text-[1rem] font-normal"  onClick={() => window.location.href = "/user1"}>Account </h4>
+            <h4 className="text-[#2800AE] text-[1.5rem] font-bold"  onClick={() => window.location.href = "/user1"}>Account </h4>
           </div>
 
           {item.map((items) => {
@@ -862,24 +880,139 @@ overflow-y-scroll hide-scrollbar "
             const isDisabled = disabledList.includes(titleText);
             const isActive = active === titleText;
 
+            // Special handling for pages that should open their actual content
+            if ([
+              "QGenii Credits",
+              "Wishlist",
+              "Notifications",
+              "My Studying",
+              "Certifications",
+              "Blogs",
+              "Invite Friends",
+              "Help & Support",
+              "Change Password",
+              "Change Username",
+              "Update Email Preferences"
+            ].includes(titleText)) {
+              return (
+                <span
+                  key={titleText}
+                  onClick={() => setTabActive(titleText)}
+                  className={`
+                    flex flex-col items-center justify-center gap-2 p-[0.625rem] rounded-[0.3125rem]
+                    self-stretch w-[16.75rem]
+                    ${isActive ? "bg-[#DED9FF]" : "bg-white"}
+                    cursor-pointer
+                  `}
+                >
+                  <div className="flex flex-col items-center justify-center">
+                    {items.icon}
+                    <h4 className="text-[1rem] mt-1 text-center">{titleText}</h4>
+                  </div>
+                </span>
+              );
+            }
+
+            // Make Delete Account and Logout functional
+            if (titleText === "Delete Account") {
+              return (
+                <span
+                  key={titleText}
+                  onClick={() => {
+                    if (window.confirm("Are you sure you want to delete your account? This action cannot be undone.")) {
+                      // Call your API to delete the account here
+                      api.delete("/user/profile").then(() => {
+                        // Optionally clear user state and redirect
+                        setUser(null);
+                        window.location.href = "/login";
+                      }).catch(() => {
+                        alert("Failed to delete account. Please try again.");
+                      });
+                    }
+                  }}
+                  className={`
+                    flex flex-col items-center justify-center gap-2 p-[0.625rem] rounded-[0.3125rem]
+                    self-stretch w-[16.75rem]
+                    bg-white cursor-pointer text-red-600
+                  `}
+                >
+                  <div className="flex flex-col items-center justify-center">
+                    {items.icon}
+                    <h4 className="text-[1rem] mt-1 text-center">{titleText}</h4>
+                  </div>
+                </span>
+              );
+            }
+            if (titleText === "Logout") {
+              return (
+                <span
+                  key={titleText}
+                  onClick={() => {
+                    // Clear user state and redirect to login
+                    setUser(null);
+                    localStorage.clear();
+                    window.location.href = "/login";
+                  }}
+                  className={`
+                    flex flex-col items-center justify-center gap-2 p-[0.625rem] rounded-[0.3125rem]
+                    self-stretch w-[16.75rem]
+                    bg-white cursor-pointer text-[#2800AE]
+                  `}
+                >
+                  <div className="flex flex-col items-center justify-center">
+                    {items.icon}
+                    <h4 className="text-[1rem] mt-1 text-center">{titleText}</h4>
+                  </div>
+                </span>
+              );
+            }
+
+            // Use <Link> for specific items (except the three above)
+            if (["Language Selector", "Organizer Panel","QGenii Business Pro","Purchase History","Get The App", "My jobs / internships","My rounds","My Opportunities", "Registeration & Application", "Purchase History", "Get The App", "QGenii Pro", "Purchase History"].includes(titleText)) {
+              const isLearningOrOrganizer = ["Learning", "Organizer Panel"].includes(titleText);
+              return (
+                <Link
+                  to="/coming-soonn"
+                  key={titleText}
+                  className="flex flex-col items-center justify-center gap-2 py-2 px-2 self-stretch w-[16.75rem] cursor-pointer no-underline"
+                  onClick={() => setTabActive(titleText)}
+                >
+                  <div className="flex flex-col items-center justify-center">
+                    {items.icon}
+                    <span className={
+                      isLearningOrOrganizer
+                        ? "text-[#2800AE] text-[1.25rem] font-bold mt-1 text-center"
+                        : "text-base text-black font-normal mt-1 text-center"
+                    }>
+                      {titleText}
+                    </span>
+                  </div>
+                </Link>
+              );
+            }
+
+            // For other items, keep the code but comment out navigation logic
             return (
               <span
                 key={titleText}
+                /*
                 onClick={() => {
                   if (isDisabled) return; // BLOCK CLICK HERE
                   setTabActive(titleText);
                 }}
+                */
                 className={`
-                flex items-center gap-[0.625rem] p-[0.625rem] rounded-[0.3125rem]
-                self-stretch w-[16.75rem]
-                
-                ${isDisabled ? "bg-white cursor-not-allowed " : ""}
-                ${!isDisabled && isActive ? "bg-[#DED9FF]" : "bg-white"}
-                ${!isDisabled ? "cursor-pointer" : ""}
-            `}
+                  flex flex-col items-center justify-center gap-2 p-[0.625rem] rounded-[0.3125rem]
+                  self-stretch w-[16.75rem]
+                  ${isDisabled ? "bg-white cursor-not-allowed " : ""}
+                  ${!isDisabled && isActive ? "bg-[#DED9FF]" : "bg-white"}
+                  ${!isDisabled ? "cursor-pointer" : ""}
+                `}
               >
-                {items.icon}
-                <h4 className="text-[0.875rem]">{items.title}</h4>
+                <div className="flex flex-col items-center justify-center">
+                  {items.icon}
+                  <h4 className="text-[1rem] mt-1 text-center">{items.title}</h4>
+                </div>
               </span>
             );
           })}
@@ -1013,9 +1146,9 @@ overflow-y-scroll hide-scrollbar "
                 <div className="flex items-center justify-center gap-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="21"
-                    viewBox="0 0 24 21"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
                     fill="none"
                   >
                     <path
@@ -1041,9 +1174,9 @@ overflow-y-scroll hide-scrollbar "
                 <div className="flex items-center justify-center gap-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="23"
-                    viewBox="0 0 22 23"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
                     fill="none"
                   >
                     <path
@@ -1109,7 +1242,7 @@ overflow-y-scroll hide-scrollbar "
           {/* Billing & Subscriptions */}
 
           {/* Subscription */}
-          {active === "Suscription" && (
+          {/* {active === "Suscription" && (
             <div className=" ">
               <div className="  w-[62.125rem] mt-[2rem] flex justify-between items-center gap-[0.625rem] self-stretch h-[3.875rem] px-[4.875rem] py-[0.9375rem] rounded-t-[1.25rem] bg-[#4013D4]">
                 <div className="flex items-center justify-center gap-1">
@@ -1144,7 +1277,7 @@ overflow-y-scroll hide-scrollbar "
                 <Suscription />
               </div>
             </div>
-          )}
+          )} */}
           {/* Qgenii credits */}
 
           {active === "QGenii Credits" && (

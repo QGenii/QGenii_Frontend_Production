@@ -155,7 +155,7 @@ export const AdminDashboard = () => {
         {/* Tab Navigation */}
         <div className="flex gap-4 mb-6 border-b">
           <button
-            className={`pb-2 px-4 font-medium ${
+            className={`pb-2 px-4 bg-[#0C66FF] text-white font-medium ${
               activeTab === 'overview'
                 ? 'text-blue-600 border-b-2 border-blue-600'
                 : 'text-gray-600 hover:text-gray-900'
@@ -165,7 +165,7 @@ export const AdminDashboard = () => {
             Overview
           </button>
           <button
-            className={`pb-2 px-4 font-medium ${
+            className={`pb-2 px-4 bg-[#0C66FF] text-white font-medium ${
               activeTab === 'courses'
                 ? 'text-blue-600 border-b-2 border-blue-600'
                 : 'text-gray-600 hover:text-gray-900'
@@ -175,7 +175,7 @@ export const AdminDashboard = () => {
             Course Approvals ({courseStats.pending})
           </button>
           <button
-            className={`pb-2 px-4 font-medium ${
+            className={`pb-2 px-4 bg-[#0C66FF] text-white font-medium ${
               activeTab === 'recent-contests'
                 ? 'text-blue-600 border-b-2 border-blue-600'
                 : 'text-gray-600 hover:text-gray-900'

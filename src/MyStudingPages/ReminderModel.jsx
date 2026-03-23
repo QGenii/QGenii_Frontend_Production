@@ -296,6 +296,8 @@ import { IoSearch } from "react-icons/io5";
 import { FaRegClock } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 
 const ReminderModal = ({ onClose, onSave }) => {
   const [step, setStep] = useState(1);
@@ -306,11 +308,13 @@ const ReminderModal = ({ onClose, onSave }) => {
     frequency: "Daily",
     time: "12:00 AM",
     calendar: "Google",
+    date: new Date(),
   });
 
   const handleNext = () => {
-    if (step < 3) setStep(step + 1);
-    else {
+    if (step < 3) {
+      setStep(step + 1);
+    } else {
       onSave(reminder);
       onClose();
     }
@@ -424,10 +428,21 @@ const ReminderModal = ({ onClose, onSave }) => {
               ))}
             </div>
 
-            <h4 className="w-[29.75rem] mt-2 text-left font-medium text-[#1E1E1E]">
+            <h4 className="w-[29.75rem] mt-4 text-left font-medium text-[#1E1E1E]">
+              Date
+            </h4>
+            <div className="flex w-[29.75rem] mt-2 justify-center">
+              <Calendar
+                onChange={(date) => setReminder({ ...reminder, date })}
+                value={reminder.date}
+                className="rounded-lg border border-[#8686A1] shadow-md font-poppins w-full"
+              />
+            </div>
+
+            <h4 className="w-[29.75rem] mt-4 text-left font-medium text-[#1E1E1E]">
               Time
             </h4>
-            <div className="flex w-[29.75rem] mt-2">
+            <div className="flex w-[29.75rem] mt-2 mb-4">
               <input
                 type="time"
                 value={reminder.time}
@@ -449,9 +464,10 @@ const ReminderModal = ({ onClose, onSave }) => {
 
             <div className="flex gap-5 flex-wrap justify-center">
               {[
-                { name: "Sign in with Google", icon: <FcGoogle size={20} /> },
-                { name: "Sign in with Apple", icon: <FaApple size={20} /> },
+                { id: "Google", name: "Sign in with Google", icon: <FcGoogle size={20} /> },
+                { id: "Apple", name: "Sign in with Apple", icon: <FaApple size={20} /> },
                 {
+                  id: "Outlook",
                   name: "Continue with Outlook",
                   icon: (
                     <svg
@@ -470,10 +486,10 @@ const ReminderModal = ({ onClose, onSave }) => {
                 },
               ].map((c) => (
                 <span
-                  key={c.name}
-                  onClick={() => setReminder({ ...reminder, calendar: c.name })}
-                  className={`flex w-48 px-3 py-2 justify-center items-center gap-2 rounded-full border border-[#8686A1] shadow-md ${
-                    reminder.calendar === c.name
+                  key={c.id}
+                  onClick={() => setReminder({ ...reminder, calendar: c.id })}
+                  className={`flex w-48 px-3 py-2 justify-center items-center gap-2 rounded-full border border-[#8686A1] shadow-md cursor-pointer ${
+                    reminder.calendar === c.id
                       ? "bg-[#0C316E] text-white"
                       : "bg-white text-[#1E1E1E]"
                   }`}

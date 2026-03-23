@@ -169,7 +169,7 @@
 
 .create-post .form-control:focus {
   background-color: #fff;
-  border-color: #0C316E;
+  border-color: #0C66FF;
   box-shadow: 0 0 0 0.2rem rgba(12, 49, 110, 0.1);
 }
 
@@ -183,7 +183,7 @@
 
 .create-post .btn-link:hover {
   background-color: #f8f9fa;
-  color: #0C316E !important;
+  color: #0C66FF !important;
 }
 
 .create-post .btn-primary {
@@ -208,7 +208,7 @@
 
 .new-post-page h1 {
   font-weight: 700;
-  color: #0C316E;
+  color: #0C66FF;
   letter-spacing: 1px;
   margin-bottom: 2.5rem;
 }
@@ -224,7 +224,7 @@
 }
 
 .preview-container {
-  border: 2px dashed #0C316E;
+  border: 2px dashed #0C66FF;
   padding: 1rem;
   border-radius: 8px;
   background-color: #f8f9fa;
@@ -233,7 +233,7 @@
 
 .preview-container:hover {
   background-color: #fff;
-  border-color: #0a2654;
+  border-color: #0C66FF;
 }
 
 .preview-container img {
@@ -364,7 +364,7 @@
 
 .preview-count {
   font-weight: 600;
-  color: #0C316E;
+  color: #0C66FF;
   font-size: 18px;
 }
 
@@ -433,7 +433,7 @@
 
 .view-post-page h2 {
   font-weight: 700;
-  color: #0C316E;
+  color: #0C66FF;
   margin-bottom: 2rem;
 }
 
@@ -517,26 +517,26 @@
    UTILITY CLASSES
    ======================================== */
 .text-primary {
-  color: #0C316E !important;
+  color: #0C66FF !important;
 }
 
 .btn-primary {
-  background-color: #0C316E;
-  border-color: #0C316E;
+  background-color: #0C66FF;
+  border-color: #0C66FF;
 }
 
 .btn-primary:hover {
-  background-color: #0a2654;
-  border-color: #0a2654;
+  background-color: #0C66FF;
+  border-color: #0C66FF;
 }
 
 .btn-outline-primary {
-  color: #0C316E;
-  border-color: #0C316E;
+  color: #0C66FF;
+  border-color: #0C66FF;
 }
 
 .btn-outline-primary:hover {
-  background-color: #0C316E;
-  border-color: #0C316E;
+  background-color: #0C66FF;
+  border-color: #0C66FF;
   color: #fff;
 }

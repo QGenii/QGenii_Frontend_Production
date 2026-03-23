@@ -63,7 +63,7 @@ export default function ShareButton({ url }) {
       {/* Share Button */}
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900"
+        className="flex items-center gap-2 text-sm text-white bg-[#0C66FF] hover:text-gray-900"
       >
         <IoIosSend size={16} />
         <span>Share</span>
@@ -73,13 +73,13 @@ export default function ShareButton({ url }) {
       {open && (
         <div className="absolute bottom-full left-1/ -translate-x-1/2 mb-2 z-50">
           {/* Popup */}
-          <div className="flex items-center gap-4 bg-white border rounded-full shadow-lg px-5 py-2">
+          <div className="flex items-center gap-4 bg-white border rounded-full shadow-lg px- py-2">
             {platforms.map(({ Icon, label }) => (
               <button
                 key={label}
                 title={label}
                 onClick={() => handleShare(label)}
-                className="text-gray-600 hover:text-gray-900 transition"
+                className="text-white bg-[#0C66FF] hover:bg-[#0C66FF] transition"
               >
                 <Icon className="w-4.5 h-4.5" />
               </button>

@@ -4,21 +4,31 @@ import ContactForm from '../Components/ContactForm';
 
 const ContactPage = () => {
   const [showContactForm, setShowContactForm] = useState(false);
+const [openIndex, setOpenIndex] = useState(null);
 
+const toggleFAQ = (index) => {
+  setOpenIndex(openIndex === index ? null : index);
+};
   const contactMethods = [
     {
       icon: Mail,
       title: 'Email Support',
       description: 'Send us an email and we\'ll respond within 24 hours',
-      contact: 'support@studyplanner.com',
-      action: 'Send Email'
+      contact: 'Support@qgenii.com',
+      action: 'Send Email',
+      onClick: () => {
+        window.location.href = 'mailto:Support@qgenii.com';
+      },
     },
     {
       icon: Phone,
       title: 'Phone Support',
       description: 'Speak directly with our support team',
-      contact: '+1 (555) 123-4567',
-      action: 'Call Now'
+      contact: '+91 9876543210',
+      action: 'Call Now',
+      onClick: () => {
+        window.location.href = 'tel:+919876543210';
+      },
     },
     {
       icon: MessageSquare,
@@ -149,32 +159,74 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-gray-600">
-              Find answers to common questions about using our study planner.
-            </p>
+  <section className="py-20 bg-gradient-to-b from-indigo-50/40 to-white">
+  <div className="max-w-4xl mx-auto px-4">
+
+    {/* Heading */}
+    <div className="text-center mb-14">
+      <h2 className="text-3xl font-bold text-gray-900 mb-3">
+        Frequently Asked Questions
+      </h2>
+      <p className="text-sm text-gray-600">
+        Find answers to common questions about using our study planner.
+      </p>
+    </div>
+
+    <div className="space-y-4">
+      {faqItems.map((faq, index) => (
+        <div
+          key={index}
+          className="group border border-indigo-100 bg-white/80 backdrop-blur rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
+        >
+
+          {/* Question */}
+          <button
+            onClick={() => toggleFAQ(index)}
+            className="w-full bg-white  flex items-center justify-between px-6 py-4 text-left"
+          >
+            <span className="text-lg font-medium text-gray-800 group-hover:text-indigo-600 transition">
+              {faq.question}
+            </span>
+
+            {/* Arrow */}
+            <svg
+              className={`w-5 h-5 text-black transform transition-transform duration-300 ${
+                openIndex === index ? "rotate-180" : ""
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          {/* Answer */}
+          <div
+            className={`grid transition-all duration-300 ease-in-out ${
+              openIndex === index
+                ? "grid-rows-[1fr] opacity-100"
+                : "grid-rows-[0fr] opacity-0"
+            }`}
+          >
+            <div className="overflow-hidden">
+              <p className="text-lg px-6 pb-5 text-gray-900 leading-relaxed">
+                {faq.answer}
+              </p>
+            </div>
           </div>
 
-          <div className="space-y-6">
-            {faqItems.map((faq, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {faq.question}
-                </h3>
-                <p className="text-gray-600">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
 
       {/* Office Hours */}
       <section className="py-16 bg-gray-50">

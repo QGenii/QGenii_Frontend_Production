@@ -316,7 +316,7 @@ export default function BlogPost({ post, onPostUpdated }) {
             We'll show you fewer posts like this.
           </div>
           <button
-            className="px-3 py-1 bg-black text-white rounded text-sm "
+            className="px-3 py-1 bg-[#0C66FF] text-white rounded text-sm "
             onClick={async () => {
               toast.dismiss(t.id);
               try {
@@ -387,14 +387,14 @@ export default function BlogPost({ post, onPostUpdated }) {
                       <div className="relative">
                         <button
                           onClick={() => setShowMenu((prev) => !prev)}
-                          className="px-2 py-1 text-gray-600 hover:bg-gray-100 rounded"
+                          className="px-2 py-1 text-white bg-[#0C66FF] hover:bg-[#0C66FF] rounded"
                         >
                           ⋮
                         </button>
                         {showMenu && (
                           <div className="absolute right-0 mt-1 w-28 bg-white border rounded shadow-md z-10">
                             <button
-                              className="w-full text-left px-3 py-2 text-sm hover:bg-gray-100"
+                              className="w-full text-left px-3 py-2 text-sm text-white bg-[#0C66FF] hover:bg-[#0C66FF]"
                               onClick={() => {
                                 setEditContent(post.content || "");
                                 setShowEditDialog(true);
@@ -404,7 +404,7 @@ export default function BlogPost({ post, onPostUpdated }) {
                               Edit
                             </button>
                             <button
-                              className="w-full text-left px-3 py-2 text-sm text-red-600 hover:bg-red-50"
+                              className="w-full text-left px-3 py-2 text-sm text-white bg-[#0C66FF] hover:bg-[#0C66FF]"
                               onClick={() => {
                                 handleDelete();
                                 setShowMenu(false);
@@ -420,14 +420,14 @@ export default function BlogPost({ post, onPostUpdated }) {
                     <div className="relative" ref={followMenuRef}>
                       <button
                         onClick={() => setShowFollowMenu((prev) => !prev)}
-                        className="px-2 py-1 text-gray-600 hover:bg-gray-100 rounded"
+                        className="px-2 py-1 text-white bg-[#0C66FF] hover:bg-[#0C66FF] rounded"
                       >
                         ⋮
                       </button>
                       {showFollowMenu && (
                         <div className="absolute right-0 mt-1 w-48 bg-white border rounded shadow-md z-10">
                           <button
-                            className="w-full text-left px-3 py-2 text-sm hover:bg-gray-100 text-gray-700"
+                            className="w-full text-left px-3 py-2 text-sm hover:bg-gray-100 text-white bg-[#0C66FF] hover:bg-[#0C66FF]"
                             onClick={() => {
                               handleNotInterested();
                               setShowFollowMenu(false);
@@ -436,7 +436,7 @@ export default function BlogPost({ post, onPostUpdated }) {
                             Not interested
                           </button>
                           <button
-                            className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 text-gray-700"
+                            className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 text-white bg-[#0C66FF] hover:bg-[#0C66FF]"
                             onClick={() => {
                               toggleWishlist();
                               setShowFollowMenu(false);
@@ -488,7 +488,7 @@ export default function BlogPost({ post, onPostUpdated }) {
                       )}
                       {isReposted && (
                         <div
-                          className="w-full flex items-center gap-2 px-2 py-2 hover:bg-gray-100 rounded-md cursor-pointer text-red-600"
+                          className="w-full flex items-center gap-2 px-2 py-2 hover:bg-gray-100 rounded-md cursor-pointer text-white bg-[#0C66FF] hover:bg-[#0C66FF]"
                           onClick={() => {
                             handleRemoveRepost();
                             setMenuOpen(false);
@@ -566,27 +566,21 @@ export default function BlogPost({ post, onPostUpdated }) {
           {/* Actions */}
           <div className="flex justify-between items-center border-t pt-3 px-8">
             <button
-              className={`flex items-center gap-2 text-sm ${
-                isLiked ? "text-blue-700" : "text-gray-600"
-              }`}
+              className="flex items-center gap-2 text-sm px-6 py-2 rounded-md bg-[#0C66FF] text-white"
               onClick={handleLike}
             >
               {isLiked ? <AiFillLike /> : <AiOutlineLike />} <span>Like</span>
             </button>
 
             <button
-              className={`flex items-center gap-2 text-sm ${
-                showComments ? "text-blue-700" : "text-gray-600"
-              }`}
+              className="flex items-center gap-2 text-sm px-6 py-2 rounded-md bg-[#0C66FF] text-white"
               onClick={toggleComments}
             >
               <AiOutlineComment /> <span>Comment</span>
             </button>
 
             <button
-              className={`flex items-center gap-2 text-sm ${
-                isReposted ? "text-green-600" : "text-gray-600"
-              }`}
+              className="flex items-center gap-2 text-sm px-6 py-2 rounded-md bg-[#0C66FF] text-white"
               onClick={handleRepost}
             >
               <AiOutlineRetweet />{" "}
@@ -609,7 +603,7 @@ export default function BlogPost({ post, onPostUpdated }) {
                   placeholder="Write a comment..."
                 />
                 <button
-                  className="px-3 py-2 bg-blue-600 text-white rounded"
+                  className="px-3 py-2 bg-[#0C66FF] text-white rounded"
                   onClick={handleAddComment}
                   disabled={isSubmitting}
                 >
@@ -652,7 +646,7 @@ export default function BlogPost({ post, onPostUpdated }) {
                         {(c.user?._id === currentUser._id || isAuthor) && (
                           <div className="mt-2">
                             <button
-                              className="text-sm text-red-600"
+                              className="text-sm text-white bg-[#0C66FF] hover:bg-[#0C66FF]"
                               onClick={() => handleDeleteComment(c._id)}
                             >
                               Delete
@@ -687,13 +681,13 @@ export default function BlogPost({ post, onPostUpdated }) {
               />
               <div className="flex justify-end gap-2">
                 <button
-                  className="px-4 py-2 border rounded"
+                  className="px-4 py-2 border border-[#0C66FF] text-[#0C66FF] rounded"
                   onClick={() => setShowEdit(false)}
                 >
                   Cancel
                 </button>
                 <button
-                  className="px-4 py-2 bg-blue-600 text-white rounded"
+                  className="px-4 py-2 bg-[#0C66FF] text-white rounded"
                   onClick={handleEdit}
                   disabled={isSubmitting}
                 >
@@ -724,13 +718,13 @@ export default function BlogPost({ post, onPostUpdated }) {
               />
               <div className="flex justify-end gap-2">
                 <button
-                  className="px-4 py-2 border rounded"
+                  className="px-4 py-2 border border-[#0C66FF] text-white bg-[#0C66FF] rounded"
                   onClick={() => setShowRepostDialog(false)}
                 >
                   Cancel
                 </button>
                 <button
-                  className="px-4 py-2 bg-green-600 text-white rounded"
+                  className="px-4 py-2 bg-[#0C66FF] text-white rounded"
                   onClick={confirmRepost}
                   disabled={isSubmitting}
                 >

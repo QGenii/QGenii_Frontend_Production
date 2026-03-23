@@ -146,17 +146,17 @@ const BlogFeed = () => {
           style={{
             width: "100px",
             height: "100px",
-            border: "2px solid #0C316E",
+            border: "2px solid #0C66FF",
             borderRadius: "8px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <AiOutlinePicture style={{ fontSize: "50px", color: "#0C316E" }} />
+          <AiOutlinePicture style={{ fontSize: "50px", color: "#0C66FF" }} />
         </div>
       </div>
-      <h5 className="mb-3" style={{ color: "#0C316E" }}>
+      <h5 className="mb-3" style={{ color: "#0C66FF" }}>
         Share The Images And Videos
       </h5>
       {preview && (
@@ -178,9 +178,9 @@ const BlogFeed = () => {
       />
       <div className="flex justify-center items-center ">
         <button
-          className="btn d-block w-100 py-2 rounded-pill text-white bg-red-400 mb-3 flex items-center justify-center px-4 rounded-2xl"
+          className="btn d-block w-100 py-2 rounded-pill text-white mb-3 flex items-center justify-center px-4 rounded-2xl"
           onClick={handleUploadClick}
-          style={{ backgroundColor: "#0C316E" }}
+          style={{ backgroundColor: "#0C66FF" }}
         >
           <AiOutlineCloudUpload
             style={{ marginRight: "8px", fontSize: "18px" }}
@@ -192,7 +192,7 @@ const BlogFeed = () => {
         <button
           className="btn px-5 py-2 text-white rounded-pill rounded-2xl"
           onClick={handleNextToEdit}
-          style={{ backgroundColor: "#0C316E" }}
+          style={{ backgroundColor: "#0C66FF" }}
         >
           Next
         </button>
@@ -272,7 +272,8 @@ const BlogFeed = () => {
                 {/* Example quick actions (icons can be added) */}
                 <button
                   onClick={handleBackToUpload}
-                  className="px-3 py-2 rounded-full border border-transparent hover:border-slate-200 text-sm bg-slate-50 shadow-sm transition"
+                  className="px-3 py-2 rounded-full text-sm shadow-sm transition text-white"
+                  style={{ backgroundColor: "#0C66FF" }}
                 >
                   Back
                 </button>
@@ -286,11 +287,12 @@ const BlogFeed = () => {
                 <button
                   onClick={handlePost}
                   disabled={!postTitle?.trim() || !postText?.trim() || isPosting}
-                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium shadow-md transition-transform active:scale-95
-${!postTitle?.trim() || !postText?.trim() || isPosting
-                      ? "opacity-60 cursor-not-allowed bg-slate-300 text-slate-600"
-                      : "bg-[#0C316E] text-white"
-                    }`}
+                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium shadow-md transition-transform active:scale-95 ${
+                    !postTitle?.trim() || !postText?.trim() || isPosting
+                      ? "opacity-60 cursor-not-allowed"
+                      : ""
+                  }`}
+                  style={{ backgroundColor: "#0C66FF", color: "#FFFFFF" }}
                 >
                   <AiOutlineSend className="text-lg" />
                   {isPosting ? "Posting..." : "Post"}
@@ -310,7 +312,7 @@ ${!postTitle?.trim() || !postText?.trim() || isPosting
       <AiOutlineCheckCircle
         style={{ fontSize: "80px", color: "#28a745", marginBottom: "20px" }}
       />
-      <h3 style={{ color: "#0C316E", marginBottom: "15px" }}>
+      <h3 style={{ color: "#5082d4", marginBottom: "15px" }}>
         Post Created Successfully!
       </h3>
       <p className="text-muted mb-4">
@@ -320,7 +322,7 @@ ${!postTitle?.trim() || !postText?.trim() || isPosting
       <button
         className="btn px-5 py-2 text-white rounded-pill"
         onClick={handleDone}
-        style={{ backgroundColor: "#0C316E" }}
+        style={{ backgroundColor: "#0C66FF" }}
       >
         Done
       </button>
@@ -366,8 +368,8 @@ ${!postTitle?.trim() || !postText?.trim() || isPosting
             </DialogContent>
           </div>
         </Dialog>
-
-        <CreatePostBox />
+      
+        <CreatePostBox onPostCreated={fetchPosts} />
       </div>
       <div className="blog-feed w-full mx-auto backdrop-blur-md rounded-2xl border border-gray-100">
 

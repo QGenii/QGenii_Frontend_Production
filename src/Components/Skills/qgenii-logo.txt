@@ -1,0 +1,3 @@
+// QGenii logo for PDF header
+// This file is a placeholder for the QGenii logo image. The actual image is stored in the assets directory.
+// Use the path './qgenii-logo.png' in your PDF generator.

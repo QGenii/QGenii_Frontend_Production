@@ -8,8 +8,8 @@ export default function QGeniiCredits() {
     <div className="w-full max-w-4xl mx-auto p-6">
       <div className="flex items-start justify-between gap-6">
         <div>
-          <h4 className="text-sm text-gray-700 mb-1">Qgenii credits</h4>
-          <div className="text-lg font-semibold">Your credits: ₹{credits}</div>
+          <h4 className="text-sm text-gray-700 mb-1">Qgenii Wallets</h4>
+          <div className="text-lg font-semibold">Your Wallets: ₹{credits}</div>
         </div>
 
         <div className="w-80">

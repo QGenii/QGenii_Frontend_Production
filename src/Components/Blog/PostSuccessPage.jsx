@@ -35,7 +35,7 @@ const PostSuccessPage = () => {
                 }}>
                 <AiOutlineCheck style={{ 
                   fontSize: '3rem', 
-                  color: '#0C316E' 
+                  color: '#0C66FF' 
                 }}/>
               </div>
             </div>
@@ -45,8 +45,8 @@ const PostSuccessPage = () => {
               onClick={handleViewPost}
               style={{ 
                 borderRadius: '4px', 
-                backgroundColor: '#0C316E',
-                borderColor: '#0C316E',
+                backgroundColor: '#0C66FF',
+                borderColor: '#0C66FF',
                 fontWeight: '500',
                 fontSize: '1rem'
               }}

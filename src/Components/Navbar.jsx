@@ -48,7 +48,7 @@ const Navbar = () => {
     <header className="custom-navbar">
       {menuOpen && <div className="overlay" onClick={() => setMenuOpen(false)}></div>}
       <div className="navbar-container">
-        <div className="navbar-brand">CodeIQGenius</div>
+        <div className="navbar-brand">QGenii</div>
         
         <div className={`mobile-toggle ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>

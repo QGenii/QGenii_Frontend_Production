@@ -1,5 +1,155 @@
-import React from 'react';
-import { useState } from 'react';
+// StudyCard component fetches enrollment data
+import { useRef, useState, useEffect } from 'react';
+function StudyCard() {
+  const [enrollments, setEnrollments] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [startIdx, setStartIdx] = useState(0);
+  const cardsToShow = 2;
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    async function fetchEnrollment() {
+      setLoading(true);
+      setError(null);
+      try {
+        const token = localStorage.getItem('token');
+        const response = await fetch('/enrollments', {
+          headers: {
+            'Authorization': token ? `Bearer ${token}` : undefined,
+          },
+        });
+        if (!response.ok) throw new Error('Failed to fetch enrollment');
+        const data = await response.json();
+        if (Array.isArray(data?.data)) {
+          setEnrollments(data.data);
+        } else {
+          setEnrollments([]);
+        }
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchEnrollment();
+  }, []);
+const handlePrev = () => {
+    setStartIdx((prev) => Math.max(prev - 1, 0));
+  };
+  const handleNext = () => {
+    setStartIdx((prev) =>
+      Math.min(prev + 1, enrollments.length - cardsToShow < 0 ? 0 : enrollments.length - cardsToShow)
+    );
+  };
+
+  if (loading) {
+    return (
+      <div className="flex items-center border border-blue-500 rounded-md overflow-hidden bg-white w-full max-w-[250px]">
+        <div className="bg-[#cce5ff] px-6 py-4 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path d="M5 12h14M5 6h14M5 18h14" />
+          </svg>
+        </div>
+        <div className="p-3 text-sm font-medium text-gray-700">Loading...</div>
+      </div>
+    );
+  }
+  if (error) {
+    return (
+      <div className="flex items-center border border-blue-500 rounded-md overflow-hidden bg-white w-full max-w-[250px]">
+        <div className="bg-[#cce5ff] px-6 py-4 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path d="M5 12h14M5 6h14M5 18h14" />
+          </svg>
+        </div>
+        <div className="p-3 text-sm font-medium text-red-500">{error}</div>
+      </div>
+    );
+  }
+  if (!enrollments || enrollments.length === 0) {
+    return (
+      <div className="flex items-center border border-blue-500 rounded-md overflow-hidden bg-white w-full max-w-[250px]">
+        <div className="bg-[#cce5ff] px-6 py-4 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path d="M5 12h14M5 6h14M5 18h14" />
+          </svg>
+        </div>
+        <div className="p-3 text-sm font-medium text-gray-700">No enrollments found.</div>
+      </div>
+    );
+  }
+
+  const canScrollPrev = startIdx > 0;
+  const canScrollNext = enrollments.length > cardsToShow && startIdx < enrollments.length - cardsToShow;
+
+  return (
+    <div className="flex items-center gap-2">
+      <button
+        onClick={handlePrev}
+        disabled={!canScrollPrev}
+        className={`p-3 rounded-full border-2 border-blue-500 bg-blue-500 shadow-md transition disabled:opacity-30 disabled:cursor-not-allowed hover:bg-blue-600 hover:border-blue-600 active:scale-95`}
+        aria-label="Previous"
+      >
+        <svg 
+          xmlns="http://www.w3.org/2000/svg"
+          width="20" 
+          height="20" 
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <div
+        ref={sliderRef}
+        className="flex gap-4 overflow-x-hidden py-2"
+        style={{ width: cardsToShow * 340 }}
+      >
+        {enrollments.slice(startIdx, startIdx + cardsToShow).map((enrollment, idx) => (
+          <div
+            key={enrollment._id || idx}
+            className="flex-shrink-0 flex items-center border border-blue-500 rounded-md overflow-hidden bg-white w-[320px] min-w-[320px] max-w-[350px] shadow-md"
+          >
+            <div className="bg-[#cce5ff] px-6 py-4 flex items-center justify-center">
+              <img src={enrollment.course?.thumbnail} alt="Course Thumbnail" className="w-12 h-12 rounded object-cover" />
+            </div>
+            <div className="p-3 text-sm font-medium text-gray-700">
+              <div className="font-bold text-base mb-1">{enrollment.course?.title || 'Course'}</div>
+              <div className="text-xs text-gray-500 mb-1">{enrollment.course?.shortDescription || enrollment.course?.description || ''}</div>
+              <div className="text-xs text-gray-600">Progress: {enrollment.progress || 0}%</div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <button
+        onClick={handleNext}
+        disabled={!canScrollNext}
+        className={`p-3 rounded-full border-2 border-blue-500 bg-blue-500 shadow-md transition disabled:opacity-30 disabled:cursor-not-allowed hover:bg-blue-600 hover:border-blue-600 active:scale-95`}
+        aria-label="Next"
+      >
+        <svg 
+          xmlns="http://www.w3.org/2000/svg"
+          width="20" 
+          height="20" 
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  );
+}
+// ...existing code...
 import { Container, Row, Col } from 'react-bootstrap';
 import { useAuth } from '../../hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
@@ -69,7 +219,7 @@ const menuItems = [
     link: "/blog",
   },
   {
-    name: "Teach On Qgenii",
+    name: "Teach On QGenii",
     icon: <Monitor size={20} />,
     className: "border border-[#38BDF8] bg-white",
     color: "#0369A1",
@@ -151,12 +301,7 @@ export default function Section1() {
             
             <div className="flex items-center w-full mb-6 whitespace-nowrap gap-2 ">
               <h2 className="text-3xl font-bold">Let’s Start Studying</h2>
-              <a
-                href="#"
-                className=" text-lg font-bold text-[#0C316E] underline whitespace-nowrap  pr-10 "
-              >
-                My Studying
-              </a>
+             
             </div>
 
 
@@ -164,26 +309,8 @@ export default function Section1() {
 
 
 
-            {/* Study Card */}
-            <div className="flex items-center border border-blue-500 rounded-md overflow-hidden bg-white w-full max-w-[250px]">
-              <div className="bg-[#cce5ff] px-6 py-4 flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M5 6h14M5 18h14" />
-                </svg>
-              </div>
-              <div className="p-3 text-sm font-medium text-gray-700">
-                <div>2025 Bootcamp</div>
-                <div>149. link to download the</div>
-              </div>
-            </div>
+            {/* Study Card (Dynamic) */}
+            <StudyCard />
 
           </Col>
 
@@ -192,13 +319,10 @@ export default function Section1() {
             <img
               src="https://randomuser.me/api/portraits/women/44.jpg"
               alt="User"
-              className="w-12 h-12 rounded-full object-cover"
+              className="w-16 h-16 rounded-full object-cover"
             />
             <div>
-              <p className="text-base font-semibold">Welcome Back, {user.name}</p>
-              <a href="#" className="text-blue-600 text-sm underline font-medium">
-                Add Occupation And Interest
-              </a>
+              <p className="text-base font-semibold">Welcome Back, {user && user.name ? user.name : "User"}</p>
             </div>
           </Col>
          
