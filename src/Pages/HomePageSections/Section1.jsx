@@ -85,7 +85,7 @@ export default function Section1() {
   const navigate = useNavigate();
 
   return (
-    <section className="w-full h-[400px] bg-[#fff5f5] py-[1.68rem] px-4 sm:px-6">
+    <section className="w-full min-h-[400px] h-auto bg-[#fff5f5] py-8 px-4 sm:px-6">
       {/* Toggle Button + Dropdown */}
       <div className="w-full flex justify-end px-4 py-3">
         <div className="relative inline-block">
@@ -131,50 +131,50 @@ export default function Section1() {
           )}
         </div>
       </div>
-<div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 py-1">                
-                {/* Text Content */}
-                <div className="flex-1 text-center md:text-left">
-                    <h1 className="text-3xl md:text-4xl font-bold text-[#1f2a56] sm:whitespace-nowrap">
-                        Learn.Code.Grow With QGenii
-                    </h1>
+      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 py-1">
+        {/* Text Content */}
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1f2a56]">
+            Learn.Code.Grow With QGenii
+          </h1>
 
-                    <p className="text-gray-600 mt-4 text-sm md:text-base max-w-md mx-auto md:mx-0">
-                        Let me know vibe you're going for professional, fun, inspiring...
-                        and I can tailor it more!
-                    </p>
+          <p className="text-gray-600 mt-4 text-sm md:text-base max-w-md mx-auto md:mx-0">
+            Let me know vibe you're going for professional, fun, inspiring...
+            and I can tailor it more!
+          </p>
 
-                    {/* Email Input + Button */}
-                    <div className="mt-6 flex flex-col sm:flex-row w-full sm:w-auto max-w-md mx-auto md:mx-0">
-                        {/* <input
+          {/* Email Input + Button */}
+          <div className="mt-6 flex flex-col sm:flex-row w-full sm:w-auto max-w-md mx-auto md:mx-0">
+            {/* <input
                             type="email"
                             placeholder="Enter Email"
                             className="px-4 py-3 h-[55px] w-full font-poppins font-medium text-[18px] leading-[100%] tracking-[0] capitalize bg-[#FFFFFF] shadow-[0px_1px_1px_0px_#00000040] border rounded-l-full p-2 border-gray-300 text-sm sm:w-64 focus:outline-none sm:rounded-t-none sm:rounded-l-md"
                         /> */}
-                        <button
-className="bg-[#0C316E] text-white px-5 py-2 h-[45px] w-full text-sm font-medium hover:bg-[#0a2d74]/90 sm:w-auto rounded-lg"                            onClick={() => navigate('/login')}
-                        >
-                            Start Studying Today
-                        </button>
-                    </div>
+            <button
+              className="bg-[#0C316E] text-white px-5 py-2 h-[45px] w-full text-sm font-medium hover:bg-[#0a2d74]/90 sm:w-auto rounded-lg" onClick={() => navigate('/login')}
+            >
+              Start Studying Today
+            </button>
+          </div>
 
-                    {/* <p className="text-xl font-bold text-black mt-3 px-5 flex justify-center md:justify-start items-center gap-2">
+          {/* <p className="text-xl font-bold text-black mt-3 px-5 flex justify-center md:justify-start items-center gap-2">
                         Or Sign Up With{" "}
                         <button className="border px-2 py-2 rounded h-[40px] w-[150px] bg-[#FFFFFF] text-[8px] flex items-center justify-center gap-1">
                             <i className="ri-google-fill text-[#0C316E] text-4xl"></i>
                             <span className="text-[20px]">Google</span>
                         </button>
                     </p> */}
-                </div>
+        </div>
 
-                {/* Image Section */}
-                <div className="flex-1 flex justify-center md:justify-end">
-                    <img
-                        src="public/home1.png"
-                        alt="Students studying"
-                        className="w-full max-w-md object-contain"
-                    />
-                </div>
-            </div>
-        </section>
-    );
+        {/* Image Section */}
+        <div className="flex-1 flex justify-center md:justify-end">
+          <img
+            src="/home1.png"
+            alt="Students studying"
+            className="w-full max-w-md object-contain"
+          />
+        </div>
+      </div>
+    </section>
+  );
 }

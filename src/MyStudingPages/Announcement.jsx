@@ -2,20 +2,20 @@ import React from "react";
 
 const Announcement = () => {
   return (
-    <div className="max-w-3xl mx-auto ">
-        <div className="flex gap-4">
-          <div className="bg-gray-500 rounded-full h-[3.125rem] w-[3.125rem]"></div>
-          <div className=" w-[23.125rem]">
-            <div className="text-gray-600 text-[.75rem] font-medium ">
+    <div className="max-w-3xl mx-auto p-4">
+        <div className="flex flex-wrap gap-4 items-center">
+          <div className="bg-gray-500 rounded-full h-12 w-12 shrink-0"></div>
+          <div className="flex-1 min-w-[200px]">
+            <div className="text-gray-600 text-xs font-medium">
               Instructor Name
             </div>
-            <div className="text-gray-500 text-[0.625rem] font-normal ">
+            <div className="text-gray-500 text-[10px] font-normal">
               11 days ago. Announcement
             </div>
           </div>
         </div>
 
-      <div className=" mt-4  w-[35.937rem]    ">
+      <div className="mt-4 w-full">
 
         <h4 className="text-[0.75rem] font-medium text-gray-800 ">
           This Online Bootcamp Is A Compact And Accelerated Version Of Our

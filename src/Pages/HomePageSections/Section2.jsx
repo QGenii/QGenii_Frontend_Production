@@ -68,11 +68,11 @@ export default function Section2() {
                 </div>
             </div>
 
-            <div className='sm:px-6 md:px-8 m-auto w-full'>
+            <div className='px-4 sm:px-6 md:px-8 m-auto w-full'>
                 {/* Top Section */}
                 <div className="text-left flex flex-col items-start max-w-md mb-8">
-                    <img src="/home2.png" alt="Study to Code" className="w-28 sm:w-36 md:w-44 mb-4" />
-                    <h2 className="text-[1.75rem] font-bold text-gray-900">Study To Course</h2>
+                    <img src="/home2.png" alt="Study to Code" className="w-24 sm:w-28 md:w-44 mb-4" />
+                    <h2 className="text-xl sm:text-2xl md:text-[1.75rem] font-bold text-gray-900 px-1">Study To Course</h2>
                 </div>
 
                 {/* Courses Section */}
@@ -147,7 +147,7 @@ export default function Section2() {
 
                 {/* Skills Section */}
                 <div className="w-full mb-10">
-                    <h2 className="text-[1.75rem] font-bold text-gray-900 mb-6">Skill Check Test</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-[1.75rem] font-bold text-gray-900 mb-6 px-1">Skill Check Test</h2>
                     <div className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide">
                         {loadingSkills ? (
                             <div className="text-center w-full py-8 text-lg text-gray-500">Loading skills...</div>

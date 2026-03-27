@@ -55,7 +55,7 @@ export default function LoginPage() {
             </Link>
           </div>
           <h2 className="text-2xl font-semibold text-gray-900 mb-1 text-center">
-            Welcome to Qgenii Business
+            Welcome to QGenii Business
           </h2>
           <h4 className="text-[0.875rem] text-gray-500 mb-6 text-center">
             Sign in to your business account
@@ -165,7 +165,7 @@ export default function LoginPage() {
               href="#"
               className="text-[#0C316E] text-[0.875rem] font-medium underline"
             >
-              Contact Qgenii Support
+              Contact QGenii Support
             </a>
             <p className="mt-4 text-xs text-gray-500">
               By signing in, you agree to our{" "}

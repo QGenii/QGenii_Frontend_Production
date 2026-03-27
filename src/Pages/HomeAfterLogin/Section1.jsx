@@ -107,13 +107,12 @@ const handlePrev = () => {
       </button>
       <div
         ref={sliderRef}
-        className="flex gap-4 overflow-x-hidden py-2"
-        style={{ width: cardsToShow * 340 }}
+        className="flex gap-4 overflow-x-hidden py-2 w-full max-w-full"
       >
         {enrollments.slice(startIdx, startIdx + cardsToShow).map((enrollment, idx) => (
           <div
             key={enrollment._id || idx}
-            className="flex-shrink-0 flex items-center border border-blue-500 rounded-md overflow-hidden bg-white w-[320px] min-w-[320px] max-w-[350px] shadow-md"
+            className="flex-shrink-0 flex items-center border border-blue-500 rounded-md overflow-hidden bg-white w-[280px] sm:w-[320px] shadow-md"
           >
             <div className="bg-[#cce5ff] px-6 py-4 flex items-center justify-center">
               <img src={enrollment.course?.thumbnail} alt="Course Thumbnail" className="w-12 h-12 rounded object-cover" />
@@ -315,14 +314,14 @@ export default function Section1() {
           </Col>
 
           {/* Right Section: Welcome */}
-          <Col className="flex items-center gap-4 md:justify-end md:w-1/2">
+          <Col className="flex items-center gap-4 justify-center md:justify-end w-full md:w-1/2">
             <img
               src="https://randomuser.me/api/portraits/women/44.jpg"
               alt="User"
-              className="w-16 h-16 rounded-full object-cover"
+              className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover"
             />
-            <div>
-              <p className="text-base font-semibold">Welcome Back, {user && user.name ? user.name : "User"}</p>
+            <div className="text-center md:text-left">
+              <p className="text-sm md:text-base font-semibold">Welcome Back, {user && user.name ? user.name : "User"}</p>
             </div>
           </Col>
          

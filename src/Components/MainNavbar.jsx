@@ -33,43 +33,43 @@ export default function Header() {
     />
     {/* https://codeiqgenius-frontend-g17v.vercel.app/ */}
   </div>
-        {/* Center Navigation - shifted right to align above blue bar links */}
-        <div className="flex flex-1 justify-between max-w-[900px] mx-auto ml-[640px] text-l">
+        {/* Center Navigation - hidden on mobile, visible on md+ */}
+        <div className="hidden md:flex flex-1 justify-between max-w-[900px] mx-auto text-l">
           <span className="text-black font-bold text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide flex-1 text-center" onClick={() => (window.location.href = 'https://codeiqgenius-frontend-g17v.vercel.app')} >HOME</span>
           <span className="text-black font-bold text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide flex-1 text-center" onClick={() => navigate('/blog')}>BLOG</span>
           <span className="text-black font-bold text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide flex-1 text-center" onClick={() => navigate('/partnership')}>PARTNERSHIP</span>
           <span className="text-black font-bold text-xl hover:text-blue-600 cursor-pointer transition-colors uppercase tracking-wide flex-1 text-center" onClick={() => navigate('/contact-us')}>CONTACT US</span>
         </div>
+        
         {/* Profile/Menu for mobile */}
-        <div className="md:hidden cursor-pointer">
+        <div className="md:hidden cursor-pointer p-2" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X /> : <Menu />}
         </div>
       </div>
 
       {/* --- MIDDLE BAR --- */}
-      <div className="bg-[#0288E7] w-full">
-        <div className="max-w-[1600px] mx-auto flex items-center h-[56px] px-0">
+      <div className="bg-[#0288E7] w-full overflow-hidden">
+        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center md:h-[56px] py-3 md:py-0 px-4 md:px-0 gap-4">
           {/* Try Out button and Search bar group - left aligned */}
-          <div className="flex items-center min-w-[500px] pl-8">
-            <button className="text-white font-semibold px-5 py-2 text-lg bg-[#0288E7] rounded-full mr-4 focus:outline-none" style={{fontWeight:600, minWidth:'110px'}}>Try Out</button>
-            <div className="relative bg-white rounded-full shadow-sm w-[340px] flex items-center h-12">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2"><Search className="text-black w-5 h-5" /></span>
+          <div className="flex items-center w-full md:w-auto md:min-w-[500px] md:pl-8">
+            <button className="text-white font-semibold px-4 py-2 text-base md:text-lg bg-[#0288E7] rounded-full mr-4 focus:outline-none" style={{fontWeight:600, minWidth:'100px'}}>Try Out</button>
+            <div className="relative bg-white rounded-full shadow-sm flex-1 md:w-[340px] flex items-center h-10 md:h-12">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2"><Search className="text-black w-4 h-4 md:w-5 md:h-5" /></span>
               <input
                 type="text"
-                placeholder="Search for something"
-                className="w-full pl-12 pr-4 py-2 rounded-full border-none outline-none text-black text-lg placeholder:text-gray-500 h-12"
+                placeholder="Search"
+                className="w-full pl-10 md:pl-12 pr-4 py-2 rounded-full border-none outline-none text-black text-sm md:text-lg placeholder:text-gray-500 h-10 md:h-12"
                 style={{fontWeight:500}}
               />
             </div>
           </div>
-          {/* Center nav links - evenly distributed below top nav */}
-          <div className="flex flex-1 justify-between max-w-[900px] mx-auto px-10 text-[#f1f1f1]">
+          {/* Center nav links - hidden on mobile, or could be in mobile menu */}
+          <div className="hidden md:flex flex-1 justify-between max-w-[900px] mx-auto px-10 text-[#f1f1f1]">
             <span className=" font-semibold text-xl cursor-pointer hover:underline flex-1 text-center" onClick={() => navigate('/compiler')}>Compiler</span>
             <span className=" font-semibold text-xl cursor-pointer hover:underline flex-1 text-center" onClick={() => (window.location.href = 'https://code-i-qgenius-frontend-ajeet-sahan-one.vercel.app/')}
 >IQ Business</span>
             <span className=" font-semibold text-xl cursor-pointer hover:underline flex-1 text-center" onClick={() => navigate('/teach/steps')}>Teach on IQ</span>
             <span className=" font-semibold text-xl cursor-pointer hover:underline flex-1 text-center" onClick={() => (window.location.href = 'https://code-i-qgenius-frontend-ajeet-sahan-one.vercel.app/studying')}>My Studying</span>
-
           </div>
           {/* Icons - right aligned, spaced out */}
           <div className="flex items-center space-x-8 pr-8">
@@ -121,27 +121,50 @@ export default function Header() {
           </div>
         </div>
       </div>
-      {/* --- BOTTOM NAVIGATION --- */}
-      <div className="bg-slate-800 text-white text-sm font-normal space-x-20">
-        <div className="max-w-[90%] mx-auto py-3 overflow-x-auto">
-          <div className="flex justify-center gap-28 text-center text-base whitespace-nowrap">
+      {/* --- BOTTOM NAVIGATION --- hidden on mobile, visible on md+ */}
+      <div className="hidden md:block bg-slate-800 text-white text-sm font-normal">
+        <div className="max-w-full mx-auto py-3 px-4 overflow-x-auto no-scrollbar">
+          <div className="flex justify-center gap-20 text-center text-base whitespace-nowrap">
             <span className="cursor-pointer hover:text-blue-300"  onClick={() => (window.location.href = 'https://codeiqgenius-frontend-g17v.vercel.app/')}>All courses</span>
             <span className="cursor-pointer hover:text-blue-300" onClick={()=>navigate('/skills/study-plan')}>Study Plan</span>
             <span className="cursor-pointer hover:text-blue-300" onClick={() => navigate('/practice')}>Practice</span>
             <span className="cursor-pointer hover:text-blue-300" onClick={() => navigate('/contest')}>Contest</span>
             <span className="cursor-pointer hover:text-blue-300" onClick={() => navigate('/jobs')}>Job Portal</span>
             <span className="cursor-pointer hover:text-blue-300" onClick={() => navigate('/community')}>Community</span>
-            {/* <span className="cursor-pointer hover:text-blue-300">Internship</span> */}
           </div>
         </div>
       </div>
       {/* --- MOBILE MENU --- */}
       {menuOpen && (
-        <div className="bg-white px-6 py-4 md:hidden font-medium text-sm text-black space-y-4 border-b shadow-sm">
-          <span className="block cursor-pointer hover:text-blue-600">HOME</span>
-          <span className="block cursor-pointer hover:text-blue-600">BLOG</span>
-          <span className="block cursor-pointer hover:text-blue-600">PARTNERSHIP</span>
-          <span className="block cursor-pointer hover:text-blue-600">CONTACT US</span>
+        <div className="bg-white px-6 py-4 md:hidden font-medium text-sm text-black space-y-6 border-b shadow-lg absolute w-full z-[100] max-h-[80vh] overflow-y-auto">
+          {/* Main Links */}
+          <div className="space-y-3">
+            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Navigation</p>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => (window.location.href = 'https://codeiqgenius-frontend-g17v.vercel.app/')}>HOME</span>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/blog')}>BLOG</span>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/partnership')}>PARTNERSHIP</span>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/contact-us')}>CONTACT US</span>
+          </div>
+
+          {/* Features */}
+          <div className="space-y-3">
+            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Features</p>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/compiler')}>Compiler</span>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => (window.location.href = 'https://code-i-qgenius-frontend-ajeet-sahan-one.vercel.app/')}>IQ Business</span>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/teach/steps')}>Teach on IQ</span>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => (window.location.href = 'https://code-i-qgenius-frontend-ajeet-sahan-one.vercel.app/studying')}>My Studying</span>
+          </div>
+
+          {/* Study & Community */}
+          <div className="space-y-3 pb-4">
+            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Study & Community</p>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => (window.location.href = 'https://codeiqgenius-frontend-g17v.vercel.app/')}>All courses</span>
+            <span className="block cursor-pointer hover:text-blue-600 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/skills/study-plan')}>Study Plan</span>
+            <span className="block cursor-pointer hover:text-blue-300 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/practice')}>Practice</span>
+            <span className="block cursor-pointer hover:text-blue-300 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/contest')}>Contest</span>
+            <span className="block cursor-pointer hover:text-blue-300 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/jobs')}>Job Portal</span>
+            <span className="block cursor-pointer hover:text-blue-300 pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => navigate('/community')}>Community</span>
+          </div>
         </div>
       )}
     </header>

@@ -48,16 +48,16 @@ export default function NotesApp() {
   };
 
   return (
-    <div className="flex justify-center gap-7 bg-amber-800">
-      <div className=" flex flex-col   items-center space-y-6">
+    <div className="flex flex-col lg:flex-row justify-center gap-7 bg-amber-800 p-4">
+      <div className="flex flex-col items-center space-y-6 flex-1 w-full">
         {/* Input + Button */}
         {!isEditing && (
-          <div className="flex flex-col gap-[2.0625rem] bg-amber-300 w-[36.625rem] items-center justify-center">
-            <div className="flex items-center space-x-2">
+          <div className="flex flex-col gap-8 bg-amber-300 w-full max-w-[36.625rem] p-4 rounded-lg items-center justify-center">
+            <div className="flex items-center space-x-2 w-full max-w-[28.78125rem]">
               <input
                 type="text"
                 placeholder="Create note 0:15"
-                className="border rounded-lg px-3 py-2 w-[28.78125rem] "
+                className="border rounded-lg px-3 py-2 flex-1"
                 disabled
               />
               <svg
@@ -117,10 +117,10 @@ export default function NotesApp() {
         </span>
       </div>
 
-      <div className="rounded-[0.46875rem] border-[0.375px] border-[#0C316E] bg-white shadow-[ -0.75px_3px_9px_0_rgba(12,49,110,0.10)] flex w-[32rem] h-[6.875rem] flex-col items-start gap-[0.46875rem]">
+      <div className="rounded-lg border-[0.375px] border-[#0C316E] bg-white shadow-[ -0.75px_3px_9px_0_rgba(12,49,110,0.10)] flex w-full max-w-[32rem] min-h-[6.875rem] flex-col items-start gap-2 overflow-hidden">
         {/* Textarea with toolbar */}
-        <div>
-          <div className="flex items-center border-b pb-1 text-gray-600 w-[32rem] p-2">
+        <div className="w-full">
+          <div className="flex items-center border-b pb-1 text-gray-600 w-full p-2">
             <div className="flex px-[0.3125rem] gap-[0.9375rem] items-center justify-center">
               <span className="font-bold">B</span>
               <span className="italic">I</span>
@@ -191,9 +191,9 @@ export default function NotesApp() {
         </div>
       </div>
       {/* Right Section */}
-      <div className="flex flex-col gap-3 bg-amber-300 justify-center items-center">
+      <div className="flex flex-col gap-3 bg-amber-300 justify-center items-center p-4 rounded-lg h-fit">
         
-        <div className="flex  justify-center  border-[#0C316E] bg-[#0C316E]  w-[7.1875rem]   px-[0.9125rem] py-[0.625rem] items-center rounded-[0.3125rem] border">
+        <div className="flex justify-center border-[#0C316E] bg-[#0C316E] w-full max-w-[7.1875rem] px-4 py-2.5 items-center rounded-md border">
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
   <g clip-path="url(#clip0_3616_12984)">

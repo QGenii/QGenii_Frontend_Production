@@ -201,118 +201,56 @@ export default function Header() {
           )}
 
           {/* Hamburger — mobile only */}
-          <button
-            className="md:hidden flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="flex items-center gap-3 md:hidden">
+            <button
+              className="flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
-
         {/* Mobile dropdown menu */}
         {menuOpen && (
-          <div className="md:hidden bg-white border-t px-4 py-4 space-y-3 shadow-md">
-            <Link
-              to="/"
-              className="block text-black font-bold text-lg hover:text-blue-600 uppercase no-underline"
-              onClick={() => setMenuOpen(false)}
-            >
-              HOME
-            </Link>
-            <Link
-              to="/blog"
-              className="block text-black font-bold text-lg hover:text-blue-600 cursor-pointer uppercase no-underline"
-              onClick={() => { setMenuOpen(false); }}
-            >
-              BLOG
-            </Link>
-            <span
-              className="block text-black font-bold text-lg hover:text-blue-600 cursor-pointer uppercase"
-              onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}
-            >
-              PARTNERSHIP
-            </span>
-            <span
-              className="block text-black font-bold text-lg hover:text-blue-600 cursor-pointer uppercase"
-              onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}
-            >
-              CONTACT US
-            </span>
+          <div className="md:hidden bg-white border-t px-6 py-4 space-y-6 shadow-lg absolute w-full z-[100] max-h-[80vh] overflow-y-auto left-0">
+            {/* Main Links */}
+            <div className="space-y-3">
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Navigation</p>
+              <Link to="/" className="block text-black font-bold text-lg hover:text-blue-600 uppercase no-underline pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => setMenuOpen(false)}>HOME</Link>
+              <Link to="/blog" className="block text-black font-bold text-lg hover:text-blue-600 uppercase no-underline pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => setMenuOpen(false)}>BLOG</Link>
+              <span className="block text-black font-bold text-lg hover:text-blue-600 uppercase cursor-pointer pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}>PARTNERSHIP</span>
+              <span className="block text-black font-bold text-lg hover:text-blue-600 uppercase cursor-pointer pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => { setMenuOpen(false); navigate("/contactus"); }}>CONTACT US</span>
+            </div>
 
-            {/* Mobile middle bar links */}
-            <hr className="my-2" />
-            <span
-              className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer"
-              onClick={() => { setMenuOpen(false); navigate("/compiler"); }}
-            >
-              Compiler
-            </span>
-            <span
-              className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer"
-              onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}
-            >
-              QGenii Business
-            </span>
-            <span className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer"
-             onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}
-            >Teach On QGenii</span>
-            <Link
-              to="/mystudying"
-              className="block text-gray-700 font-semibold text-base hover:text-blue-600"
-              onClick={() => setMenuOpen(false)}
-            >
-              My Studying
-            </Link>
+            {/* Features */}
+            <div className="space-y-3">
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Features</p>
+              <span className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => { setMenuOpen(false); navigate("/compiler"); }}>Compiler</span>
+              <span className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}>QGenii Business</span>
+              <span className="block text-gray-700 font-semibold text-base hover:text-blue-600 cursor-pointer pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}>Teach On QGenii</span>
+              <Link to="/mystudying" className="block text-gray-700 font-semibold text-base hover:text-blue-600 no-underline pl-2 border-l-2 border-transparent hover:border-blue-600" onClick={() => setMenuOpen(false)}>My Studying</Link>
+            </div>
 
-            {/* Mobile Login/Signup */}
+            {/* Study & Community */}
+            <div className="space-y-4 pb-4">
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Study & Community</p>
+              <div className="grid grid-cols-2 gap-3">
+                <span className="text-white bg-slate-700 rounded-lg px-3 py-2 text-center text-sm cursor-pointer hover:bg-slate-600 transition-colors" onClick={() => { setMenuOpen(false); navigate("/courses/allCourses"); }}>All courses</span>
+                <span className="text-white bg-slate-700 rounded-lg px-3 py-2 text-center text-sm cursor-pointer hover:bg-slate-600 transition-colors" onClick={() => { setMenuOpen(false); navigate("/skills/study-plan"); }}>Study Plan</span>
+                <span className="text-white bg-slate-700 rounded-lg px-3 py-2 text-center text-sm cursor-pointer hover:bg-slate-600 transition-colors" onClick={() => { setMenuOpen(false); navigate("/practice"); }}>Practice</span>
+                <span className="text-white bg-slate-700 rounded-lg px-3 py-2 text-center text-sm cursor-pointer hover:bg-slate-600 transition-colors" onClick={() => { setMenuOpen(false); navigate("/contest"); }}>Contest</span>
+                <span className="text-white bg-slate-700 rounded-lg px-3 py-2 text-center text-sm cursor-pointer hover:bg-slate-600 transition-colors" onClick={() => { setMenuOpen(false); navigate("/coming-soon"); }}>Community</span>
+              </div>
+            </div>
+
+            {/* Mobile Auth */}
             {disablelogin && (
               <div className="flex gap-3 pt-2">
-                <button
-                  className="flex-1 border-2 border-indigo-700 bg-white text-indigo-700 py-2 rounded-full text-sm font-semibold"
-                  onClick={() => { setMenuOpen(false); navigate("/login"); }}
-                >
-                  Login In
-                </button>
-                <button
-                  className="flex-1 bg-indigo-800 text-white py-2 rounded-lg text-sm font-semibold"
-                  onClick={() => { setMenuOpen(false); navigate("/signup"); }}
-                >
-                  Sign Up
-                </button>
+                <button className="flex-1 border-2 border-blue-900 bg-white text-blue-900 py-2.5 rounded-lg text-sm font-semibold hover:bg-blue-50 transition-colors" onClick={() => { setMenuOpen(false); navigate("/login"); }}>Log In</button>
+                <button className="flex-1 bg-indigo-800 text-white py-2.5 rounded-lg text-sm font-semibold hover:bg-indigo-900 transition-colors" onClick={() => { setMenuOpen(false); navigate("/register"); }}>Sign Up</button>
               </div>
             )}
-
-            {/* Bottom bar links in mobile */}
-            <hr className="my-2" />
-            <div className="grid grid-cols-3 gap-2 pb-2">
-              <span
-                className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600"
-                onClick={() => { setMenuOpen(false); navigate("/courses/allCourses"); }}
-              >
-                All courses
-              </span>
-              <span
-                className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600"
-                onClick={() => { setMenuOpen(false); navigate("/skills/study-plan"); }}
-              >
-                Study Plan
-              </span>
-              <span
-                className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600"
-                onClick={() => { setMenuOpen(false); navigate("/practice"); }}
-              >
-                Practice
-              </span>
-              <span
-                className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600"
-                onClick={() => { setMenuOpen(false); navigate("/contest"); }}
-              >                Contest
-              </span>
-              <span className="text-white bg-slate-700 rounded px-2 py-1 text-center text-sm cursor-pointer hover:bg-slate-600">
-                Community
-              </span>
-            </div>
           </div>
         )}
       </div>
@@ -432,9 +370,9 @@ export default function Header() {
         </div>
       </div>
 
-      {/* ===== BOTTOM NAVIGATION BAR ===== */}
+      {/* ===== BOTTOM NAVIGATION BAR ===== hidden on mobile */}
       {!disableHeader1 && (
-        <div className="bg-slate-800 text-white text-sm font-normal">
+        <div className="hidden md:block bg-slate-800 text-white text-sm font-normal">
           <div className="max-w-[90%] mx-auto py-3 overflow-x-auto">
             <div className="flex justify-center gap-6 md:gap-12 lg:gap-20 xl:gap-28 text-center text-sm md:text-base whitespace-nowrap text-white">
               <span

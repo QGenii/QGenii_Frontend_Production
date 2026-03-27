@@ -21,12 +21,12 @@ export default function CoursePlayer() {
   const [askUserQuestion, setAskUserQuestion] = useState("Ask a Question");
 
   return (
-    <div className="w-full h-full  flex flex-col bg-gray-50">
+    <div className="w-full h-full flex flex-col bg-gray-50 overflow-x-hidden">
       {/* Navbar */}
-      <div className="flex items-center justify-between bg-[#0C316E] px-[0.75rem] py-[0.875rem] text-white h-[3.4375rem]">
-        <div className="flex  justify-between gap-[10.125rem] relative ">
+      <div className="flex flex-wrap items-center justify-between bg-[#0C316E] px-3 py-3.5 text-white min-h-[3.5rem] gap-4">
+        <div className="flex items-center justify-between gap-4 sm:gap-10 relative">
           <svg onClick={() => setOpen(!open)}
-            className="w-[1.5rem] h-[1.5rem] aspect-square"
+            className="w-6 h-6 aspect-square cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -79,14 +79,14 @@ export default function CoursePlayer() {
           </div>
         </div>
 
-        <div className="flex items-center gap-[7.9rem]">
+        <div className="flex flex-wrap items-center gap-4 sm:gap-[7.9rem]">
           {/* video Title */}
-          <h4 className="font-normal text-[1rem] text-white w-[35.625rem]">
+          <h4 className="font-normal text-base text-white w-full sm:w-auto lg:w-[35.625rem]">
             Video Title
           </h4>
-          <div className="flex gap-[1.25rem]">
+          <div className="flex flex-wrap gap-5 items-center">
             {/* progress */}
-            <div className="flex  flex-col justify-center items-center   w-[13rem] gap-[0.25rem]">
+            <div className="flex flex-col justify-center items-center w-full sm:w-[13rem] gap-1">
               <div className="flex gap-2">
                 <img src={trophy} alt="" />
                 <h4 className="font-normal text-[0.625rem] text-white ">
@@ -134,16 +134,16 @@ export default function CoursePlayer() {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-1">
+      <div className="flex flex-col lg:flex-row flex-1">
         {/* Left Panel - AI Assistant */}
-        <div className="w-[33.0625rem] h-[44.6875rem] bg-white border-r flex flex-col">
+        <div className="w-full lg:w-[33.0625rem] h-auto lg:h-[44.6875rem] bg-white border-r flex flex-col order-2 lg:order-1">
           {/* Tabs */}
-          <div className="flex ">
+          <div className="flex overflow-x-auto">
             <input
               type="button"
-              value="  Course Contest"
-              className={` p[0.625rem] text-sm w-[11.6875rem] h-[2.75rem] shrink-0 ${assistantTab === "course"
-                  ? " bg-[#C0D7FA] font-normal"
+              value="Course Contest"
+              className={`p-2.5 text-sm flex-1 lg:w-[11.6875rem] h-11 shrink-0 cursor-pointer ${assistantTab === "course"
+                  ? "bg-[#C0D7FA] font-normal"
                   : "text-gray-600"
                 }`}
               onClick={() => setAssistantTab("course")}
@@ -152,17 +152,17 @@ export default function CoursePlayer() {
             <input
               type="button"
               value="AI Assistant"
-              className={` p-[0.625rem] text-sm w-[11.6875rem] h-[2.75rem] shrink-0 ${assistantTab === "ai"
-                  ? " bg-[#C0D7FA] font-normal "
+              className={`p-2.5 text-sm flex-1 lg:w-[11.6875rem] h-11 shrink-0 cursor-pointer ${assistantTab === "ai"
+                  ? "bg-[#C0D7FA] font-normal"
                   : "text-gray-600"
                 }`}
               onClick={() => setAssistantTab("ai")}
             />
 
             {/* cross */}
-            <div className="flex p-[0.625rem] text-sm w-[11rem] h-[2.75rem]  justify-end">
+            <div className="hidden lg:flex p-2.5 text-sm w-[11rem] h-11 justify-end">
               <svg
-                className="w-[4.5rem] h-[1.5rem] aspect-square  "
+                className="w-18 h-6 aspect-square"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -180,11 +180,11 @@ export default function CoursePlayer() {
           </div>
 
           {/* Content */}
-          <div className="  overflow-y-auto">
+          <div className="overflow-y-auto">
             {assistantTab === "course" ? (
               <SectionList />
             ) : (
-              <div className=" flex  h-[41.5rem] py-[0.625rem] px-[0.5625rem] flex-col  gap-[0.625rem] justify-between shrink-0">
+              <div className="flex flex-col h-auto lg:h-[41.5rem] py-2.5 px-2.5 gap-2.5 justify-between shrink-0">
                 <div className="flex flex-col gap-[0.625rem] mt-5 ">
                   <div className="flex flex-col items-center justify-center ">
                     <h4 className="font-medium text-[0.875rem] capitalize">
@@ -211,8 +211,8 @@ export default function CoursePlayer() {
                   ))}
                 </div>
 
-                <div className="flex w-[31.75rem] px-[2.75rem] py-[0.84375rem]  justify-center items-center gap-[0.46875rem] rounded-[0.3125rem]-[0.9375rem] border-[0.75px] border-[#A6A6A6] bg-white">
-                  <div className="flex items-center  justify-center gap-[.31rem]">
+                <div className="flex w-full max-w-[31.75rem] mx-auto px-4 lg:px-11 py-3.5 justify-center items-center gap-2 rounded-lg border-[0.75px] border-[#A6A6A6] bg-white">
+                  <div className="flex items-center justify-center gap-1.5 w-full">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="12"
@@ -231,9 +231,9 @@ export default function CoursePlayer() {
                     <input
                       type="text"
                       placeholder="Ask a Question"
-                      className=" border-none  outline-none rounded-[0.3125rem] w-[23.28rem] text-[0.675rem] font-normal"
+                      className="border-none outline-none rounded-md flex-1 text-xs sm:text-sm font-normal"
                     />
-                    <div className="flex w-[2.20313rem] h-[2.20313rem] p-[0.51563rem] justify-end items-center gap-[0.46875rem] rounded-[0.3125rem]-[1.10156rem] bg-[#0C316E]">
+                    <div className="flex w-9 h-9 p-2 justify-center items-center rounded-full bg-[#0C316E] shrink-0">
                       <svg
                         className="cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
@@ -259,9 +259,9 @@ export default function CoursePlayer() {
         </div>
 
         {/* Right Panel - Video + Tabs */}
-        <div className="flex-1 flex flex-col w-[56.875rem]">
+        <div className="flex-1 flex flex-col w-full order-1 lg:order-2">
           {/* Video Player */}
-          <div className="bg-black h-[23.0625rem]  flex items-center justify-center text-white">
+          <div className="bg-black h-auto aspect-video max-h-[500px] flex items-center justify-center text-white">
             <video
               src="https://www.pexels.com/download/video/33655178/"
               controls
@@ -272,7 +272,7 @@ export default function CoursePlayer() {
           </div>
 
           {/* Course Tabs */}
-          <div className="border-b flex gap-[2.31rem] px-[0.75rem]  justify-center items-center">
+          <div className="border-b flex flex-wrap gap-4 sm:gap-9 px-3 justify-center items-center overflow-x-auto whitespace-nowrap">
             {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -313,8 +313,8 @@ export default function CoursePlayer() {
             ].map((tab) => (
               <span
                 key={tab}
-                className={` p-[0.625rem]  capitalize    text-[1rem] ${activeTab === tab
-                    ? " bg-[#C0D7FA] font-medium"
+                className={`p-2.5 capitalize text-sm sm:text-base cursor-pointer ${activeTab === tab
+                    ? "bg-[#C0D7FA] font-medium"
                     : "text-gray-600"
                   }`}
                 onClick={() => setActiveTab(tab)}
@@ -344,10 +344,9 @@ export default function CoursePlayer() {
                   />
                 </svg>
               ) && "searched"}
-            {/* Overview */}
             {activeTab === "overview" && (
-              <div className=" px-[2.8rem] ">
-                <h2 className=" font-normal text-black w-[43.06rem] text-[1rem] mb-4 ">
+              <div className="px-4 lg:px-11">
+                <h2 className="font-normal text-black w-full max-w-[43.06rem] text-base lg:text-[1rem] mb-4">
                   From Zero To Professional Level: Learn The Keys To Generative
                   AI, LLM Apps, AI Agents, And Cursor AI.
                 </h2>
@@ -471,12 +470,12 @@ export default function CoursePlayer() {
                         <path
                           d="M5.96499 3.71484C5.28659 3.89653 4.66799 4.25364 4.17138 4.75024C3.67478 5.24685 3.31768 5.86545 3.13599 6.54384M18.035 3.71484C18.7134 3.89653 19.332 4.25364 19.8286 4.75024C20.3252 5.24685 20.6823 5.86545 20.864 6.54384"
                           stroke="#0C316E"
-                          stroke-width="2"
-                          stroke-linecap="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                         />
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M12 20.5781C14.1217 20.5781 16.1566 19.7353 17.6569 18.235C19.1571 16.7347 20 14.6999 20 12.5781C20 10.4564 19.1571 8.42156 17.6569 6.92127C16.1566 5.42098 14.1217 4.57813 12 4.57812C9.87827 4.57813 7.84344 5.42098 6.34315 6.92127C4.84285 8.42156 4 10.4564 4 12.5781C4 14.6999 4.84285 16.7347 6.34315 18.235C7.84344 19.7353 9.87827 20.5781 12 20.5781ZM13 8.57812C13 8.31291 12.8946 8.05855 12.7071 7.87102C12.5196 7.68348 12.2652 7.57812 12 7.57812C11.7348 7.57812 11.4804 7.68348 11.2929 7.87102C11.1054 8.05855 11 8.31291 11 8.57812V12.3281C11 13.0181 11.56 13.5781 12.25 13.5781H15C15.2652 13.5781 15.5196 13.4728 15.7071 13.2852C15.8946 13.0977 16 12.8433 16 12.5781C16 12.3129 15.8946 12.0586 15.7071 11.871C15.5196 11.6835 15.2652 11.5781 15 11.5781H13V8.57812Z"
                           fill="#0C316E"
                         />
@@ -488,7 +487,7 @@ export default function CoursePlayer() {
                       <span>Learning a little each day adds up. </span>
                     </div>
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap gap-4 underline ">
                       <button>Start Timer</button>
                       <button>Dismiss</button>
                     </div>
@@ -496,50 +495,50 @@ export default function CoursePlayer() {
                 </div>
 
                 {/* By the Numbers Section */}
-                <div className="flex  gap-4  justify-center items-center   rounded-[0.3125rem]-lg p-4 text-sm text-gray-700 ">
-                  <div className="flex   gap-[1.37rem] px-[1.25rem] py-[0.625rem] bg-blue-100">
+                <div className="flex flex-wrap gap-4 justify-center items-center p-4 text-sm text-gray-700">
+                  <div className="flex flex-wrap lg:flex-nowrap gap-5 px-5 py-2.5 bg-blue-100 w-full lg:w-auto rounded-lg">
                     <div className="flex flex-col justify-center items-center whitespace-nowrap">
-                      <h4 className=" text-[0.75rem] font-normal">
+                      <h4 className="text-xs font-normal">
                         By The Numbers
                       </h4>
                     </div>
 
-                    <div className="  w-[11.1875rem] text-[0.75rem] font-normal   ">
-                      <h4 className="text-[0.75rem] font-normal">
+                    <div className="w-full sm:w-[11.1875rem] text-xs font-normal">
+                      <h4 className="text-xs font-normal">
                         Skill Level: Beginner Level
                       </h4>
-                      <h4 className="text-[0.75rem] font-normal">
+                      <h4 className="text-xs font-normal">
                         Students: 32022
                       </h4>
-                      <h4 className="text-[0.75rem] font-normal">
+                      <h4 className="text-xs font-normal">
                         Languages: English
                       </h4>
                     </div>
-                    <div className="w-[9.1875rem] ">
-                      <h4 className="text-[0.75rem] font-normal">
+                    <div className="w-full sm:w-[9.1875rem]">
+                      <h4 className="text-xs font-normal">
                         Captions: Yes
                       </h4>
-                      <h4 className="text-[0.75rem] font-normal">
+                      <h4 className="text-xs font-normal">
                         Lectures: 698
                       </h4>
-                      <h4 className="text-[0.75rem] font-normal">
+                      <h4 className="text-xs font-normal">
                         Video: 71.5 Total Hours
                       </h4>
                     </div>
                   </div>
 
                   {/* Features Section */}
-                  <div className="flex rounded-[0.3125rem]-[1.25rem] items-center justify-center gap-[1.37rem] px-[1.25rem] py-[0.625rem] bg-blue-100 text-[0.75rem] font-normal h-[2.37rem] w-[18.75rem]">
-                    <h4 className="text-[0.75rem] font-normal">Features</h4>
-                    <div className="flex  gap-2  font-normal px-2">
-                      <h4 className="text-[0.75rem] font-normal">
+                  <div className="flex flex-wrap rounded-xl items-center justify-center gap-5 px-5 py-2.5 bg-blue-100 text-xs font-normal h-auto w-full sm:w-[18.75rem]">
+                    <h4 className="text-xs font-normal">Features</h4>
+                    <div className="flex gap-2 font-normal px-2">
+                      <h4 className="text-xs font-normal">
                         AvailableOn
                       </h4>
-                      <a href="#" className=" text-[0.75rem] underline">
+                      <a href="#" className="text-xs underline text-blue-600">
                         iOS
                       </a>{" "}
-                      <h4 className="text-[0.75rem] font-normal">And</h4>
-                      <a href="#" className=" underline text-[0.75rem]">
+                      <h4 className="text-xs font-normal">And</h4>
+                      <a href="#" className="underline text-xs text-blue-600">
                         Android
                       </a>
                     </div>
@@ -648,15 +647,15 @@ export default function CoursePlayer() {
                       </select>
                     </div>
 
-                    <div className=" flex w-[43.8125rem] flex-col items-center gap-[1.75rem] ">
+                    <div className="flex flex-col w-full max-w-[43.8125rem] items-center gap-7 mx-auto">
                       {/* Search Bar */}
-                      <div className="flex items-center gap-[1.25rem] ">
+                      <div className="flex flex-wrap items-center justify-center gap-5 w-full">
                         <input
                           type="text"
                           placeholder="Search questions here"
-                          className="flex-grow border border-gray-300 rounded-[0.3125rem] px-4 py-2 w-[28.78rem] h-[2.39rem] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          className="flex-grow border border-gray-300 rounded-md px-4 py-2 w-full sm:w-[28.78rem] h-[2.39rem] focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
-                        <button className="">
+                        <button className="bg-[#0C316E] text-white px-4 py-2 rounded-md">
                           Search
                         </button>
                       </div>
@@ -675,11 +674,11 @@ export default function CoursePlayer() {
                       <div className=" rounded-[0.3125rem]   p-4  flex items-start gap-[0.62rem] ">
                         <div className="w-10 h-10 rounded-full bg-gray-300"></div>
 
-                        <div className="flex-1">
-                          <h4 className="font-medium text-[0.75rem]  w-[23.68rem] h-[1.125rem]">
+                        <div className="flex-1 min-w-0">
+                          <h4 className="font-medium text-[0.75rem] w-full line-clamp-1">
                             Question About Course
                           </h4>
-                          <h4 className="text-[#1E1E1E] text-[0.625rem] w-[23.68rem] h-[3.125rem]">
+                          <h4 className="text-[#1E1E1E] text-[0.625rem] w-full line-clamp-2">
                             Description here
                           </h4>
                         </div>

@@ -110,11 +110,11 @@ export default function Section3() {
   };
 
   return (
-    <div className="flex flex-col items-start justify-center gap-8 py-[-1rem]">
-      <div className="sm:px-6 md:px-8 m-auto w-full">
+    <div className="flex flex-col items-start justify-center gap-8 py-0">
+      <div className="px-4 sm:px-6 md:px-8 m-auto w-full">
         {/* Courses */}
         <div className="w-full mb-10 pt-8">
-          <h2 className="text-[1.75rem] font-bold text-gray-900 mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-[1.75rem] font-bold text-gray-900 mb-6 px-1">
             Study To Course
           </h2>
           {renderCards(courses, "course")}
@@ -133,7 +133,7 @@ export default function Section3() {
 
         {/* Practice Categories */}
         <div className="w-full mb-10">
-          <h2 className="text-[1.75rem] font-bold text-gray-900 mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-[1.75rem] font-bold text-gray-900 mb-6 px-1">
             Practice Coding Challenge
           </h2>
           {renderCards(categories, "category")}
@@ -152,7 +152,7 @@ export default function Section3() {
       
         {/* Contests */}
         <div className="w-full mb-10">
-          <h2 className="text-[1.75rem] font-bold text-gray-900 mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-[1.75rem] font-bold text-gray-900 mb-6 px-1">
             Future Coding Challenge
           </h2>
           {renderCards(contests, "contest")}
@@ -171,7 +171,7 @@ export default function Section3() {
       
         {/* Skills */}
         <div className="w-full mb-10">
-          <h2 className="text-[1.75rem] font-bold text-gray-900 mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-[1.75rem] font-bold text-gray-900 mb-6 px-1">
             Skill Check Test
           </h2>
           {renderCards(skills, "skill")}

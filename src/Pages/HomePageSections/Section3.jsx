@@ -40,7 +40,7 @@ export default function Section3() {
   const renderCourseCard = (key, name) => (
     <div
       key={key}
-      className="bg-[#0C316E] text-white p-4 rounded-lg w-56 sm:w-60 shadow-md shrink-0 cursor-pointer"
+      className="bg-[#0C316E] text-white p-4 rounded-lg w-full max-w-[15rem] sm:max-w-[16rem] shadow-md shrink-0 cursor-pointer"
       onClick={() => (window.location.href = 'https://codeiqgenius-frontend-nitesh.vercel.app/course-detail')}
     >
       <div className="bg-white rounded-md h-20 sm:h-24 mb-4"></div>
@@ -64,7 +64,7 @@ export default function Section3() {
       {/* Skill Highlight Section */}
       <div className="w-full mt-16 px-4 sm:px-6 md:px-8 ">
         <div className="max-w-4xl text-left">
-          <h2 className="text-3xl font-bold text-gray-800 mb-2">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">
             Your One-Stop Destination For All Skills
           </h2>
           <p className="text-base text-gray-600">
@@ -113,7 +113,7 @@ export default function Section3() {
             {courseMap[selectedCategory]?.map((courseName, index) => (
               <div
                 key={index}
-                className="bg-[#0C316E] text-white p-4 rounded-lg w-60 shrink-0 shadow-md"
+                className="bg-[#0C316E] text-white p-4 rounded-lg w-full max-w-[15rem] sm:max-w-[16rem] shrink-0 shadow-md"
               >
                 <div className="bg-white rounded-md h-20 sm:h-24 md:h-28 mb-4"></div>
                 <p className="text-xs sm:text-sm mb-2 break-words whitespace-normal leading-snug">
@@ -136,7 +136,7 @@ export default function Section3() {
 
         {/* Suggestions For You */}
         <div className="w-full mb-12  bg-white px-[2rem]">
-          <h3 className="text-base sm:text-2xl font-bold text-gray-800 mb-4">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 px-1">
             Suggestions For You
           </h3>
           <div className="overflow-x-auto  md:justify-center">
@@ -150,7 +150,7 @@ export default function Section3() {
 
         {/* Trending Courses For You */}
         <div className="w-full bg-white  px-[2rem]">
-          <h3 className="text-base sm:text-2xl font-bold text-gray-800 mb-4">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 px-1">
             Trending Courses For You
           </h3>
           <div className="overflow-x-auto">

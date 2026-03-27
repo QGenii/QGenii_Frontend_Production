@@ -105,18 +105,18 @@ const uniqueLanguages = [
       {/* Top bar */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <h2 className="text-2xl font-semibold text-gray-900">
+          <div className="flex flex-col sm:flex-row items-center justify-between py-4 sm:py-0 sm:h-16 gap-3">
+            <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">
               Online Compiler
             </h2>
             <a
               href="/practice"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#0C66FF] rounded-full  text-white text-sm font-medium hover:opacity-95"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#0C66FF] rounded-full text-white text-xs sm:text-sm font-medium hover:opacity-95 shadow-md"
             >
               Checkout our practice section{" "}
-              <HiExternalLink className="w-5 h-5" />
+              <HiExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
             </a>
           </div>
         </div>
@@ -132,35 +132,36 @@ const uniqueLanguages = [
           {/* Editor column (span 2 on lg) */}
           <div className="lg:col-span-2 flex flex-col gap-4">
             {/* Header: language select + run */}
-            <div className="flex items-center justify-between gap-4">
-              <div className="flex items-center gap-3 relative">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 relative w-full sm:w-auto">
                 <label htmlFor="language" className="sr-only">
                   Language
                 </label>
 
                 {/* Custom searchable dropdown */}
-                <div className="relative" ref={dropdownRef}>
+                <div className="relative w-full sm:w-auto" ref={dropdownRef}>
                   <input
                     type="text"
                     placeholder="Search language..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onFocus={() => setIsDropdownOpen(true)}
-className="block w-full pl-9 pr-3 py-2.5 border-4 border-black rounded-lg 
+                    className="block w-full sm:w-48 pl-9 pr-3 py-2 border-2 sm:border-4 border-black rounded-lg 
 bg-white text-sm text-gray-700 placeholder-gray-400
 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
-shadow-sm transition-all"                 />
+shadow-sm transition-all"
+                  />
 
                   {/* Dropdown list */}
                   {isDropdownOpen && (
-                    <div className="absolute z-10 mt-1 w-48 max-h-60 overflow-auto bg-white border border-gray-200 rounded-md shadow-lg">
+                    <div className="absolute z-10 mt-1 w-full sm:w-48 max-h-60 overflow-auto bg-white border border-gray-200 rounded-md shadow-lg">
                       {filteredRuntimes.length > 0 ? (
                         filteredRuntimes.map((rt, idx) => {
                           return (
                             <div
                               key={rt.language}
                               onClick={() => {
-              setShowLanguage(`${rt.language} ${rt.version}`);
+                                setShowLanguage(`${rt.language} ${rt.version}`);
                                 setSearchQuery("");
                                 setIsDropdownOpen(false);
                               }}
@@ -170,7 +171,7 @@ shadow-sm transition-all"                 />
                                   : ""
                               }`}
                             >
-                              {rt.language }{   rt.version}
+                              {rt.language} {rt.version}
                             </div>
                           );
                         })
@@ -183,23 +184,23 @@ shadow-sm transition-all"                 />
                   )}
                 </div>
 
-                <div className="text-xl text-gray-500">
-                  <span className="hidden sm:inline">Selected: </span>
-                  <span className="font-medium text-gray-700 ml-1">
+                <div className="text-lg sm:text-xl text-gray-500 flex items-center">
+                  <span className="text-sm sm:text-lg">Selected: </span>
+                  <span className="font-medium text-gray-700 ml-1 truncate max-w-[150px] sm:max-w-none">
                     {showLanguage}
                   </span>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 w-full sm:w-auto justify-end">
                 <button
                   onClick={handleRunCode}
                   disabled={isRunning}
-                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium shadow-sm ${
+                  className={`inline-flex items-center justify-center gap-2 px-6 py-2 rounded-md text-sm font-medium shadow-md transition-all active:scale-95 ${
                     isRunning
                       ? "bg-indigo-300 text-white cursor-not-allowed"
                       : "bg-indigo-600 text-white hover:bg-indigo-700"
-                  }`}
+                  } w-full sm:w-auto`}
                 >
                   <AiOutlinePlayCircle className="w-5 h-5" />
                   {isRunning ? "Running..." : "Run"}

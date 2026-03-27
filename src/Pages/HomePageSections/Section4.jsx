@@ -98,7 +98,7 @@ export default function Section4() {
               <img
                 src={feature.image}
                 alt={feature.title}
-                className="w-[360px] h-[240px] object-contain rounded"
+                className="w-full max-w-md h-auto object-contain rounded"
               />
             </div>
 

@@ -87,7 +87,7 @@ export default function Section2() {
                   className="w-full flex flex-col md:flex-row justify-between items-center px-4 md:px-10 py-8 md:py-10 gap-8 bg-[#8c5c5c] shrink-0"
                 >
                   {/* Left Content Box */}
-                  <div className="bg-white p-6 rounded-md shadow-md w-[21rem] md:ml-36">
+                  <div className="bg-white p-6 rounded-md shadow-md w-full max-w-[21rem] md:ml-36">
                     <h3 className="text-xl font-extrabold font-[cursive] mb-2 leading-tight">
                       {slide.title}
                     </h3>

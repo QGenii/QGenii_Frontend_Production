@@ -325,8 +325,8 @@ const ReminderModal = ({ onClose, onSave }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
-      <div className="relative bg-white p-7 rounded-xl text-center w-[42.3125rem] shadow-lg">
+    <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50 p-4">
+      <div className="relative bg-white p-4 sm:p-7 rounded-xl text-center w-full max-w-[42.3125rem] shadow-lg max-h-[90vh] overflow-y-auto">
         {/* Title */}
         <div className="relative mb-4">
           <h2 className="flex items-center justify-center text-black font-poppins text-xl font-medium">
@@ -335,11 +335,11 @@ const ReminderModal = ({ onClose, onSave }) => {
         </div>
 
         {/* Progress Bar */}
-        <div className="flex justify-center my-4 py-8 h-12">
+        <div className="flex justify-center my-4 py-4 sm:py-8 h-12">
           {[1, 2, 3].map((i) => (
             <div
               key={i}
-              className={`h-[0.5625rem] w-[9.375rem] mx-1 rounded-lg ${
+              className={`h-[0.5625rem] flex-1 max-w-[9.375rem] mx-1 rounded-lg ${
                 step >= i ? "bg-[#0C316E]" : "bg-[#D9D9D9]"
               }`}
             ></div>
@@ -359,7 +359,7 @@ const ReminderModal = ({ onClose, onSave }) => {
                 setReminder({ ...reminder, name: e.target.value })
               }
               placeholder="Studying reminder"
-              className="flex w-[30.3125rem] h-[2.375rem] px-6 py-2 items-center gap-2 rounded border border-black bg-white text-[#595959] font-poppins text-sm outline-none"
+              className="flex w-full sm:w-[30.3125rem] h-[2.375rem] px-6 py-2 items-center gap-2 rounded border border-black bg-white text-[#595959] font-poppins text-sm outline-none"
             />
 
             {/* Search */}
@@ -408,11 +408,11 @@ const ReminderModal = ({ onClose, onSave }) => {
 
         {/* Step 2 */}
         {step === 2 && (
-          <div className="flex flex-col items-center">
-            <h6 className="w-[29.75rem] mb-2 text-left font-medium text-[#1E1E1E]">
+          <div className="flex flex-col items-center w-full">
+            <h6 className="w-full max-w-[29.75rem] mb-2 text-left font-medium text-[#1E1E1E]">
               Frequency
             </h6>
-            <div className="inline-flex w-[29.75rem] p-2 justify-center items-center gap-5 rounded-full border border-[#8686A180] bg-white">
+            <div className="inline-flex flex-wrap w-full max-w-[29.75rem] p-2 justify-center items-center gap-2 sm:gap-5 rounded-full sm:rounded-full border border-[#8686A180] bg-white">
               {["Daily", "Once", "Weekly"].map((freq) => (
                 <span
                   key={freq}
@@ -428,10 +428,10 @@ const ReminderModal = ({ onClose, onSave }) => {
               ))}
             </div>
 
-            <h4 className="w-[29.75rem] mt-4 text-left font-medium text-[#1E1E1E]">
+            <h4 className="w-full max-w-[29.75rem] mt-4 text-left font-medium text-[#1E1E1E]">
               Date
             </h4>
-            <div className="flex w-[29.75rem] mt-2 justify-center">
+            <div className="flex w-full max-w-[29.75rem] mt-2 justify-center overflow-x-auto">
               <Calendar
                 onChange={(date) => setReminder({ ...reminder, date })}
                 value={reminder.date}
@@ -439,10 +439,10 @@ const ReminderModal = ({ onClose, onSave }) => {
               />
             </div>
 
-            <h4 className="w-[29.75rem] mt-4 text-left font-medium text-[#1E1E1E]">
+            <h4 className="w-full max-w-[29.75rem] mt-4 text-left font-medium text-[#1E1E1E]">
               Time
             </h4>
-            <div className="flex w-[29.75rem] mt-2 mb-4">
+            <div className="flex w-full max-w-[29.75rem] mt-2 mb-4">
               <input
                 type="time"
                 value={reminder.time}

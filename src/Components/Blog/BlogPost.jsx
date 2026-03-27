@@ -351,8 +351,8 @@ export default function BlogPost({ post, onPostUpdated }) {
 
   return (
     <div className="w-full">
-      <div className="w-full max-w-[50rem] mx-auto rounded-lg shadow-md overflow-hidden mt-3 flex flex-col justify-center">
-        <div className="p-5 flex flex-col ">
+      <div className="w-full max-w-[50rem] mx-auto rounded-lg shadow-md overflow-hidden mt-3 flex flex-col justify-center bg-white border border-gray-100">
+        <div className="p-3 sm:p-5 flex flex-col">
           {/* Header */}
           <div className="flex items-start gap-4 mb-4">
             <div className="w-12 h-12 rounded-full bg-gray-100 border border-gray-200 overflow-hidden flex-shrink-0">
@@ -526,11 +526,11 @@ export default function BlogPost({ post, onPostUpdated }) {
 
           {/* Cover Image */}
           {post.coverImage ? (
-            <div className="mb-4 text-center">
+            <div className="mb-4 text-center overflow-hidden rounded">
               <img
                 src={post.coverImage}
                 alt="cover"
-                className="w-full max-h-80 object-cover rounded"
+                className="w-full max-h-60 sm:max-h-80 object-cover"
               />
             </div>
           ) : (
@@ -564,31 +564,33 @@ export default function BlogPost({ post, onPostUpdated }) {
           </div>
 
           {/* Actions */}
-          <div className="flex justify-between items-center border-t pt-3 px-8">
+          <div className="flex flex-wrap items-center border-t pt-3 px-2 sm:px-8 gap-2">
             <button
-              className="flex items-center gap-2 text-sm px-6 py-2 rounded-md bg-[#0C66FF] text-white"
+              className="flex items-center justify-center gap-2 text-sm px-3 sm:px-4 py-2 rounded-md bg-[#0C66FF] text-white flex-1 min-w-[100px] sm:min-w-[120px]"
               onClick={handleLike}
             >
               {isLiked ? <AiFillLike /> : <AiOutlineLike />} <span>Like</span>
             </button>
 
             <button
-              className="flex items-center gap-2 text-sm px-6 py-2 rounded-md bg-[#0C66FF] text-white"
+              className="flex items-center justify-center gap-2 text-sm px-3 sm:px-4 py-2 rounded-md bg-[#0C66FF] text-white flex-1 min-w-[100px] sm:min-w-[120px]"
               onClick={toggleComments}
             >
               <AiOutlineComment /> <span>Comment</span>
             </button>
 
             <button
-              className="flex items-center gap-2 text-sm px-6 py-2 rounded-md bg-[#0C66FF] text-white"
+              className="flex items-center justify-center gap-2 text-sm px-3 sm:px-4 py-2 rounded-md bg-[#0C66FF] text-white flex-1 min-w-[100px] sm:min-w-[120px]"
               onClick={handleRepost}
             >
               <AiOutlineRetweet />{" "}
               <span>{isReposted ? "Reposted" : "Repost"}</span>
             </button>
-            <ShareButton
-              url={`${window.location.origin}/blog/view/${post._id}`}
-            />
+            <div className="flex-1 min-w-[100px] sm:min-w-[120px] flex justify-center">
+              <ShareButton
+                url={`${window.location.origin}/blog/view/${post._id}`}
+              />
+            </div>
           </div>
 
           {/* Comments Section */}

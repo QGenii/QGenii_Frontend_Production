@@ -25,8 +25,8 @@ const LearningTool = () => {
 
 
       </div >
-      <div className=" flex justify-end">
-        <img src={ClockTime} className='w-[16.6875rem] h-[11.125rem] shrink-0 aspect-[3/2]' alt="" />
+      <div className="flex justify-center sm:justify-end mt-6">
+        <img src={ClockTime} className='w-full max-w-[16.6875rem] h-auto shrink-0 aspect-[3/2]' alt="" />
       </div>
     </div>
   )

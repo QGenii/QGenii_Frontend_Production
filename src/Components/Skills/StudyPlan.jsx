@@ -210,16 +210,8 @@ const StudyPlan = () => {
 
       {/* Study Session View */}
       {isStudyActive && (
-        <div style={{
-          width: "100%",
-          background: "#ffffff",
-          padding: "40px",
-          minHeight: "600px"
-        }}>
-          <div style={{
-            maxWidth: "1000px",
-            margin: "0 auto"
-          }}>
+        <div className="study-session-container">
+          <div className="session-inner">
             <Button
               variant="outline-secondary"
               onClick={() => setIsStudyActive(false)}
@@ -236,7 +228,7 @@ const StudyPlan = () => {
             }}>
               <h4>Start Your Study Session</h4>
               {/* Focus and Break Time Inputs */}
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginBottom: 20 }}>
+              <div className="timer-settings">
                 <div>
                   <label htmlFor="focusTime" style={{ fontWeight: 500 }}>Focus time (minutes): </label>
                   <input
@@ -272,35 +264,31 @@ const StudyPlan = () => {
               <p style={{ fontSize: "16px", color: "#666", marginBottom: "20px" }}>
                 Focus time: {focusTime} minutes | Break time: {breakTime} minutes
               </p>
-              <div style={{
-                fontSize: "48px",
-                fontWeight: "bold",
-                color: isOnBreak ? "#28a745" : "#007bff",
-                marginBottom: "20px"
-              }}>
+              <div className="timer-display" style={{ color: isOnBreak ? "#28a745" : "#007bff" }}>
                 {isOnBreak ? 'Break' : 'Focus'}: {Math.floor(timeLeft / 60)}:{String(timeLeft % 60).padStart(2, '0')}
               </div>
-              <Button
-                variant="primary"
-                size="lg"
-                style={{ marginRight: "10px" }}
-                onClick={() => {
-                  setIsRunning(true);
-                  if (!isOnBreak) setTimeLeft(focusTime * 60);
-                  else setTimeLeft(breakTime * 60);
-                }}
-                disabled={isRunning}
-              >
-                Start Session
-              </Button>
-              <Button
-                variant="outline-secondary"
-                size="lg"
-                onClick={() => setIsRunning(false)}
-                disabled={!isRunning}
-              >
-                Pause
-              </Button>
+              <div className="timer-buttons">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  onClick={() => {
+                    setIsRunning(true);
+                    if (!isOnBreak) setTimeLeft(focusTime * 60);
+                    else setTimeLeft(breakTime * 60);
+                  }}
+                  disabled={isRunning}
+                >
+                  Start Session
+                </Button>
+                <Button
+                  variant="outline-secondary"
+                  size="lg"
+                  onClick={() => setIsRunning(false)}
+                  disabled={!isRunning}
+                >
+                  Pause
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -309,38 +297,19 @@ const StudyPlan = () => {
       {/* Main Study Plan View */}
       {!isStudyActive && !loading && (
         <>
-          <div
-            style={{
-              width: "100%",
-              background: "#f7ede3",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              padding: "28px 38px 28px 38px",
-              borderRadius: "0 0 0 0",
-              marginBottom: 24,
-              height: 300,
-            }}
-          >
-            <div >
-              <div style={{ fontWeight: 700, fontSize: 45, marginBottom: 6, marginLeft: 343 }}>
+          <div className="study-plan-banner">
+            <div className="banner-text-content">
+              <div className="banner-title">
                 Study Plan
               </div>
-              <div style={{ fontWeight: 500, fontSize: 35, marginLeft: 225 }}>
+              <div className="banner-subtitle">
                 Your Smart RoadMap To Success
               </div>
             </div>
             <img
               src={studyPlanImg}
               alt="Study Plan Illustration"
-              style={{
-                height: 300,
-                width: 400,
-                objectFit: "contain",
-                marginLeft: 18,
-                display: "block",
-                marginRight: 300
-              }}
+              className="banner-image"
             />
           </div>
           <Container>
@@ -350,7 +319,7 @@ const StudyPlan = () => {
         </div> */}
 
             <Row className="month-selector-row">
-              <Col xs={4}>
+              <Col lg={3} md={4} sm={6} xs={12}>
                 <MonthSelector
                   selectedMonth={currentMonth}
                   selectedYear={currentYear}
@@ -449,7 +418,7 @@ const StudyPlan = () => {
               <p>Boost your focus, Stay on Track, Learn Smarter</p>
               <Row>
                 {studyGuides.map((guide, index) => (
-                  <Col key={index} md={3}>
+                  <Col key={index} lg={3} md={6} sm={6} xs={12} className="mb-4">
                     <StudyGuideCard {...guide} />
                   </Col>
                 ))}
